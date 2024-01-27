@@ -79,13 +79,24 @@ const config = {
             position: 'left',
             label: '教程',
           },
-
+          {
+            href: 'https://github.com/houxinlin/cool-request',
+            html: `
+            <img
+              src="https://img.shields.io/github/stars/houxinlin/cool-request?style=social"
+              alt="GitHub Stars"
+              style="vertical-align: middle"
+            />
+          `,
+            position: 'right',
+          },
         ],
       },
 
       prism: {
         theme: prismThemes.github,
         darkTheme: prismThemes.dracula,
+        additionalLanguages: ['java'],
       },
     }),
 };

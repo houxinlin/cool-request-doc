@@ -16,6 +16,11 @@
               "sidebar": "tutorialSidebar"
             },
             {
+              "id": "tutorial-basics/request",
+              "path": "/docs/tutorial-basics/request",
+              "sidebar": "tutorialSidebar"
+            },
+            {
               "id": "tutorial-basics/startup",
               "path": "/docs/tutorial-basics/startup",
               "sidebar": "tutorialSidebar"
@@ -26,23 +31,23 @@
               "sidebar": "tutorialSidebar"
             },
             {
-              "id": "tutorial-extras/common",
-              "path": "/docs/tutorial-extras/common",
+              "id": "tutorial-script/common",
+              "path": "/docs/tutorial-script/common",
               "sidebar": "tutorialSidebar"
             },
             {
-              "id": "tutorial-extras/script",
-              "path": "/docs/tutorial-extras/script",
+              "id": "tutorial-script/script",
+              "path": "/docs/tutorial-script/script",
               "sidebar": "tutorialSidebar"
             },
             {
-              "id": "tutorial-extras/script-pos",
-              "path": "/docs/tutorial-extras/script-pos",
+              "id": "tutorial-script/script-pos",
+              "path": "/docs/tutorial-script/script-pos",
               "sidebar": "tutorialSidebar"
             },
             {
-              "id": "tutorial-extras/script-pre",
-              "path": "/docs/tutorial-extras/script-pre",
+              "id": "tutorial-script/script-pre",
+              "path": "/docs/tutorial-script/script-pre",
               "sidebar": "tutorialSidebar"
             },
             {

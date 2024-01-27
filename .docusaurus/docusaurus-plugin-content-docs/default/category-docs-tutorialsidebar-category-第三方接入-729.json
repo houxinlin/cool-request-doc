@@ -5,8 +5,8 @@
   "permalink": "/docs/category/第三方接入",
   "navigation": {
     "previous": {
-      "title": "启动",
-      "permalink": "/docs/tutorial-basics/startup"
+      "title": "发起HTTP请求",
+      "permalink": "/docs/tutorial-basics/request"
     },
     "next": {
       "title": "apifox",

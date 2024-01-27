@@ -186,17 +186,17 @@
     },
     "content": "content---markdown-page-393-028"
   },
-  "/docs-03f": {
+  "/docs-912": {
     "__comp": "__comp---theme-docs-root-5-e-9-0b6",
     "__context": {
       "plugin": "plugin---docs-03-b-2b2"
     }
   },
-  "/docs-329": {
+  "/docs-815": {
     "__comp": "__comp---theme-doc-version-roota-7-b-5de",
     "version": "version---docs-935-398"
   },
-  "/docs-a4f": {
+  "/docs-820": {
     "__comp": "__comp---theme-doc-roota-94-67a"
   },
   "/docs/category/第三方接入-176": {
@@ -215,6 +215,10 @@
     "__comp": "__comp---theme-doc-item-178-a40",
     "content": "content---docs-intro-0-e-3-be1"
   },
+  "/docs/tutorial-basics/request-fe9": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-tutorial-basics-request-8-d-1-623"
+  },
   "/docs/tutorial-basics/startup-c6c": {
     "__comp": "__comp---theme-doc-item-178-a40",
     "content": "content---docs-tutorial-basics-startup-312-920"
@@ -223,21 +227,21 @@
     "__comp": "__comp---theme-doc-item-178-a40",
     "content": "content---docs-tutorial-basics-three-part-apifox-1-ce-d2d"
   },
-  "/docs/tutorial-extras/common-9a2": {
+  "/docs/tutorial-script/common-074": {
     "__comp": "__comp---theme-doc-item-178-a40",
-    "content": "content---docs-tutorial-extras-commonc-2-a-05b"
+    "content": "content---docs-tutorial-script-common-174-43a"
   },
-  "/docs/tutorial-extras/script-0af": {
+  "/docs/tutorial-script/script-5db": {
     "__comp": "__comp---theme-doc-item-178-a40",
-    "content": "content---docs-tutorial-extras-scripteae-748"
+    "content": "content---docs-tutorial-script-script-76-e-6a9"
   },
-  "/docs/tutorial-extras/script-pos-9d7": {
+  "/docs/tutorial-script/script-pos-e79": {
     "__comp": "__comp---theme-doc-item-178-a40",
-    "content": "content---docs-tutorial-extras-script-posea-2-98b"
+    "content": "content---docs-tutorial-script-script-posa-11-d2d"
   },
-  "/docs/tutorial-extras/script-pre-5c7": {
+  "/docs/tutorial-script/script-pre-6c9": {
     "__comp": "__comp---theme-doc-item-178-a40",
-    "content": "content---docs-tutorial-extras-script-pre-6-dc-eec"
+    "content": "content---docs-tutorial-script-script-preea-5-157"
   },
   "/-5f0": {
     "__comp": "__comp---site-src-pages-index-jsc-4-f-f99",

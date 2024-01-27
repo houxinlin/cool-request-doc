@@ -99,15 +99,15 @@ export default [
   },
   {
     path: '/docs',
-    component: ComponentCreator('/docs', '03f'),
+    component: ComponentCreator('/docs', '912'),
     routes: [
       {
         path: '/docs',
-        component: ComponentCreator('/docs', '329'),
+        component: ComponentCreator('/docs', '815'),
         routes: [
           {
             path: '/docs',
-            component: ComponentCreator('/docs', 'a4f'),
+            component: ComponentCreator('/docs', '820'),
             routes: [
               {
                 path: '/docs/category/第三方接入',
@@ -134,6 +134,12 @@ export default [
                 sidebar: "tutorialSidebar"
               },
               {
+                path: '/docs/tutorial-basics/request',
+                component: ComponentCreator('/docs/tutorial-basics/request', 'fe9'),
+                exact: true,
+                sidebar: "tutorialSidebar"
+              },
+              {
                 path: '/docs/tutorial-basics/startup',
                 component: ComponentCreator('/docs/tutorial-basics/startup', 'c6c'),
                 exact: true,
@@ -146,26 +152,26 @@ export default [
                 sidebar: "tutorialSidebar"
               },
               {
-                path: '/docs/tutorial-extras/common',
-                component: ComponentCreator('/docs/tutorial-extras/common', '9a2'),
+                path: '/docs/tutorial-script/common',
+                component: ComponentCreator('/docs/tutorial-script/common', '074'),
                 exact: true,
                 sidebar: "tutorialSidebar"
               },
               {
-                path: '/docs/tutorial-extras/script',
-                component: ComponentCreator('/docs/tutorial-extras/script', '0af'),
+                path: '/docs/tutorial-script/script',
+                component: ComponentCreator('/docs/tutorial-script/script', '5db'),
                 exact: true,
                 sidebar: "tutorialSidebar"
               },
               {
-                path: '/docs/tutorial-extras/script-pos',
-                component: ComponentCreator('/docs/tutorial-extras/script-pos', '9d7'),
+                path: '/docs/tutorial-script/script-pos',
+                component: ComponentCreator('/docs/tutorial-script/script-pos', 'e79'),
                 exact: true,
                 sidebar: "tutorialSidebar"
               },
               {
-                path: '/docs/tutorial-extras/script-pre',
-                component: ComponentCreator('/docs/tutorial-extras/script-pre', '5c7'),
+                path: '/docs/tutorial-script/script-pre',
+                component: ComponentCreator('/docs/tutorial-script/script-pre', '6c9'),
                 exact: true,
                 sidebar: "tutorialSidebar"
               }

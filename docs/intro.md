@@ -44,6 +44,7 @@ Cool Request是一款基于 IntelliJ IDEA 的插件，旨在简化 Spring MVC(Bo
   <summary>复制请求为curl</summary>
 
     右击将要生成的API，可选择复制为curl格式，支持选择IP，此功能生成的参数信息是用户最后一次发起请求后所填写的参数。
+    ![Alt text](images/copy-curl.png)
 </details>
  
  <details>
@@ -56,6 +57,7 @@ Cool Request是一款基于 IntelliJ IDEA 的插件，旨在简化 Spring MVC(Bo
   <summary>使用java语法处理请求**前置/后置**脚本</summary>
 
     Cool Request提供了极为方便的java脚本，可以在请求前/后执行相关代码，同时可支持请求参数修改，为一些动态参数提供了极大的便利。
+    ![Alt text](images/request-script.png)
 </details>
  
  <details>
@@ -68,6 +70,7 @@ Cool Request是一款基于 IntelliJ IDEA 的插件，旨在简化 Spring MVC(Bo
   <summary>json、xml、img、html、text响应快速预览</summary>
 
     可选择预览五种不同响应格式的数据，方便开发人员查看数据。
+    ![Alt text](images/response-perview.png)
 </details>
 
 <details>
@@ -78,7 +81,7 @@ Cool Request是一款基于 IntelliJ IDEA 的插件，旨在简化 Spring MVC(Bo
 
 # 如何安装
 
-# 方法一
+## 方法一
 
 [点击这里](http://plugin.houxinlin.com/cool-request-plugin.zip)进行离线包下载。
 :::tip
@@ -87,7 +90,7 @@ Cool Request是一款基于 IntelliJ IDEA 的插件，旨在简化 Spring MVC(Bo
 
 ![Alt text](image.png)
 
-### 方式二
+## 方式二
 :::tip
 选择 FIle > Setting > Plugins > 搜索Cool Request
 :::

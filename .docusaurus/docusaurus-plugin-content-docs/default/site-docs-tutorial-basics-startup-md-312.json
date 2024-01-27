@@ -1,7 +1,7 @@
 {
   "id": "tutorial-basics/startup",
-  "title": "启动",
-  "description": "Cool Request收集项目信息是在项目运行时完成，切勿在项目停止时刷新",
+  "title": "扫描API",
+  "description": "Cool Request提供了两种扫描项目API方式，Static和Dyanmic。",
   "source": "@site/docs/tutorial-basics/startup.md",
   "sourceDirName": "tutorial-basics",
   "slug": "/tutorial-basics/startup",
@@ -20,7 +20,7 @@
     "permalink": "/docs/category/使用教程"
   },
   "next": {
-    "title": "第三方接入",
-    "permalink": "/docs/category/第三方接入"
+    "title": "发起HTTP请求",
+    "permalink": "/docs/tutorial-basics/request"
   }
 }

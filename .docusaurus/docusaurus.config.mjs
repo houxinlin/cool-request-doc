@@ -52,6 +52,11 @@ export default {
           "sidebarId": "tutorialSidebar",
           "position": "left",
           "label": "教程"
+        },
+        {
+          "href": "https://github.com/houxinlin/cool-request",
+          "html": "\n            <img\n              src=\"https://img.shields.io/github/stars/houxinlin/cool-request?style=social\"\n              alt=\"GitHub Stars\"\n              style=\"vertical-align: middle\"\n            />\n          ",
+          "position": "right"
         }
       ],
       "hideOnScroll": false
@@ -248,7 +253,9 @@ export default {
           }
         ]
       },
-      "additionalLanguages": [],
+      "additionalLanguages": [
+        "java"
+      ],
       "magicComments": [
         {
           "className": "theme-code-block-highlighted-line",

@@ -40,9 +40,36 @@
               }
             },
             {
+              "id": "tutorial-basics/request",
+              "title": "发起HTTP请求",
+              "description": "当扫描API成功后，双击将要调试的API。",
+              "source": "@site/docs/tutorial-basics/request.md",
+              "sourceDirName": "tutorial-basics",
+              "slug": "/tutorial-basics/request",
+              "permalink": "/docs/tutorial-basics/request",
+              "draft": false,
+              "unlisted": false,
+              "tags": [],
+              "version": "current",
+              "sidebarPosition": 2,
+              "frontMatter": {
+                "sidebar_position": 2,
+                "title": "发起HTTP请求"
+              },
+              "sidebar": "tutorialSidebar",
+              "previous": {
+                "title": "扫描API",
+                "permalink": "/docs/tutorial-basics/startup"
+              },
+              "next": {
+                "title": "第三方接入",
+                "permalink": "/docs/category/第三方接入"
+              }
+            },
+            {
               "id": "tutorial-basics/startup",
-              "title": "启动",
-              "description": "Cool Request收集项目信息是在项目运行时完成，切勿在项目停止时刷新",
+              "title": "扫描API",
+              "description": "Cool Request提供了两种扫描项目API方式，Static和Dyanmic。",
               "source": "@site/docs/tutorial-basics/startup.md",
               "sourceDirName": "tutorial-basics",
               "slug": "/tutorial-basics/startup",
@@ -61,8 +88,8 @@
                 "permalink": "/docs/category/使用教程"
               },
               "next": {
-                "title": "第三方接入",
-                "permalink": "/docs/category/第三方接入"
+                "title": "发起HTTP请求",
+                "permalink": "/docs/tutorial-basics/request"
               }
             },
             {
@@ -89,13 +116,13 @@
               }
             },
             {
-              "id": "tutorial-extras/common",
+              "id": "tutorial-script/common",
               "title": "通用函数",
-              "description": "通用函数为内置的Java函数，可在请求、响应脚本中调用。",
-              "source": "@site/docs/tutorial-extras/common.md",
-              "sourceDirName": "tutorial-extras",
-              "slug": "/tutorial-extras/common",
-              "permalink": "/docs/tutorial-extras/common",
+              "description": "ILog用于在脚本中日志输出.",
+              "source": "@site/docs/tutorial-script/common.md",
+              "sourceDirName": "tutorial-script",
+              "slug": "/tutorial-script/common",
+              "permalink": "/docs/tutorial-script/common",
               "draft": false,
               "unlisted": false,
               "tags": [],
@@ -107,21 +134,21 @@
               "sidebar": "tutorialSidebar",
               "previous": {
                 "title": "介绍",
-                "permalink": "/docs/tutorial-extras/script"
+                "permalink": "/docs/tutorial-script/script"
               },
               "next": {
                 "title": "前置脚本",
-                "permalink": "/docs/tutorial-extras/script-pre"
+                "permalink": "/docs/tutorial-script/script-pre"
               }
             },
             {
-              "id": "tutorial-extras/script",
+              "id": "tutorial-script/script",
               "title": "介绍",
-              "description": "Cool Request内置了Java 8编译器，可以使用Java在请求前修改请求，或者是响应后进行一系列操作，内部自动导入了以下常用的包。",
-              "source": "@site/docs/tutorial-extras/script.md",
-              "sourceDirName": "tutorial-extras",
-              "slug": "/tutorial-extras/script",
-              "permalink": "/docs/tutorial-extras/script",
+              "description": "Cool Request内置了Java 8编译器，可以使用Java语法在请求前修改请求，或者是响应后进行一系列操作.",
+              "source": "@site/docs/tutorial-script/script.md",
+              "sourceDirName": "tutorial-script",
+              "slug": "/tutorial-script/script",
+              "permalink": "/docs/tutorial-script/script",
               "draft": false,
               "unlisted": false,
               "tags": [],
@@ -137,17 +164,17 @@
               },
               "next": {
                 "title": "通用函数",
-                "permalink": "/docs/tutorial-extras/common"
+                "permalink": "/docs/tutorial-script/common"
               }
             },
             {
-              "id": "tutorial-extras/script-pos",
+              "id": "tutorial-script/script-pos",
               "title": "后置脚本",
-              "description": "后置脚本用于在响应结束后执行用户代码，此脚本不能改变最终返回值。",
-              "source": "@site/docs/tutorial-extras/script-pos.md",
-              "sourceDirName": "tutorial-extras",
-              "slug": "/tutorial-extras/script-pos",
-              "permalink": "/docs/tutorial-extras/script-pos",
+              "description": "后置脚本用于在响应结束后执行用户代码，用户代码需要编写在handlerResponse函数下。",
+              "source": "@site/docs/tutorial-script/script-pos.md",
+              "sourceDirName": "tutorial-script",
+              "slug": "/tutorial-script/script-pos",
+              "permalink": "/docs/tutorial-script/script-pos",
               "draft": false,
               "unlisted": false,
               "tags": [],
@@ -159,17 +186,17 @@
               "sidebar": "tutorialSidebar",
               "previous": {
                 "title": "前置脚本",
-                "permalink": "/docs/tutorial-extras/script-pre"
+                "permalink": "/docs/tutorial-script/script-pre"
               }
             },
             {
-              "id": "tutorial-extras/script-pre",
+              "id": "tutorial-script/script-pre",
               "title": "前置脚本",
-              "description": "前置脚本用于在请求发起前执行用户代码，可对请求进行修改。",
-              "source": "@site/docs/tutorial-extras/script-pre.md",
-              "sourceDirName": "tutorial-extras",
-              "slug": "/tutorial-extras/script-pre",
-              "permalink": "/docs/tutorial-extras/script-pre",
+              "description": "前置脚本用于在请求发起前执行用户代码，可对请求参数进行修改，用户代码需要编写在handlerRequest函数下。",
+              "source": "@site/docs/tutorial-script/script-pre.md",
+              "sourceDirName": "tutorial-script",
+              "slug": "/tutorial-script/script-pre",
+              "permalink": "/docs/tutorial-script/script-pre",
               "draft": false,
               "unlisted": false,
               "tags": [],
@@ -181,11 +208,11 @@
               "sidebar": "tutorialSidebar",
               "previous": {
                 "title": "通用函数",
-                "permalink": "/docs/tutorial-extras/common"
+                "permalink": "/docs/tutorial-script/common"
               },
               "next": {
                 "title": "后置脚本",
-                "permalink": "/docs/tutorial-extras/script-pos"
+                "permalink": "/docs/tutorial-script/script-pos"
               }
             }
           ],
@@ -205,6 +232,10 @@
                   {
                     "type": "doc",
                     "id": "tutorial-basics/startup"
+                  },
+                  {
+                    "type": "doc",
+                    "id": "tutorial-basics/request"
                   },
                   {
                     "type": "category",
@@ -240,19 +271,19 @@
                 "items": [
                   {
                     "type": "doc",
-                    "id": "tutorial-extras/script"
+                    "id": "tutorial-script/script"
                   },
                   {
                     "type": "doc",
-                    "id": "tutorial-extras/common"
+                    "id": "tutorial-script/common"
                   },
                   {
                     "type": "doc",
-                    "id": "tutorial-extras/script-pre"
+                    "id": "tutorial-script/script-pre"
                   },
                   {
                     "type": "doc",
-                    "id": "tutorial-extras/script-pos"
+                    "id": "tutorial-script/script-pos"
                   }
                 ],
                 "link": {
