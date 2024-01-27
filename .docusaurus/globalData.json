@@ -1,0 +1,78 @@
+{
+  "docusaurus-plugin-content-docs": {
+    "default": {
+      "path": "/docs",
+      "versions": [
+        {
+          "name": "current",
+          "label": "Next",
+          "isLast": true,
+          "path": "/docs",
+          "mainDocId": "intro",
+          "docs": [
+            {
+              "id": "intro",
+              "path": "/docs/intro",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "tutorial-basics/startup",
+              "path": "/docs/tutorial-basics/startup",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "tutorial-basics/three-part/apifox",
+              "path": "/docs/tutorial-basics/three-part/apifox",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "tutorial-extras/common",
+              "path": "/docs/tutorial-extras/common",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "tutorial-extras/script",
+              "path": "/docs/tutorial-extras/script",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "tutorial-extras/script-pos",
+              "path": "/docs/tutorial-extras/script-pos",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "tutorial-extras/script-pre",
+              "path": "/docs/tutorial-extras/script-pre",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "/category/使用教程",
+              "path": "/docs/category/使用教程",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "/category/第三方接入",
+              "path": "/docs/category/第三方接入",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "/category/前后置脚本",
+              "path": "/docs/category/前后置脚本",
+              "sidebar": "tutorialSidebar"
+            }
+          ],
+          "draftIds": [],
+          "sidebars": {
+            "tutorialSidebar": {
+              "link": {
+                "path": "/docs/intro",
+                "label": "intro"
+              }
+            }
+          }
+        }
+      ],
+      "breadcrumbs": true
+    }
+  }
+}

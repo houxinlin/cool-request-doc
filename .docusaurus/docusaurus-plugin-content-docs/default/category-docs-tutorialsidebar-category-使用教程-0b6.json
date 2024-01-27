@@ -1,0 +1,16 @@
+{
+  "title": "使用教程",
+  "description": "以下文章快速带您使用Cool Request",
+  "slug": "/category/使用教程",
+  "permalink": "/docs/category/使用教程",
+  "navigation": {
+    "previous": {
+      "title": "什么是Cool Request",
+      "permalink": "/docs/intro"
+    },
+    "next": {
+      "title": "启动",
+      "permalink": "/docs/tutorial-basics/startup"
+    }
+  }
+}

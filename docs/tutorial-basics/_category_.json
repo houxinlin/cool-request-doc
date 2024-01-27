@@ -1,0 +1,8 @@
+{
+  "label": "使用教程",
+  "position": 2,
+  "link": {
+    "type": "generated-index",
+    "description": "以下文章快速带您使用Cool Request"
+  }
+}

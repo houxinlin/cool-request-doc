@@ -1,0 +1,26 @@
+{
+  "id": "tutorial-extras/common",
+  "title": "通用函数",
+  "description": "通用函数为内置的Java函数，可在请求、响应脚本中调用。",
+  "source": "@site/docs/tutorial-extras/common.md",
+  "sourceDirName": "tutorial-extras",
+  "slug": "/tutorial-extras/common",
+  "permalink": "/docs/tutorial-extras/common",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 2,
+  "frontMatter": {
+    "sidebar_position": 2
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "介绍",
+    "permalink": "/docs/tutorial-extras/script"
+  },
+  "next": {
+    "title": "前置脚本",
+    "permalink": "/docs/tutorial-extras/script-pre"
+  }
+}

@@ -1,0 +1,134 @@
+{
+  "pluginId": "default",
+  "version": "current",
+  "label": "Next",
+  "banner": null,
+  "badge": false,
+  "noIndex": false,
+  "className": "docs-version-current",
+  "isLast": true,
+  "docsSidebars": {
+    "tutorialSidebar": [
+      {
+        "type": "link",
+        "label": "什么是Cool Request",
+        "href": "/docs/intro",
+        "docId": "intro",
+        "unlisted": false
+      },
+      {
+        "type": "category",
+        "label": "使用教程",
+        "collapsible": false,
+        "collapsed": false,
+        "items": [
+          {
+            "type": "link",
+            "label": "启动",
+            "href": "/docs/tutorial-basics/startup",
+            "docId": "tutorial-basics/startup",
+            "unlisted": false
+          },
+          {
+            "type": "category",
+            "label": "第三方接入",
+            "collapsible": false,
+            "collapsed": false,
+            "items": [
+              {
+                "type": "link",
+                "label": "apifox",
+                "href": "/docs/tutorial-basics/three-part/apifox",
+                "docId": "tutorial-basics/three-part/apifox",
+                "unlisted": false
+              }
+            ],
+            "href": "/docs/category/第三方接入"
+          }
+        ],
+        "href": "/docs/category/使用教程"
+      },
+      {
+        "type": "category",
+        "label": "前/后置脚本",
+        "collapsible": false,
+        "collapsed": false,
+        "items": [
+          {
+            "type": "link",
+            "label": "介绍",
+            "href": "/docs/tutorial-extras/script",
+            "docId": "tutorial-extras/script",
+            "unlisted": false
+          },
+          {
+            "type": "link",
+            "label": "通用函数",
+            "href": "/docs/tutorial-extras/common",
+            "docId": "tutorial-extras/common",
+            "unlisted": false
+          },
+          {
+            "type": "link",
+            "label": "前置脚本",
+            "href": "/docs/tutorial-extras/script-pre",
+            "docId": "tutorial-extras/script-pre",
+            "unlisted": false
+          },
+          {
+            "type": "link",
+            "label": "后置脚本",
+            "href": "/docs/tutorial-extras/script-pos",
+            "docId": "tutorial-extras/script-pos",
+            "unlisted": false
+          }
+        ],
+        "href": "/docs/category/前后置脚本"
+      }
+    ]
+  },
+  "docs": {
+    "intro": {
+      "id": "intro",
+      "title": "什么是Cool Request",
+      "description": "Cool Request是一款基于 IntelliJ IDEA 的插件，旨在简化 Spring MVC(Boot) 项目中 API调试调用，提供了强大的参数推测能力、运行时反射调用等能力。",
+      "sidebar": "tutorialSidebar"
+    },
+    "tutorial-basics/startup": {
+      "id": "tutorial-basics/startup",
+      "title": "启动",
+      "description": "Cool Request收集项目信息是在项目运行时完成，切勿在项目停止时刷新",
+      "sidebar": "tutorialSidebar"
+    },
+    "tutorial-basics/three-part/apifox": {
+      "id": "tutorial-basics/three-part/apifox",
+      "title": "apifox",
+      "description": "Apifox 是接口管理、开发、测试全流程集成工具，Cool Request可以一键导出API到Apifox中。",
+      "sidebar": "tutorialSidebar"
+    },
+    "tutorial-extras/common": {
+      "id": "tutorial-extras/common",
+      "title": "通用函数",
+      "description": "通用函数为内置的Java函数，可在请求、响应脚本中调用。",
+      "sidebar": "tutorialSidebar"
+    },
+    "tutorial-extras/script": {
+      "id": "tutorial-extras/script",
+      "title": "介绍",
+      "description": "Cool Request内置了Java 8编译器，可以使用Java在请求前修改请求，或者是响应后进行一系列操作，内部自动导入了以下常用的包。",
+      "sidebar": "tutorialSidebar"
+    },
+    "tutorial-extras/script-pos": {
+      "id": "tutorial-extras/script-pos",
+      "title": "后置脚本",
+      "description": "后置脚本用于在响应结束后执行用户代码，此脚本不能改变最终返回值。",
+      "sidebar": "tutorialSidebar"
+    },
+    "tutorial-extras/script-pre": {
+      "id": "tutorial-extras/script-pre",
+      "title": "前置脚本",
+      "description": "前置脚本用于在请求发起前执行用户代码，可对请求进行修改。",
+      "sidebar": "tutorialSidebar"
+    }
+  }
+}

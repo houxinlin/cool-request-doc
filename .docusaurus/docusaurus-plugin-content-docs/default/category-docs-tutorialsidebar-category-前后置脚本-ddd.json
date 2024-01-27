@@ -1,0 +1,15 @@
+{
+  "title": "前/后置脚本",
+  "slug": "/category/前后置脚本",
+  "permalink": "/docs/category/前后置脚本",
+  "navigation": {
+    "previous": {
+      "title": "apifox",
+      "permalink": "/docs/tutorial-basics/three-part/apifox"
+    },
+    "next": {
+      "title": "介绍",
+      "permalink": "/docs/tutorial-extras/script"
+    }
+  }
+}

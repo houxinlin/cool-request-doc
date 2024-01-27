@@ -1,0 +1,22 @@
+{
+  "id": "tutorial-extras/script-pos",
+  "title": "后置脚本",
+  "description": "后置脚本用于在响应结束后执行用户代码，此脚本不能改变最终返回值。",
+  "source": "@site/docs/tutorial-extras/script-pos.md",
+  "sourceDirName": "tutorial-extras",
+  "slug": "/tutorial-extras/script-pos",
+  "permalink": "/docs/tutorial-extras/script-pos",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 4,
+  "frontMatter": {
+    "sidebar_position": 4
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "前置脚本",
+    "permalink": "/docs/tutorial-extras/script-pre"
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "title": "第三方接入",
+  "description": "以下文章快速接入Apifox",
+  "slug": "/category/第三方接入",
+  "permalink": "/docs/category/第三方接入",
+  "navigation": {
+    "previous": {
+      "title": "启动",
+      "permalink": "/docs/tutorial-basics/startup"
+    },
+    "next": {
+      "title": "apifox",
+      "permalink": "/docs/tutorial-basics/three-part/apifox"
+    }
+  }
+}
