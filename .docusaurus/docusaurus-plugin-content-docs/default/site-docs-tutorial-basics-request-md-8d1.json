@@ -21,7 +21,7 @@
     "permalink": "/docs/tutorial-basics/startup"
   },
   "next": {
-    "title": "第三方接入",
-    "permalink": "/docs/category/第三方接入"
+    "title": "发起反射请求",
+    "permalink": "/docs/tutorial-basics/request_by_reflex"
   }
 }

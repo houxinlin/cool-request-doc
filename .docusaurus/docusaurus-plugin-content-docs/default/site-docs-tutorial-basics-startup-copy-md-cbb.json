@@ -1,0 +1,26 @@
+{
+  "id": "tutorial-basics/startup copy",
+  "title": "扫描API",
+  "description": "Cool Request提供了两种扫描项目API方式，Static和Dyanmic。",
+  "source": "@site/docs/tutorial-basics/startup copy.md",
+  "sourceDirName": "tutorial-basics",
+  "slug": "/tutorial-basics/startup copy",
+  "permalink": "/docs/tutorial-basics/startup copy",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 1,
+  "frontMatter": {
+    "sidebar_position": 1
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "使用教程",
+    "permalink": "/docs/category/使用教程"
+  },
+  "next": {
+    "title": "扫描API",
+    "permalink": "/docs/tutorial-basics/startup"
+  }
+}

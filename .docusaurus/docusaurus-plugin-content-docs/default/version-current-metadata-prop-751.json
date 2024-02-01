@@ -37,6 +37,13 @@
             "unlisted": false
           },
           {
+            "type": "link",
+            "label": "发起反射请求",
+            "href": "/docs/tutorial-basics/request_by_reflex",
+            "docId": "tutorial-basics/request_by_reflex",
+            "unlisted": false
+          },
+          {
             "type": "category",
             "label": "第三方接入",
             "collapsible": false,
@@ -51,6 +58,13 @@
               }
             ],
             "href": "/docs/category/第三方接入"
+          },
+          {
+            "type": "link",
+            "label": "Spring网关自动发现",
+            "href": "/docs/tutorial-basics/spring_gateway",
+            "docId": "tutorial-basics/spring_gateway",
+            "unlisted": false
           }
         ],
         "href": "/docs/category/使用教程"
@@ -107,6 +121,18 @@
       "description": "当扫描API成功后，双击将要调试的API。",
       "sidebar": "tutorialSidebar"
     },
+    "tutorial-basics/request_by_reflex": {
+      "id": "tutorial-basics/request_by_reflex",
+      "title": "发起反射请求",
+      "description": "普通HTTP请求的流程如下：",
+      "sidebar": "tutorialSidebar"
+    },
+    "tutorial-basics/spring_gateway": {
+      "id": "tutorial-basics/spring_gateway",
+      "title": "Spring网关自动发现",
+      "description": "Cool Request在网关程序启动后，会自动提取网关配置的路劲，并添加到环境变量中，用户只需要更具实际修改即可。",
+      "sidebar": "tutorialSidebar"
+    },
     "tutorial-basics/startup": {
       "id": "tutorial-basics/startup",
       "title": "扫描API",
@@ -128,7 +154,7 @@
     "tutorial-script/script": {
       "id": "tutorial-script/script",
       "title": "介绍",
-      "description": "Cool Request内置了Java 8编译器，可以使用Java语法在请求前修改请求，或者是响应后进行一系列操作.",
+      "description": "Cool Request提供了脚本，可以使用Java语法在请求前修改请求，或者是响应后进行一系列操作，这对于那些需要动态参数的请求来说，这是非常有用的。",
       "sidebar": "tutorialSidebar"
     },
     "tutorial-script/script-pos": {

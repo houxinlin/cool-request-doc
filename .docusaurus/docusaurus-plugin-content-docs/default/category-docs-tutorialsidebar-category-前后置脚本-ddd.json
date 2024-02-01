@@ -4,8 +4,8 @@
   "permalink": "/docs/category/前后置脚本",
   "navigation": {
     "previous": {
-      "title": "apifox",
-      "permalink": "/docs/tutorial-basics/three-part/apifox"
+      "title": "Spring网关自动发现",
+      "permalink": "/docs/tutorial-basics/spring_gateway"
     },
     "next": {
       "title": "介绍",

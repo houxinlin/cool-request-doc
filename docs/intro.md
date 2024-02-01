@@ -94,3 +94,4 @@ Cool Request是一款基于 IntelliJ IDEA 的插件，旨在简化 Spring MVC(Bo
 :::tip
 选择 FIle > Setting > Plugins > 搜索Cool Request
 :::
+![Alt text](./images/idea_plugin_search.png)

@@ -5,8 +5,8 @@
   "permalink": "/docs/category/第三方接入",
   "navigation": {
     "previous": {
-      "title": "发起HTTP请求",
-      "permalink": "/docs/tutorial-basics/request"
+      "title": "发起反射请求",
+      "permalink": "/docs/tutorial-basics/request_by_reflex"
     },
     "next": {
       "title": "apifox",

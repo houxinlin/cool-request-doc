@@ -21,6 +21,16 @@
               "sidebar": "tutorialSidebar"
             },
             {
+              "id": "tutorial-basics/request_by_reflex",
+              "path": "/docs/tutorial-basics/request_by_reflex",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "tutorial-basics/spring_gateway",
+              "path": "/docs/tutorial-basics/spring_gateway",
+              "sidebar": "tutorialSidebar"
+            },
+            {
               "id": "tutorial-basics/startup",
               "path": "/docs/tutorial-basics/startup",
               "sidebar": "tutorialSidebar"

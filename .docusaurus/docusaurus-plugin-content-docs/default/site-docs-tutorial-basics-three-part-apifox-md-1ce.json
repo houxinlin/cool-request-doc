@@ -17,7 +17,7 @@
     "permalink": "/docs/category/第三方接入"
   },
   "next": {
-    "title": "前/后置脚本",
-    "permalink": "/docs/category/前后置脚本"
+    "title": "Spring网关自动发现",
+    "permalink": "/docs/tutorial-basics/spring_gateway"
   }
 }

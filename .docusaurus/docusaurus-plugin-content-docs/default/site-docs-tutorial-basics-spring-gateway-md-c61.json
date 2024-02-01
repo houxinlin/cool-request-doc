@@ -1,0 +1,27 @@
+{
+  "id": "tutorial-basics/spring_gateway",
+  "title": "Spring网关自动发现",
+  "description": "Cool Request在网关程序启动后，会自动提取网关配置的路劲，并添加到环境变量中，用户只需要更具实际修改即可。",
+  "source": "@site/docs/tutorial-basics/spring_gateway.md",
+  "sourceDirName": "tutorial-basics",
+  "slug": "/tutorial-basics/spring_gateway",
+  "permalink": "/docs/tutorial-basics/spring_gateway",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 3,
+  "frontMatter": {
+    "sidebar_position": 3,
+    "title": "Spring网关自动发现"
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "apifox",
+    "permalink": "/docs/tutorial-basics/three-part/apifox"
+  },
+  "next": {
+    "title": "前/后置脚本",
+    "permalink": "/docs/category/前后置脚本"
+  }
+}

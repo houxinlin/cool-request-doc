@@ -22,5 +22,3 @@ log.println("log");
 ```
 log.print("log");
 ```
-
-# Utils
