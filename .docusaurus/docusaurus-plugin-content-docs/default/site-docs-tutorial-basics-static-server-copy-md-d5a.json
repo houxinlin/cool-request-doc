@@ -1,11 +1,11 @@
 {
-  "id": "tutorial-basics/static_server",
+  "id": "tutorial-basics/static_server copy",
   "title": "创建静态服务",
   "description": "Cool Request可以创建一个静态资源服务器，可方便对本机数据进行共享，操作方式如下：",
-  "source": "@site/docs/tutorial-basics/static_server.md",
+  "source": "@site/docs/tutorial-basics/static_server copy.md",
   "sourceDirName": "tutorial-basics",
-  "slug": "/tutorial-basics/static_server",
-  "permalink": "/docs/tutorial-basics/static_server",
+  "slug": "/tutorial-basics/static_server copy",
+  "permalink": "/docs/tutorial-basics/static_server copy",
   "draft": false,
   "unlisted": false,
   "tags": [],
@@ -16,11 +16,11 @@
   },
   "sidebar": "tutorialSidebar",
   "previous": {
-    "title": "手动触发定时器",
-    "permalink": "/docs/tutorial-basics/request_timer"
+    "title": "Spring网关自动发现",
+    "permalink": "/docs/tutorial-basics/spring_gateway"
   },
   "next": {
-    "title": "前/后置脚本",
-    "permalink": "/docs/category/前后置脚本"
+    "title": "创建静态服务",
+    "permalink": "/docs/tutorial-basics/static_server"
   }
 }

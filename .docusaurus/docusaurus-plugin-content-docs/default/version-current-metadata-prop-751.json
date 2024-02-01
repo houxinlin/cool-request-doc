@@ -52,6 +52,13 @@
           },
           {
             "type": "link",
+            "label": "手动触发定时器",
+            "href": "/docs/tutorial-basics/request_timer",
+            "docId": "tutorial-basics/request_timer",
+            "unlisted": false
+          },
+          {
+            "type": "link",
             "label": "创建静态服务",
             "href": "/docs/tutorial-basics/static_server",
             "docId": "tutorial-basics/static_server",
@@ -138,6 +145,12 @@
       "id": "tutorial-basics/request_by_reflex",
       "title": "发起反射请求",
       "description": "普通HTTP请求的流程如下：",
+      "sidebar": "tutorialSidebar"
+    },
+    "tutorial-basics/request_timer": {
+      "id": "tutorial-basics/request_timer",
+      "title": "手动触发定时器",
+      "description": "手动触发定时器是Cool Request特色功能之一，他可以在运行时候，调用任意具有@Scheduled注解的方法，这样带来的好处是无需等待Spring自动调度，省去了开发人员调试定时器带来的麻烦。",
       "sidebar": "tutorialSidebar"
     },
     "tutorial-basics/spring_gateway": {

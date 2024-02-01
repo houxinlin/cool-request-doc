@@ -21,7 +21,7 @@
     "permalink": "/docs/tutorial-basics/request_by_reflex"
   },
   "next": {
-    "title": "创建静态服务",
-    "permalink": "/docs/tutorial-basics/static_server"
+    "title": "手动触发定时器",
+    "permalink": "/docs/tutorial-basics/request_timer"
   }
 }
