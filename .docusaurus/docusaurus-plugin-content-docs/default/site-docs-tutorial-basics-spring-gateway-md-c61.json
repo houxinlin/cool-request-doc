@@ -21,7 +21,7 @@
     "permalink": "/docs/tutorial-basics/three-part/apifox"
   },
   "next": {
-    "title": "前/后置脚本",
-    "permalink": "/docs/category/前后置脚本"
+    "title": "创建静态服务",
+    "permalink": "/docs/tutorial-basics/static_server"
   }
 }

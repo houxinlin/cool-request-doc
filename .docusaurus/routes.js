@@ -3,6 +3,41 @@ import ComponentCreator from '@docusaurus/ComponentCreator';
 
 export default [
   {
+    path: '/__docusaurus/debug',
+    component: ComponentCreator('/__docusaurus/debug', '959'),
+    exact: true
+  },
+  {
+    path: '/__docusaurus/debug/config',
+    component: ComponentCreator('/__docusaurus/debug/config', 'ce0'),
+    exact: true
+  },
+  {
+    path: '/__docusaurus/debug/content',
+    component: ComponentCreator('/__docusaurus/debug/content', '1c7'),
+    exact: true
+  },
+  {
+    path: '/__docusaurus/debug/globalData',
+    component: ComponentCreator('/__docusaurus/debug/globalData', '81d'),
+    exact: true
+  },
+  {
+    path: '/__docusaurus/debug/metadata',
+    component: ComponentCreator('/__docusaurus/debug/metadata', '2b9'),
+    exact: true
+  },
+  {
+    path: '/__docusaurus/debug/registry',
+    component: ComponentCreator('/__docusaurus/debug/registry', '387'),
+    exact: true
+  },
+  {
+    path: '/__docusaurus/debug/routes',
+    component: ComponentCreator('/__docusaurus/debug/routes', '0cb'),
+    exact: true
+  },
+  {
     path: '/blog',
     component: ComponentCreator('/blog', 'd49'),
     exact: true
@@ -64,15 +99,15 @@ export default [
   },
   {
     path: '/docs',
-    component: ComponentCreator('/docs', '5d5'),
+    component: ComponentCreator('/docs', '7f2'),
     routes: [
       {
         path: '/docs',
-        component: ComponentCreator('/docs', 'aa6'),
+        component: ComponentCreator('/docs', 'e80'),
         routes: [
           {
             path: '/docs',
-            component: ComponentCreator('/docs', 'b32'),
+            component: ComponentCreator('/docs', '6fc'),
             routes: [
               {
                 path: '/docs/category/第三方接入',
@@ -119,6 +154,12 @@ export default [
               {
                 path: '/docs/tutorial-basics/startup',
                 component: ComponentCreator('/docs/tutorial-basics/startup', 'c6c'),
+                exact: true,
+                sidebar: "tutorialSidebar"
+              },
+              {
+                path: '/docs/tutorial-basics/static_server',
+                component: ComponentCreator('/docs/tutorial-basics/static_server', '3cf'),
                 exact: true,
                 sidebar: "tutorialSidebar"
               },

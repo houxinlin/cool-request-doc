@@ -4,8 +4,8 @@
   "permalink": "/docs/category/前后置脚本",
   "navigation": {
     "previous": {
-      "title": "Spring网关自动发现",
-      "permalink": "/docs/tutorial-basics/spring_gateway"
+      "title": "创建静态服务",
+      "permalink": "/docs/tutorial-basics/static_server"
     },
     "next": {
       "title": "介绍",

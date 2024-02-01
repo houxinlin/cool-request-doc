@@ -36,6 +36,11 @@
               "sidebar": "tutorialSidebar"
             },
             {
+              "id": "tutorial-basics/static_server",
+              "path": "/docs/tutorial-basics/static_server",
+              "sidebar": "tutorialSidebar"
+            },
+            {
               "id": "tutorial-basics/three-part/apifox",
               "path": "/docs/tutorial-basics/three-part/apifox",
               "sidebar": "tutorialSidebar"

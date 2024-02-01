@@ -65,6 +65,13 @@
             "href": "/docs/tutorial-basics/spring_gateway",
             "docId": "tutorial-basics/spring_gateway",
             "unlisted": false
+          },
+          {
+            "type": "link",
+            "label": "创建静态服务",
+            "href": "/docs/tutorial-basics/static_server",
+            "docId": "tutorial-basics/static_server",
+            "unlisted": false
           }
         ],
         "href": "/docs/category/使用教程"
@@ -137,6 +144,12 @@
       "id": "tutorial-basics/startup",
       "title": "扫描API",
       "description": "Cool Request提供了两种扫描项目API方式，Static和Dyanmic。",
+      "sidebar": "tutorialSidebar"
+    },
+    "tutorial-basics/static_server": {
+      "id": "tutorial-basics/static_server",
+      "title": "创建静态服务",
+      "description": "Cool Request可以创建一个静态资源服务器，可方便对本机数据进行共享，操作方式如下：",
       "sidebar": "tutorialSidebar"
     },
     "tutorial-basics/three-part/apifox": {
