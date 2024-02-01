@@ -32,7 +32,7 @@ request.setParameter("page","2");
 
 
 ### request.getParameterMap()
-获取请求参数Map。
+获取请求参数Map(此方法仅获取URL中的参数，无法获取Body的的参数)。
 ```java title="示例"
 Map<String, List<String>> parameterMap = request.getParameterMap();
 for (String key : parameterMap.keySet()) {
@@ -43,14 +43,14 @@ for (String key : parameterMap.keySet()) {
 
 
 ### request.getParameter(String)
-获取请求参数，如果存在多个则返回第一个。
+获取请求参数，如果存在多个则返回第一个(此方法仅获取URL中的参数，无法获取Body的的参数)。
 ```java title="示例"
 String value =request.getParameter("name");
 ```
 
 
 ### request.getParameterValues()
-获取请求参数中指定key参数的所有值。
+获取请求参数中指定key参数的所有值(此方法仅获取URL中的参数，无法获取Body的的参数)。
 ```java title="示例"
  List<String> name = request.getParameterValues("name");
  for (String s : name) {

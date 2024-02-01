@@ -1,0 +1,19 @@
+{
+  "id": "three-part/apifox",
+  "title": "apifox",
+  "description": "Apifox 是接口管理、开发、测试全流程集成工具，Cool Request可以一键导出API到Apifox中。",
+  "source": "@site/docs/three-part/apifox.md",
+  "sourceDirName": "three-part",
+  "slug": "/three-part/apifox",
+  "permalink": "/docs/three-part/apifox",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "第三方接入",
+    "permalink": "/docs/category/第三方接入"
+  }
+}

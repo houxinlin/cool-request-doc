@@ -44,22 +44,6 @@
             "unlisted": false
           },
           {
-            "type": "category",
-            "label": "第三方接入",
-            "collapsible": false,
-            "collapsed": false,
-            "items": [
-              {
-                "type": "link",
-                "label": "apifox",
-                "href": "/docs/tutorial-basics/three-part/apifox",
-                "docId": "tutorial-basics/three-part/apifox",
-                "unlisted": false
-              }
-            ],
-            "href": "/docs/category/第三方接入"
-          },
-          {
             "type": "link",
             "label": "Spring网关自动发现",
             "href": "/docs/tutorial-basics/spring_gateway",
@@ -112,6 +96,22 @@
           }
         ],
         "href": "/docs/category/前后置脚本"
+      },
+      {
+        "type": "category",
+        "label": "第三方接入",
+        "collapsible": false,
+        "collapsed": false,
+        "items": [
+          {
+            "type": "link",
+            "label": "apifox",
+            "href": "/docs/three-part/apifox",
+            "docId": "three-part/apifox",
+            "unlisted": false
+          }
+        ],
+        "href": "/docs/category/第三方接入"
       }
     ]
   },
@@ -120,6 +120,12 @@
       "id": "intro",
       "title": "什么是Cool Request",
       "description": "Cool Request是一款基于 IntelliJ IDEA 的插件，旨在简化 Spring MVC(Boot) 项目中 API调试调用，提供了强大的参数推测能力、运行时反射调用等能力。",
+      "sidebar": "tutorialSidebar"
+    },
+    "three-part/apifox": {
+      "id": "three-part/apifox",
+      "title": "apifox",
+      "description": "Apifox 是接口管理、开发、测试全流程集成工具，Cool Request可以一键导出API到Apifox中。",
       "sidebar": "tutorialSidebar"
     },
     "tutorial-basics/request": {
@@ -152,16 +158,10 @@
       "description": "Cool Request可以创建一个静态资源服务器，可方便对本机数据进行共享，操作方式如下：",
       "sidebar": "tutorialSidebar"
     },
-    "tutorial-basics/three-part/apifox": {
-      "id": "tutorial-basics/three-part/apifox",
-      "title": "apifox",
-      "description": "Apifox 是接口管理、开发、测试全流程集成工具，Cool Request可以一键导出API到Apifox中。",
-      "sidebar": "tutorialSidebar"
-    },
     "tutorial-script/common": {
       "id": "tutorial-script/common",
       "title": "通用函数",
-      "description": "ILog用于在脚本中日志输出.",
+      "description": "ILog用于在脚本中日志输出。",
       "sidebar": "tutorialSidebar"
     },
     "tutorial-script/script": {

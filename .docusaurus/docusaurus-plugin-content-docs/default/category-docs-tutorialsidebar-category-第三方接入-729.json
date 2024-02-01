@@ -5,12 +5,12 @@
   "permalink": "/docs/category/第三方接入",
   "navigation": {
     "previous": {
-      "title": "发起反射请求",
-      "permalink": "/docs/tutorial-basics/request_by_reflex"
+      "title": "后置脚本",
+      "permalink": "/docs/tutorial-script/script-pos"
     },
     "next": {
       "title": "apifox",
-      "permalink": "/docs/tutorial-basics/three-part/apifox"
+      "permalink": "/docs/three-part/apifox"
     }
   }
 }

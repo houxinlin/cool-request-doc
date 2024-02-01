@@ -1,7 +1,7 @@
 {
   "id": "tutorial-script/common",
   "title": "通用函数",
-  "description": "ILog用于在脚本中日志输出.",
+  "description": "ILog用于在脚本中日志输出。",
   "source": "@site/docs/tutorial-script/common.md",
   "sourceDirName": "tutorial-script",
   "slug": "/tutorial-script/common",

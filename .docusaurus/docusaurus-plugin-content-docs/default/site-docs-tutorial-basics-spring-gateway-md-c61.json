@@ -17,8 +17,8 @@
   },
   "sidebar": "tutorialSidebar",
   "previous": {
-    "title": "apifox",
-    "permalink": "/docs/tutorial-basics/three-part/apifox"
+    "title": "发起反射请求",
+    "permalink": "/docs/tutorial-basics/request_by_reflex"
   },
   "next": {
     "title": "创建静态服务",

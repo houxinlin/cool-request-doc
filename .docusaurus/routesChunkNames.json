@@ -186,17 +186,17 @@
     },
     "content": "content---markdown-page-393-028"
   },
-  "/docs-7f2": {
+  "/docs-6d7": {
     "__comp": "__comp---theme-docs-root-5-e-9-0b6",
     "__context": {
       "plugin": "plugin---docsfb-0-360"
     }
   },
-  "/docs-e80": {
+  "/docs-23d": {
     "__comp": "__comp---theme-doc-version-roota-7-b-5de",
     "version": "version---docs-935-398"
   },
-  "/docs-6fc": {
+  "/docs-1d8": {
     "__comp": "__comp---theme-doc-roota-94-67a"
   },
   "/docs/category/第三方接入-176": {
@@ -214,6 +214,10 @@
   "/docs/intro-aed": {
     "__comp": "__comp---theme-doc-item-178-a40",
     "content": "content---docs-intro-0-e-3-be1"
+  },
+  "/docs/three-part/apifox-7c8": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-three-part-apifoxdc-9-ac0"
   },
   "/docs/tutorial-basics/request-fe9": {
     "__comp": "__comp---theme-doc-item-178-a40",
@@ -234,10 +238,6 @@
   "/docs/tutorial-basics/static_server-3cf": {
     "__comp": "__comp---theme-doc-item-178-a40",
     "content": "content---docs-tutorial-basics-static-servere-80-faa"
-  },
-  "/docs/tutorial-basics/three-part/apifox-b41": {
-    "__comp": "__comp---theme-doc-item-178-a40",
-    "content": "content---docs-tutorial-basics-three-part-apifox-1-ce-d2d"
   },
   "/docs/tutorial-script/common-074": {
     "__comp": "__comp---theme-doc-item-178-a40",

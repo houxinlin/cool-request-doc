@@ -18,5 +18,9 @@
   "previous": {
     "title": "前置脚本",
     "permalink": "/docs/tutorial-script/script-pre"
+  },
+  "next": {
+    "title": "第三方接入",
+    "permalink": "/docs/category/第三方接入"
   }
 }

@@ -21,7 +21,7 @@
     "permalink": "/docs/tutorial-basics/request"
   },
   "next": {
-    "title": "第三方接入",
-    "permalink": "/docs/category/第三方接入"
+    "title": "Spring网关自动发现",
+    "permalink": "/docs/tutorial-basics/spring_gateway"
   }
 }
