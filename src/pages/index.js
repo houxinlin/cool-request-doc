@@ -26,7 +26,7 @@ function HomepageHeader() {
           </Link>
           <a
             className="button button--primary button--lg download-btn"
-            href="/cool-request-plugin-2024.2.1.zip"
+            href="/cool-request-plugin.zip"
             download
           >
             下载
