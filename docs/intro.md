@@ -79,8 +79,18 @@ Cool Request是一款基于 IntelliJ IDEA 的插件，旨在简化 Spring MVC(Bo
     Cool Request可以在5秒内配置一个静态资源服务器，可使用他进行文件下载，局域网内数据传输。
 </details>
 
-# 如何安装
+# 预览
 
+
+  ![Alt text](images/white-preview-3.png)
+  ![Alt text](images/white-preview-2.png)
+  ![Alt text](images/white-preview-1.png)
+
+  ![Alt text](images/black-preview-3.png)
+  ![Alt text](images/black-preview-2.png)
+  ![Alt text](images/black-preview-1.png)
+
+# 如何安装
 ## 方法一
 
 [点击这里](http://plugin.houxinlin.com/cool-request-plugin.zip)进行离线包下载。
