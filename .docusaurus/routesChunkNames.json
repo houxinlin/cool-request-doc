@@ -186,17 +186,17 @@
     },
     "content": "content---markdown-page-393-028"
   },
-  "/docs-147": {
+  "/docs-a35": {
     "__comp": "__comp---theme-docs-root-5-e-9-0b6",
     "__context": {
       "plugin": "plugin---docsfb-0-360"
     }
   },
-  "/docs-979": {
+  "/docs-de2": {
     "__comp": "__comp---theme-doc-version-roota-7-b-5de",
     "version": "version---docs-935-398"
   },
-  "/docs-682": {
+  "/docs-921": {
     "__comp": "__comp---theme-doc-roota-94-67a"
   },
   "/docs/category/第三方接入-176": {
@@ -218,6 +218,14 @@
   "/docs/three-part/apifox-7c8": {
     "__comp": "__comp---theme-doc-item-178-a40",
     "content": "content---docs-three-part-apifoxdc-9-ac0"
+  },
+  "/docs/tutorial-basics/api_search-39c": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-tutorial-basics-api-search-708-7a8"
+  },
+  "/docs/tutorial-basics/env_config-f66": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-tutorial-basics-env-config-03-f-ff4"
   },
   "/docs/tutorial-basics/request-fe9": {
     "__comp": "__comp---theme-doc-item-178-a40",

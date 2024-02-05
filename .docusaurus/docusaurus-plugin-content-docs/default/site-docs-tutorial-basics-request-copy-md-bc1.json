@@ -1,11 +1,11 @@
 {
-  "id": "tutorial-basics/request",
+  "id": "tutorial-basics/request copy",
   "title": "发起HTTP请求",
   "description": "当扫描API成功后，双击将要调试的API。",
-  "source": "@site/docs/tutorial-basics/request.md",
+  "source": "@site/docs/tutorial-basics/request copy.md",
   "sourceDirName": "tutorial-basics",
-  "slug": "/tutorial-basics/request",
-  "permalink": "/docs/tutorial-basics/request",
+  "slug": "/tutorial-basics/request copy",
+  "permalink": "/docs/tutorial-basics/request copy",
   "draft": false,
   "unlisted": false,
   "tags": [],
@@ -17,11 +17,11 @@
   },
   "sidebar": "tutorialSidebar",
   "previous": {
-    "title": "环境配置",
-    "permalink": "/docs/tutorial-basics/env_config"
+    "title": "扫描API",
+    "permalink": "/docs/tutorial-basics/startup"
   },
   "next": {
-    "title": "发起反射请求",
-    "permalink": "/docs/tutorial-basics/request_by_reflex"
+    "title": "发起HTTP请求",
+    "permalink": "/docs/tutorial-basics/request"
   }
 }

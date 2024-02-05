@@ -31,6 +31,20 @@
           },
           {
             "type": "link",
+            "label": "API搜索",
+            "href": "/docs/tutorial-basics/api_search",
+            "docId": "tutorial-basics/api_search",
+            "unlisted": false
+          },
+          {
+            "type": "link",
+            "label": "环境配置",
+            "href": "/docs/tutorial-basics/env_config",
+            "docId": "tutorial-basics/env_config",
+            "unlisted": false
+          },
+          {
+            "type": "link",
             "label": "发起HTTP请求",
             "href": "/docs/tutorial-basics/request",
             "docId": "tutorial-basics/request",
@@ -135,6 +149,18 @@
       "description": "Apifox 是接口管理、开发、测试全流程集成工具，Cool Request可以一键导出API到Apifox中。",
       "sidebar": "tutorialSidebar"
     },
+    "tutorial-basics/api_search": {
+      "id": "tutorial-basics/api_search",
+      "title": "API搜索",
+      "description": "如果想通过某个API路径来搜索对应的Controller，有以下两种方法可唤起搜索界面。",
+      "sidebar": "tutorialSidebar"
+    },
+    "tutorial-basics/env_config": {
+      "id": "tutorial-basics/env_config",
+      "title": "环境配置",
+      "description": "Cool Request提供了环境配置，可以配置不同参数、如URL主机、全局参数、全局请求头、全局x-www-form-urlencoded、全局form-data。",
+      "sidebar": "tutorialSidebar"
+    },
     "tutorial-basics/request": {
       "id": "tutorial-basics/request",
       "title": "发起HTTP请求",
@@ -156,7 +182,7 @@
     "tutorial-basics/spring_gateway": {
       "id": "tutorial-basics/spring_gateway",
       "title": "Spring网关自动发现",
-      "description": "Cool Request在网关程序启动后，会自动提取网关配置的路劲，并添加到环境变量中，用户只需要更具实际修改即可。",
+      "description": "Cool Request在网关程序启动后，会自动提取网关配置的路劲，并添加到环境变量中，用户只需要根据实际修改配置即可。",
       "sidebar": "tutorialSidebar"
     },
     "tutorial-basics/startup": {

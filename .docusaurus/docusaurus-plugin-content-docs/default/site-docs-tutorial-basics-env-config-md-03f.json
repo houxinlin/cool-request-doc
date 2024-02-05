@@ -1,0 +1,27 @@
+{
+  "id": "tutorial-basics/env_config",
+  "title": "环境配置",
+  "description": "Cool Request提供了环境配置，可以配置不同参数、如URL主机、全局参数、全局请求头、全局x-www-form-urlencoded、全局form-data。",
+  "source": "@site/docs/tutorial-basics/env_config.md",
+  "sourceDirName": "tutorial-basics",
+  "slug": "/tutorial-basics/env_config",
+  "permalink": "/docs/tutorial-basics/env_config",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 2,
+  "frontMatter": {
+    "sidebar_position": 2,
+    "title": "环境配置"
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "API搜索",
+    "permalink": "/docs/tutorial-basics/api_search"
+  },
+  "next": {
+    "title": "发起HTTP请求",
+    "permalink": "/docs/tutorial-basics/request"
+  }
+}

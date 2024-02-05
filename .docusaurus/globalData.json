@@ -21,6 +21,16 @@
               "sidebar": "tutorialSidebar"
             },
             {
+              "id": "tutorial-basics/api_search",
+              "path": "/docs/tutorial-basics/api_search",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "tutorial-basics/env_config",
+              "path": "/docs/tutorial-basics/env_config",
+              "sidebar": "tutorialSidebar"
+            },
+            {
               "id": "tutorial-basics/request",
               "path": "/docs/tutorial-basics/request",
               "sidebar": "tutorialSidebar"

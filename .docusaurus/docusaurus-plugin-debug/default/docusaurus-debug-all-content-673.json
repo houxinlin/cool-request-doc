@@ -59,6 +59,60 @@
               }
             },
             {
+              "id": "tutorial-basics/api_search",
+              "title": "API搜索",
+              "description": "如果想通过某个API路径来搜索对应的Controller，有以下两种方法可唤起搜索界面。",
+              "source": "@site/docs/tutorial-basics/api_search.md",
+              "sourceDirName": "tutorial-basics",
+              "slug": "/tutorial-basics/api_search",
+              "permalink": "/docs/tutorial-basics/api_search",
+              "draft": false,
+              "unlisted": false,
+              "tags": [],
+              "version": "current",
+              "sidebarPosition": 2,
+              "frontMatter": {
+                "sidebar_position": 2,
+                "title": "API搜索"
+              },
+              "sidebar": "tutorialSidebar",
+              "previous": {
+                "title": "扫描API",
+                "permalink": "/docs/tutorial-basics/startup"
+              },
+              "next": {
+                "title": "环境配置",
+                "permalink": "/docs/tutorial-basics/env_config"
+              }
+            },
+            {
+              "id": "tutorial-basics/env_config",
+              "title": "环境配置",
+              "description": "Cool Request提供了环境配置，可以配置不同参数、如URL主机、全局参数、全局请求头、全局x-www-form-urlencoded、全局form-data。",
+              "source": "@site/docs/tutorial-basics/env_config.md",
+              "sourceDirName": "tutorial-basics",
+              "slug": "/tutorial-basics/env_config",
+              "permalink": "/docs/tutorial-basics/env_config",
+              "draft": false,
+              "unlisted": false,
+              "tags": [],
+              "version": "current",
+              "sidebarPosition": 2,
+              "frontMatter": {
+                "sidebar_position": 2,
+                "title": "环境配置"
+              },
+              "sidebar": "tutorialSidebar",
+              "previous": {
+                "title": "API搜索",
+                "permalink": "/docs/tutorial-basics/api_search"
+              },
+              "next": {
+                "title": "发起HTTP请求",
+                "permalink": "/docs/tutorial-basics/request"
+              }
+            },
+            {
               "id": "tutorial-basics/request",
               "title": "发起HTTP请求",
               "description": "当扫描API成功后，双击将要调试的API。",
@@ -77,8 +131,8 @@
               },
               "sidebar": "tutorialSidebar",
               "previous": {
-                "title": "扫描API",
-                "permalink": "/docs/tutorial-basics/startup"
+                "title": "环境配置",
+                "permalink": "/docs/tutorial-basics/env_config"
               },
               "next": {
                 "title": "发起反射请求",
@@ -142,7 +196,7 @@
             {
               "id": "tutorial-basics/spring_gateway",
               "title": "Spring网关自动发现",
-              "description": "Cool Request在网关程序启动后，会自动提取网关配置的路劲，并添加到环境变量中，用户只需要更具实际修改即可。",
+              "description": "Cool Request在网关程序启动后，会自动提取网关配置的路劲，并添加到环境变量中，用户只需要根据实际修改配置即可。",
               "source": "@site/docs/tutorial-basics/spring_gateway.md",
               "sourceDirName": "tutorial-basics",
               "slug": "/tutorial-basics/spring_gateway",
@@ -188,8 +242,8 @@
                 "permalink": "/docs/category/使用教程"
               },
               "next": {
-                "title": "发起HTTP请求",
-                "permalink": "/docs/tutorial-basics/request"
+                "title": "API搜索",
+                "permalink": "/docs/tutorial-basics/api_search"
               }
             },
             {
@@ -339,6 +393,14 @@
                   {
                     "type": "doc",
                     "id": "tutorial-basics/startup"
+                  },
+                  {
+                    "type": "doc",
+                    "id": "tutorial-basics/api_search"
+                  },
+                  {
+                    "type": "doc",
+                    "id": "tutorial-basics/env_config"
                   },
                   {
                     "type": "doc",

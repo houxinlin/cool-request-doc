@@ -99,15 +99,15 @@ export default [
   },
   {
     path: '/docs',
-    component: ComponentCreator('/docs', '147'),
+    component: ComponentCreator('/docs', 'a35'),
     routes: [
       {
         path: '/docs',
-        component: ComponentCreator('/docs', '979'),
+        component: ComponentCreator('/docs', 'de2'),
         routes: [
           {
             path: '/docs',
-            component: ComponentCreator('/docs', '682'),
+            component: ComponentCreator('/docs', '921'),
             routes: [
               {
                 path: '/docs/category/第三方接入',
@@ -136,6 +136,18 @@ export default [
               {
                 path: '/docs/three-part/apifox',
                 component: ComponentCreator('/docs/three-part/apifox', '7c8'),
+                exact: true,
+                sidebar: "tutorialSidebar"
+              },
+              {
+                path: '/docs/tutorial-basics/api_search',
+                component: ComponentCreator('/docs/tutorial-basics/api_search', '39c'),
+                exact: true,
+                sidebar: "tutorialSidebar"
+              },
+              {
+                path: '/docs/tutorial-basics/env_config',
+                component: ComponentCreator('/docs/tutorial-basics/env_config', 'f66'),
                 exact: true,
                 sidebar: "tutorialSidebar"
               },
