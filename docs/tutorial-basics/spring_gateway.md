@@ -15,7 +15,7 @@ public class Config {
     @Bean
     public RouteLocator customRouteLocator(RouteLocatorBuilder builder) {
         return builder.routes()
-                .route("api_route", r -> r.path("/api/**")
+                .route("apiroute", r -> r.path("/api/**")
                         .filters(f -> f.stripPrefix(1))
                         .uri("http://localhost:8080"))
                 .build();
@@ -23,6 +23,7 @@ public class Config {
 }
 
 ```
+启动成功点击环境设置，可以发现会有一个名为`apiroute`的环境。
 
 ![Alt text](../images/env_setting.png)
 

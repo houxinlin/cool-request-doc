@@ -1,0 +1,27 @@
+{
+  "id": "tutorial-basics/import_curl_param",
+  "title": "导入cURL参数",
+  "description": "Cool Request可以快速导入cURL中的参数，以方便开发人员，操作方式如下。",
+  "source": "@site/docs/tutorial-basics/import_curl_param.md",
+  "sourceDirName": "tutorial-basics",
+  "slug": "/tutorial-basics/import_curl_param",
+  "permalink": "/docs/tutorial-basics/import_curl_param",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 10,
+  "frontMatter": {
+    "sidebar_position": 10,
+    "title": "导入cURL参数"
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "创建静态服务",
+    "permalink": "/docs/tutorial-basics/static_server"
+  },
+  "next": {
+    "title": "前/后置脚本",
+    "permalink": "/docs/category/前后置脚本"
+  }
+}

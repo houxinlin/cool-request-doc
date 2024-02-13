@@ -16,6 +16,8 @@ Cool Request提供了两种扫描项目API方式，Static和Dyanmic。
     :::tip
         Static扫描支持获取项目中定义的`server.port`和`server.servlet.context-path`，如果没有指定，则默认为`8080`和`/`,同时支持`spring.profiles.active`检测。
 
+        Static不支持启动参数检测，如`--server.port`和`--server.servlet.context-path`，他由Dynamic所弥补。
+
     :::
 
 

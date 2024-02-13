@@ -20,7 +20,7 @@
     "permalink": "/docs/tutorial-basics/request_timer"
   },
   "next": {
-    "title": "前/后置脚本",
-    "permalink": "/docs/category/前后置脚本"
+    "title": "导入cURL参数",
+    "permalink": "/docs/tutorial-basics/import_curl_param"
   }
 }

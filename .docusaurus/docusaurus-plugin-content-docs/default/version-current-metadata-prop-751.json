@@ -77,6 +77,13 @@
             "href": "/docs/tutorial-basics/static_server",
             "docId": "tutorial-basics/static_server",
             "unlisted": false
+          },
+          {
+            "type": "link",
+            "label": "导入cURL参数",
+            "href": "/docs/tutorial-basics/import_curl_param",
+            "docId": "tutorial-basics/import_curl_param",
+            "unlisted": false
           }
         ],
         "href": "/docs/category/使用教程"
@@ -159,6 +166,12 @@
       "id": "tutorial-basics/env_config",
       "title": "环境配置",
       "description": "Cool Request提供了环境配置，可以配置不同参数、如URL主机、全局参数、全局请求头、全局x-www-form-urlencoded、全局form-data。",
+      "sidebar": "tutorialSidebar"
+    },
+    "tutorial-basics/import_curl_param": {
+      "id": "tutorial-basics/import_curl_param",
+      "title": "导入cURL参数",
+      "description": "Cool Request可以快速导入cURL中的参数，以方便开发人员，操作方式如下。",
       "sidebar": "tutorialSidebar"
     },
     "tutorial-basics/request": {

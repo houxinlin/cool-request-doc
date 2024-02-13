@@ -4,8 +4,8 @@
   "permalink": "/docs/category/前后置脚本",
   "navigation": {
     "previous": {
-      "title": "创建静态服务",
-      "permalink": "/docs/tutorial-basics/static_server"
+      "title": "导入cURL参数",
+      "permalink": "/docs/tutorial-basics/import_curl_param"
     },
     "next": {
       "title": "介绍",
