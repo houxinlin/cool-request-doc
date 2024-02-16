@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="cool-request-plugin1">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/static/cool-request-plugin.zip!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
