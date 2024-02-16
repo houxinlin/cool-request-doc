@@ -1,9 +1,0 @@
-<component name="libraryTable">
-  <library name="cool-request-plugin">
-    <CLASSES>
-      <root url="jar://$PROJECT_DIR$/build/cool-request-plugin.zip!/" />
-    </CLASSES>
-    <JAVADOC />
-    <SOURCES />
-  </library>
-</component>
