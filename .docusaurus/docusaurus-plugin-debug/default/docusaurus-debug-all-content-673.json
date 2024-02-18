@@ -328,7 +328,7 @@
             {
               "id": "tutorial-script/script",
               "title": "介绍",
-              "description": "Cool Request提供了脚本，可以使用Java语法在请求前修改请求，或者是响应后进行一系列操作，对于那些需要动态参数的请求来说，这是非常有用的。",
+              "description": "Cool Request提供了脚本，可以使用Java语法在请求前修改HTTP请求参数，或者是响应后进行一系列操作，对于那些需要动态参数的请求来说，这是非常有用的。",
               "source": "@site/docs/tutorial-script/script.md",
               "sourceDirName": "tutorial-script",
               "slug": "/tutorial-script/script",
