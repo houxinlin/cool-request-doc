@@ -18,7 +18,7 @@ log.println("log");
 ```
 
 ## log.print
-输出日志。
+输出日志(无换行)。
 ```
 log.print("log");
 ```
