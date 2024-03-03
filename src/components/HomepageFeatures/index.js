@@ -8,7 +8,7 @@ const FeatureList = [
     Svg: require('@site/static/img/main-3.svg').default,
     description: (
       <>
-        拥有强大的参数推测能力，可一键导出为openapi、apifox.
+        拥有强大的参数推测能力，可一键导出至openapi、apifox.
       </>
     ),
   },
