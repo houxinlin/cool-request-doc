@@ -15,7 +15,7 @@ Apifox 是接口管理、开发、测试全流程集成工具，Cool Request可�
 
     用于调用Apifox接口添加时的权限验证。
 
-该Token请在Web端设置中或是客户端中有Apifox所生成，详细请看这里[开放API](https://apifox.com/help/openapi)
+该Token请在Web端设置中或是客户端中由Apifox所生成，详细请看这里[开放API](https://apifox.com/help/openapi)
 
 ![Alt text](image-1.png)
 
