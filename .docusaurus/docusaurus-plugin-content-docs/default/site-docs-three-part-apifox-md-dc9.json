@@ -15,5 +15,9 @@
   "previous": {
     "title": "第三方接入",
     "permalink": "/docs/category/第三方接入"
+  },
+  "next": {
+    "title": "apipost",
+    "permalink": "/docs/three-part/apipost"
   }
 }

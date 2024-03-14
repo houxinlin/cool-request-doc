@@ -21,6 +21,11 @@
               "sidebar": "tutorialSidebar"
             },
             {
+              "id": "three-part/apipost",
+              "path": "/docs/three-part/apipost",
+              "sidebar": "tutorialSidebar"
+            },
+            {
               "id": "tutorial-basics/api_search",
               "path": "/docs/tutorial-basics/api_search",
               "sidebar": "tutorialSidebar"
@@ -48,6 +53,11 @@
             {
               "id": "tutorial-basics/request_timer",
               "path": "/docs/tutorial-basics/request_timer",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "tutorial-basics/request_xxljob",
+              "path": "/docs/tutorial-basics/request_xxljob",
               "sidebar": "tutorialSidebar"
             },
             {
@@ -83,6 +93,11 @@
             {
               "id": "tutorial-script/script-pre",
               "path": "/docs/tutorial-script/script-pre",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "update_history",
+              "path": "/docs/update_history",
               "sidebar": "tutorialSidebar"
             },
             {

@@ -5,8 +5,8 @@
   "permalink": "/docs/category/使用教程",
   "navigation": {
     "previous": {
-      "title": "什么是Cool Request",
-      "permalink": "/docs/intro"
+      "title": "更新记录",
+      "permalink": "/docs/update_history"
     },
     "next": {
       "title": "扫描API",

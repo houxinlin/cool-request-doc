@@ -1,0 +1,27 @@
+{
+  "id": "update_history",
+  "title": "更新记录",
+  "description": "1. 增加api在代码标签中打开",
+  "source": "@site/docs/update_history.md",
+  "sourceDirName": ".",
+  "slug": "/update_history",
+  "permalink": "/docs/update_history",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 1,
+  "frontMatter": {
+    "sidebar_position": 1,
+    "title": "更新记录"
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "什么是Cool Request",
+    "permalink": "/docs/intro"
+  },
+  "next": {
+    "title": "使用教程",
+    "permalink": "/docs/category/使用教程"
+  }
+}

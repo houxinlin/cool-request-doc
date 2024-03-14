@@ -20,7 +20,7 @@
     "permalink": "/docs/tutorial-basics/request_timer"
   },
   "next": {
-    "title": "导入cURL参数",
-    "permalink": "/docs/tutorial-basics/import_curl_param"
+    "title": "手动触XXL-JOB任务",
+    "permalink": "/docs/tutorial-basics/request_xxljob"
   }
 }

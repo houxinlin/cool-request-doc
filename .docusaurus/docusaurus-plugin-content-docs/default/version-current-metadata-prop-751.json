@@ -17,6 +17,13 @@
         "unlisted": false
       },
       {
+        "type": "link",
+        "label": "更新记录",
+        "href": "/docs/update_history",
+        "docId": "update_history",
+        "unlisted": false
+      },
+      {
         "type": "category",
         "label": "使用教程",
         "collapsible": false,
@@ -80,6 +87,13 @@
           },
           {
             "type": "link",
+            "label": "手动触XXL-JOB任务",
+            "href": "/docs/tutorial-basics/request_xxljob",
+            "docId": "tutorial-basics/request_xxljob",
+            "unlisted": false
+          },
+          {
+            "type": "link",
             "label": "导入cURL参数",
             "href": "/docs/tutorial-basics/import_curl_param",
             "docId": "tutorial-basics/import_curl_param",
@@ -137,6 +151,13 @@
             "href": "/docs/three-part/apifox",
             "docId": "three-part/apifox",
             "unlisted": false
+          },
+          {
+            "type": "link",
+            "label": "apipost",
+            "href": "/docs/three-part/apipost",
+            "docId": "three-part/apipost",
+            "unlisted": false
           }
         ],
         "href": "/docs/category/第三方接入"
@@ -154,6 +175,12 @@
       "id": "three-part/apifox",
       "title": "apifox",
       "description": "Apifox 是接口管理、开发、测试全流程集成工具，Cool Request可以一键导出API到Apifox中。",
+      "sidebar": "tutorialSidebar"
+    },
+    "three-part/apipost": {
+      "id": "three-part/apipost",
+      "title": "apipost",
+      "description": "Apipost 是接口管理、开发、测试全流程集成工具，Cool Request可以一键导出API到Apipost中。",
       "sidebar": "tutorialSidebar"
     },
     "tutorial-basics/api_search": {
@@ -190,6 +217,12 @@
       "id": "tutorial-basics/request_timer",
       "title": "手动触发定时器",
       "description": "手动触发定时器是Cool Request特色功能之一，他可以在运行时候，调用任意具有@Scheduled注解的方法，这样带来的好处是无需等待Spring自动调度，省去了开发人员调试定时器带来的麻烦。",
+      "sidebar": "tutorialSidebar"
+    },
+    "tutorial-basics/request_xxljob": {
+      "id": "tutorial-basics/request_xxljob",
+      "title": "手动触XXL-JOB任务",
+      "description": "手动触发定时器是Cool Request特色功能之一，他可以在运行时候，调用任意具有@XxlJob注解的方法，这样带来的好处是无需等待XXL-JOB自动调度，省去了开发人员调试定时器带来的麻烦。",
       "sidebar": "tutorialSidebar"
     },
     "tutorial-basics/spring_gateway": {
@@ -232,6 +265,12 @@
       "id": "tutorial-script/script-pre",
       "title": "前置脚本",
       "description": "前置脚本用于在请求发起前执行用户代码，可对请求参数进行修改，用户代码需要编写在handlerRequest函数下。",
+      "sidebar": "tutorialSidebar"
+    },
+    "update_history": {
+      "id": "update_history",
+      "title": "更新记录",
+      "description": "1. 增加api在代码标签中打开",
       "sidebar": "tutorialSidebar"
     }
   }

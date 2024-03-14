@@ -24,6 +24,8 @@ Apifox 是接口管理、开发、测试全流程集成工具，Cool Request可�
 
 在可以得到上述两个Token后，您可以点击Cool Request的设置按钮，进入配置界面，复制到对应输入框即可。
 
+![Alt text](../images/apifox_setting_dialog.png)
+
 :::tip
 我们不会窃取您的隐私数据，所有数据均在本地进行缓存。
 :::

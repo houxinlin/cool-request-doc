@@ -14,6 +14,13 @@ title: API搜索
     
     Mac: Cmd + Shift + O
 
-选中`<Cool Request>`页来进行API搜索
+    选中`<Cool Request>`页来进行API搜索
 
- ![Alt text](../images/api_search_dialog.png)
+    ![Alt text](../images/api_search_dialog.png)
+
+3. 专属快捷键
+    默认为Ctrl+Shift+S    
+
+    可在设置中进行更改
+
+    ![Alt text](../images/api_search_hot_key_setting.png)

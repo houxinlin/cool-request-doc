@@ -26,7 +26,7 @@ function HomepageHeader() {
           </Link>
           <a
             className="button button--primary button--lg download-btn"
-            href="https://plugins.jetbrains.com/files/23555/490631/cool-request-plugin.zip"
+            href="https://plugins.jetbrains.com/plugin/download?rel=true&updateId=503073"
             download
           >
             下载

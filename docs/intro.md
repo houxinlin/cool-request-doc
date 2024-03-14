@@ -89,7 +89,7 @@ Cool Request是一款基于 IntelliJ IDEA 的插件，旨在简化 Spring MVC(Bo
 # 如何安装
 ## 方法一
 
-[点击这里](https://plugins.jetbrains.com/files/23555/490631/cool-request-plugin.zip)进行离线包下载。
+[点击这里](https://plugins.jetbrains.com/plugin/download?rel=true&updateId=503073)进行离线包下载。
 :::tip
 选择 FIle > Setting > Plugins > Install Plugin From Disk
 :::

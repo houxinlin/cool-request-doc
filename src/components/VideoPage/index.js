@@ -45,13 +45,12 @@ function Feature({Svg, title, description}) {
     </div>
   );
 }
-
+import MainImage from '@site/docs/images/main.png';
 export default function VideoPage() {
   return (
     <section className={styles.features}>
       <div className="container">
-      <iframe src="//player.bilibili.com/player.html?aid=325284510&bvid=BV1Hw411576y&cid=1382879124&p=1" scrolling="no" border="0" frameborder="no" framespacing="0" width="100%" height="645" allowfullscreen="true"> </iframe>
-
+        <img src={MainImage}></img>
       </div>
     </section>
   );
