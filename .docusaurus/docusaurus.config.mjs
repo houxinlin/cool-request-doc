@@ -5,7 +5,7 @@
  */
 export default {
   "title": "Cool Request",
-  "tagline": "新一代 IDEA 接口调试工具(v2024.3.15)",
+  "tagline": "新一代 IDEA 接口调试工具(v2024.4.1)",
   "favicon": "img/favicon.ico",
   "url": "http://plugin.houxinlin.com",
   "baseUrl": "/",

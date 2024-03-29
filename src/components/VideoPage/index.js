@@ -26,7 +26,7 @@ const FeatureList = [
     Svg: require('@site/static/img/main-1.svg').default,
     description: (
       <>
-        一键触发定时器任务，无需配置/等待，提升开发效率
+        一键触发定时器任务，无需配置/等待，提升开发效率1
       </>
     ),
   },

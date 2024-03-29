@@ -6,7 +6,7 @@ sidebar_position: 3
 
 前置脚本用于在请求发起前执行用户代码，可对请求参数进行修改，用户代码需要编写在`handlerRequest`函数下。
 ```java
-public boolean handlerRequest(ILog log, HTTPRequest request) {
+public boolean handlerRequest(ILog log, HTTPRequest request,IEnv env) {
 
       return true;
 }

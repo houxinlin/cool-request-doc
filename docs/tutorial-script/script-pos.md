@@ -7,7 +7,7 @@ sidebar_position: 4
 
 后置脚本用于在响应结束后执行用户代码，用户代码需要编写在`handlerResponse`函数下。
 ```java
- public void handlerResponse(ILog log, HTTPResponse response) {
+ public void handlerResponse(ILog log, HTTPResponse response,IEnv env) {
 
  }
 ```

@@ -25,7 +25,7 @@ Cool Request提供了脚本，可以使用Java语法在请求前修改HTTP请求
 
 # 调用第三方库
 ```java  title="调用DigestUtils进行加密"
-public boolean handlerRequest(ILog log, HTTPRequest request) {
+public boolean handlerRequest(ILog log, HTTPRequest request,IEnv env) {
 
     String userName = request.getParameter("userName");
     String md5 = org.springframework.util.DigestUtils.md5DigestAsHex(("abc" + userName).getBytes());
