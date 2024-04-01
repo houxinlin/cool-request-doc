@@ -13,14 +13,14 @@
           "tagsPath": "/docs/tags",
           "isLast": true,
           "routePriority": -1,
-          "sidebarFilePath": "D:\\project\\web\\cool-request-doc\\sidebars.js",
-          "contentPath": "D:\\project\\web\\cool-request-doc\\docs",
-          "contentPathLocalized": "D:\\project\\web\\cool-request-doc\\i18n\\en\\docusaurus-plugin-content-docs\\current",
+          "sidebarFilePath": "/home/LinuxWork/project/js/doc/website/sidebars.js",
+          "contentPath": "/home/LinuxWork/project/js/doc/website/docs",
+          "contentPathLocalized": "/home/LinuxWork/project/js/doc/website/i18n/en/docusaurus-plugin-content-docs/current",
           "docs": [
             {
               "id": "intro",
               "title": "什么是Cool Request",
-              "description": "Cool Request是一款基于 IntelliJ IDEA 的插件，旨在简化 Spring MVC(Boot) 项目中 API调试调用，提供了强大的参数推测能力、运行时反射调用等能力。",
+              "description": "Cool Request是一款基于 IntelliJ IDEA 的插件，旨在简化 Spring MVC(Boot) 项目中 API调试调用，提供了强大的参数推测能力、方法耗时追踪、运行时反射调用等能力。",
               "source": "@site/docs/intro.md",
               "sourceDirName": ".",
               "slug": "/intro",
@@ -100,8 +100,8 @@
               },
               "sidebar": "tutorialSidebar",
               "previous": {
-                "title": "扫描API",
-                "permalink": "/docs/tutorial-basics/startup"
+                "title": "统计方法耗时",
+                "permalink": "/docs/tutorial-basics/trace"
               },
               "next": {
                 "title": "环境配置",
@@ -319,8 +319,8 @@
                 "permalink": "/docs/category/使用教程"
               },
               "next": {
-                "title": "API搜索",
-                "permalink": "/docs/tutorial-basics/api_search"
+                "title": "统计方法耗时",
+                "permalink": "/docs/tutorial-basics/trace"
               }
             },
             {
@@ -347,6 +347,33 @@
               "next": {
                 "title": "手动触XXL-JOB任务",
                 "permalink": "/docs/tutorial-basics/request_xxljob"
+              }
+            },
+            {
+              "id": "tutorial-basics/trace",
+              "title": "统计方法耗时",
+              "description": "Cool Request可以追踪任意方法(除java包外)，将自动根据API入口函数向下推测所有方法，并统计各个方法的耗时。",
+              "source": "@site/docs/tutorial-basics/trace.md",
+              "sourceDirName": "tutorial-basics",
+              "slug": "/tutorial-basics/trace",
+              "permalink": "/docs/tutorial-basics/trace",
+              "draft": false,
+              "unlisted": false,
+              "tags": [],
+              "version": "current",
+              "sidebarPosition": 1,
+              "frontMatter": {
+                "sidebar_position": 1,
+                "title": "统计方法耗时"
+              },
+              "sidebar": "tutorialSidebar",
+              "previous": {
+                "title": "扫描API",
+                "permalink": "/docs/tutorial-basics/startup"
+              },
+              "next": {
+                "title": "API搜索",
+                "permalink": "/docs/tutorial-basics/api_search"
               }
             },
             {
@@ -501,6 +528,10 @@
                   {
                     "type": "doc",
                     "id": "tutorial-basics/startup"
+                  },
+                  {
+                    "type": "doc",
+                    "id": "tutorial-basics/trace"
                   },
                   {
                     "type": "doc",
@@ -667,7 +698,7 @@
               "permalink": "/blog/mdx-blog-post"
             }
           },
-          "content": "[Docusaurus blogging features](https://docusaurus.io/docs/blog) are powered by the [blog plugin](https://docusaurus.io/docs/api/plugins/@docusaurus/plugin-content-blog).\r\n\r\nSimply add Markdown files (or folders) to the `blog` directory.\r\n\r\nRegular blog authors can be added to `authors.yml`.\r\n\r\nThe blog post date can be extracted from filenames, such as:\r\n\r\n- `2019-05-30-welcome.md`\r\n- `2019-05-30-welcome/index.md`\r\n\r\nA blog post folder can be convenient to co-locate blog post images:\r\n\r\n![Docusaurus Plushie](./docusaurus-plushie-banner.jpeg)\r\n\r\nThe blog supports tags as well!\r\n\r\n**And if you don't want a blog**: just delete this directory, and use `blog: false` in your Docusaurus config."
+          "content": "[Docusaurus blogging features](https://docusaurus.io/docs/blog) are powered by the [blog plugin](https://docusaurus.io/docs/api/plugins/@docusaurus/plugin-content-blog).\n\nSimply add Markdown files (or folders) to the `blog` directory.\n\nRegular blog authors can be added to `authors.yml`.\n\nThe blog post date can be extracted from filenames, such as:\n\n- `2019-05-30-welcome.md`\n- `2019-05-30-welcome/index.md`\n\nA blog post folder can be convenient to co-locate blog post images:\n\n![Docusaurus Plushie](./docusaurus-plushie-banner.jpeg)\n\nThe blog supports tags as well!\n\n**And if you don't want a blog**: just delete this directory, and use `blog: false` in your Docusaurus config."
         },
         {
           "id": "mdx-blog-post",
@@ -715,7 +746,7 @@
               "permalink": "/blog/long-blog-post"
             }
           },
-          "content": "Blog posts support [Docusaurus Markdown features](https://docusaurus.io/docs/markdown-features), such as [MDX](https://mdxjs.com/).\r\n\r\n:::tip\r\n\r\nUse the power of React to create interactive blog posts.\r\n\r\n```js\r\n<button onClick={() => alert('button clicked!')}>Click me!</button>\r\n```\r\n\r\n<button onClick={() => alert('button clicked!')}>Click me!</button>\r\n\r\n:::"
+          "content": "Blog posts support [Docusaurus Markdown features](https://docusaurus.io/docs/markdown-features), such as [MDX](https://mdxjs.com/).\n\n:::tip\n\nUse the power of React to create interactive blog posts.\n\n```js\n<button onClick={() => alert('button clicked!')}>Click me!</button>\n```\n\n<button onClick={() => alert('button clicked!')}>Click me!</button>\n\n:::"
         },
         {
           "id": "long-blog-post",
@@ -766,7 +797,7 @@
               "permalink": "/blog/first-blog-post"
             }
           },
-          "content": "This is the summary of a very long blog post,\r\n\r\nUse a `<!--` `truncate` `-->` comment to limit blog post size in the list view.\r\n\r\n<!--truncate-->\r\n\r\nLorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque elementum dignissim ultricies. Fusce rhoncus ipsum tempor eros aliquam consequat. Lorem ipsum dolor sit amet\r\n\r\nLorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque elementum dignissim ultricies. Fusce rhoncus ipsum tempor eros aliquam consequat. Lorem ipsum dolor sit amet\r\n\r\nLorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque elementum dignissim ultricies. Fusce rhoncus ipsum tempor eros aliquam consequat. Lorem ipsum dolor sit amet\r\n\r\nLorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque elementum dignissim ultricies. Fusce rhoncus ipsum tempor eros aliquam consequat. Lorem ipsum dolor sit amet\r\n\r\nLorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque elementum dignissim ultricies. Fusce rhoncus ipsum tempor eros aliquam consequat. Lorem ipsum dolor sit amet\r\n\r\nLorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque elementum dignissim ultricies. Fusce rhoncus ipsum tempor eros aliquam consequat. Lorem ipsum dolor sit amet\r\n\r\nLorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque elementum dignissim ultricies. Fusce rhoncus ipsum tempor eros aliquam consequat. Lorem ipsum dolor sit amet\r\n\r\nLorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque elementum dignissim ultricies. Fusce rhoncus ipsum tempor eros aliquam consequat. Lorem ipsum dolor sit amet\r\n\r\nLorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque elementum dignissim ultricies. Fusce rhoncus ipsum tempor eros aliquam consequat. Lorem ipsum dolor sit amet\r\n\r\nLorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque elementum dignissim ultricies. Fusce rhoncus ipsum tempor eros aliquam consequat. Lorem ipsum dolor sit amet\r\n\r\nLorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque elementum dignissim ultricies. Fusce rhoncus ipsum tempor eros aliquam consequat. Lorem ipsum dolor sit amet\r\n\r\nLorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque elementum dignissim ultricies. Fusce rhoncus ipsum tempor eros aliquam consequat. Lorem ipsum dolor sit amet\r\n\r\nLorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque elementum dignissim ultricies. Fusce rhoncus ipsum tempor eros aliquam consequat. Lorem ipsum dolor sit amet\r\n\r\nLorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque elementum dignissim ultricies. Fusce rhoncus ipsum tempor eros aliquam consequat. Lorem ipsum dolor sit amet\r\n\r\nLorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque elementum dignissim ultricies. Fusce rhoncus ipsum tempor eros aliquam consequat. Lorem ipsum dolor sit amet\r\n\r\nLorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque elementum dignissim ultricies. Fusce rhoncus ipsum tempor eros aliquam consequat. Lorem ipsum dolor sit amet"
+          "content": "This is the summary of a very long blog post,\n\nUse a `<!--` `truncate` `-->` comment to limit blog post size in the list view.\n\n<!--truncate-->\n\nLorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque elementum dignissim ultricies. Fusce rhoncus ipsum tempor eros aliquam consequat. Lorem ipsum dolor sit amet\n\nLorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque elementum dignissim ultricies. Fusce rhoncus ipsum tempor eros aliquam consequat. Lorem ipsum dolor sit amet\n\nLorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque elementum dignissim ultricies. Fusce rhoncus ipsum tempor eros aliquam consequat. Lorem ipsum dolor sit amet\n\nLorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque elementum dignissim ultricies. Fusce rhoncus ipsum tempor eros aliquam consequat. Lorem ipsum dolor sit amet\n\nLorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque elementum dignissim ultricies. Fusce rhoncus ipsum tempor eros aliquam consequat. Lorem ipsum dolor sit amet\n\nLorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque elementum dignissim ultricies. Fusce rhoncus ipsum tempor eros aliquam consequat. Lorem ipsum dolor sit amet\n\nLorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque elementum dignissim ultricies. Fusce rhoncus ipsum tempor eros aliquam consequat. Lorem ipsum dolor sit amet\n\nLorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque elementum dignissim ultricies. Fusce rhoncus ipsum tempor eros aliquam consequat. Lorem ipsum dolor sit amet\n\nLorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque elementum dignissim ultricies. Fusce rhoncus ipsum tempor eros aliquam consequat. Lorem ipsum dolor sit amet\n\nLorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque elementum dignissim ultricies. Fusce rhoncus ipsum tempor eros aliquam consequat. Lorem ipsum dolor sit amet\n\nLorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque elementum dignissim ultricies. Fusce rhoncus ipsum tempor eros aliquam consequat. Lorem ipsum dolor sit amet\n\nLorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque elementum dignissim ultricies. Fusce rhoncus ipsum tempor eros aliquam consequat. Lorem ipsum dolor sit amet\n\nLorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque elementum dignissim ultricies. Fusce rhoncus ipsum tempor eros aliquam consequat. Lorem ipsum dolor sit amet\n\nLorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque elementum dignissim ultricies. Fusce rhoncus ipsum tempor eros aliquam consequat. Lorem ipsum dolor sit amet\n\nLorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque elementum dignissim ultricies. Fusce rhoncus ipsum tempor eros aliquam consequat. Lorem ipsum dolor sit amet\n\nLorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque elementum dignissim ultricies. Fusce rhoncus ipsum tempor eros aliquam consequat. Lorem ipsum dolor sit amet"
         },
         {
           "id": "first-blog-post",

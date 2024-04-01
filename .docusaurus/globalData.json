@@ -76,6 +76,11 @@
               "sidebar": "tutorialSidebar"
             },
             {
+              "id": "tutorial-basics/trace",
+              "path": "/docs/tutorial-basics/trace",
+              "sidebar": "tutorialSidebar"
+            },
+            {
               "id": "tutorial-script/common",
               "path": "/docs/tutorial-script/common",
               "sidebar": "tutorialSidebar"

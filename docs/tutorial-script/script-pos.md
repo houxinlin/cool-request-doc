@@ -13,7 +13,7 @@ sidebar_position: 4
 ```
 
 :::danger 警告
-此脚本不能改变最终HTTP返回值，也不得修改方法名、返回值、参数列表和所在的类名、这会导致编译失败。
+此脚本不得修改方法名、返回值、参数列表和所在的类名，这会导致编译失败。
 :::
 
 
@@ -47,4 +47,12 @@ for (String headerKey : keys) {
 获取响应体。
 ```java title="示例"
 byte[] body =response.getResponseBody();
+```
+
+### response.setResponseBody(byte[] body)
+
+设置响应体
+```java title="示例"
+
+response.setResponseBody("body".getBytes());
 ```

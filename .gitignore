@@ -1,3 +1,5 @@
 node_modules/
 *.gz
 .idea
+build/
+coolrequest.github.io/

@@ -1,0 +1,27 @@
+{
+  "id": "tutorial-basics/trace",
+  "title": "统计方法耗时",
+  "description": "Cool Request可以追踪任意方法(除java包外)，将自动根据API入口函数向下推测所有方法，并统计各个方法的耗时。",
+  "source": "@site/docs/tutorial-basics/trace.md",
+  "sourceDirName": "tutorial-basics",
+  "slug": "/tutorial-basics/trace",
+  "permalink": "/docs/tutorial-basics/trace",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 1,
+  "frontMatter": {
+    "sidebar_position": 1,
+    "title": "统计方法耗时"
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "扫描API",
+    "permalink": "/docs/tutorial-basics/startup"
+  },
+  "next": {
+    "title": "API搜索",
+    "permalink": "/docs/tutorial-basics/api_search"
+  }
+}
