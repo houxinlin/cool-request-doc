@@ -38,6 +38,13 @@
           },
           {
             "type": "link",
+            "label": "统计方法耗时",
+            "href": "/docs/tutorial-basics/trace",
+            "docId": "tutorial-basics/trace",
+            "unlisted": false
+          },
+          {
+            "type": "link",
             "label": "API搜索",
             "href": "/docs/tutorial-basics/api_search",
             "docId": "tutorial-basics/api_search",
@@ -168,7 +175,7 @@
     "intro": {
       "id": "intro",
       "title": "什么是Cool Request",
-      "description": "Cool Request是一款基于 IntelliJ IDEA 的插件，旨在简化 Spring MVC(Boot) 项目中 API调试调用，提供了强大的参数推测能力、运行时反射调用等能力。",
+      "description": "Cool Request是一款基于 IntelliJ IDEA 的插件，旨在简化 Spring MVC(Boot) 项目中 API调试调用，提供了强大的参数推测能力、方法耗时追踪、运行时反射调用等能力。",
       "sidebar": "tutorialSidebar"
     },
     "three-part/apifox": {
@@ -241,6 +248,12 @@
       "id": "tutorial-basics/static_server",
       "title": "创建静态服务",
       "description": "Cool Request可以创建一个静态资源服务器，可方便对本机数据进行共享，操作方式如下：",
+      "sidebar": "tutorialSidebar"
+    },
+    "tutorial-basics/trace": {
+      "id": "tutorial-basics/trace",
+      "title": "统计方法耗时",
+      "description": "Cool Request可以追踪任意方法(除java包外)，将自动根据API入口函数向下推测所有方法，并统计各个方法的耗时。",
       "sidebar": "tutorialSidebar"
     },
     "tutorial-script/common": {
