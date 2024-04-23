@@ -283,7 +283,7 @@
     "update_history": {
       "id": "update_history",
       "title": "更新记录",
-      "description": "1. 增加方法耗时跟踪，可添加/取消自定义方法",
+      "description": "1. 增加Swagger方法介绍",
       "sidebar": "tutorialSidebar"
     }
   }

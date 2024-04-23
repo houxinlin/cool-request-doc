@@ -1,6 +1,6 @@
 # Website
 
- Cool Request Plugin Website [Cool Requeset](https://plugin.houxinlin.com)
+ Cool Request Plugin Website [Cool Requeset](https://coolrequest.dev)
 
  #  build
  ```
