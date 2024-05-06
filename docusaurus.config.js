@@ -9,7 +9,7 @@ import {themes as prismThemes} from 'prism-react-renderer';
 /** @type {import('@docusaurus/types').Config} */
 const config = {
   title: 'Cool Request',
-  tagline: '新一代 IDEA 接口调试工具(v2024.4.15)',
+  tagline: '新一代 IDEA 接口调试工具(v2024.5.1)',
   favicon: 'img/favicon.ico',
 
   // Set the production url of your site here
