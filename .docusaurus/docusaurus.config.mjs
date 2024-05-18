@@ -5,9 +5,9 @@
  */
 export default {
   "title": "Cool Request",
-  "tagline": "新一代 IDEA 接口调试工具(v2024.4.15)",
+  "tagline": "新一代 IDEA 接口调试工具(v2024.5.1)",
   "favicon": "img/favicon.ico",
-  "url": "http://plugin.houxinlin.com",
+  "url": "https://coolrequest.dev",
   "baseUrl": "/",
   "organizationName": "houxinlin",
   "projectName": "houxinlin",
@@ -52,6 +52,13 @@ export default {
           "sidebarId": "tutorialSidebar",
           "position": "left",
           "label": "教程"
+        },
+        {
+          "href": "https://vip.coolrequest.dev",
+          "type": "docSidebar",
+          "sidebarId": "tutorialSidebar",
+          "position": "left",
+          "label": "VIP"
         },
         {
           "href": "https://github.com/houxinlin/cool-request",

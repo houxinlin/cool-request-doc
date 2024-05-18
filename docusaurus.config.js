@@ -4,7 +4,7 @@
 // There are various equivalent ways to declare your Docusaurus config.
 // See: https://docusaurus.io/docs/api/docusaurus-config
 
-import {themes as prismThemes} from 'prism-react-renderer';
+import { themes as prismThemes } from 'prism-react-renderer';
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
@@ -13,7 +13,7 @@ const config = {
   favicon: 'img/favicon.ico',
 
   // Set the production url of your site here
-  url: 'http://plugin.houxinlin.com',
+  url: 'https://coolrequest.dev',
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
   baseUrl: '/',
@@ -44,13 +44,13 @@ const config = {
           sidebarPath: './sidebars.js'
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
-  
+
         },
         blog: {
           showReadingTime: true
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
-       
+
         },
         theme: {
           customCss: './src/css/custom.css',
@@ -63,8 +63,6 @@ const config = {
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
 
-
-      // Replace with your project's social card
       image: 'img/docusaurus-social-card.jpg',
       navbar: {
         title: 'Cool Request',
@@ -80,6 +78,13 @@ const config = {
             label: '教程',
           },
           {
+            href: 'https://vip.coolrequest.dev',
+            type: 'docSidebar',
+            sidebarId: 'tutorialSidebar',
+            position: 'left',
+            label: 'VIP',
+          },
+          {
             href: 'https://github.com/houxinlin/cool-request',
             html: `
             <img
@@ -90,6 +95,7 @@ const config = {
           `,
             position: 'right',
           },
+
         ],
       },
 
