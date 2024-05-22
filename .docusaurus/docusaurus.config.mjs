@@ -5,7 +5,7 @@
  */
 export default {
   "title": "Cool Request",
-  "tagline": "新一代 IDEA 接口调试工具(v2024.5.1)",
+  "tagline": "让调用变得更简单",
   "favicon": "img/favicon.ico",
   "url": "https://coolrequest.dev",
   "baseUrl": "/",
@@ -13,6 +13,9 @@ export default {
   "projectName": "houxinlin",
   "onBrokenLinks": "throw",
   "onBrokenMarkdownLinks": "warn",
+  "customFields": {
+    "newTagline": "新一代IDEA接口调试插件(v2024.6.1)"
+  },
   "i18n": {
     "defaultLocale": "en",
     "locales": [
@@ -297,7 +300,6 @@ export default {
   "staticDirectories": [
     "static"
   ],
-  "customFields": {},
   "plugins": [],
   "themes": [],
   "scripts": [],

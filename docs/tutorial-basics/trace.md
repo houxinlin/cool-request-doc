@@ -10,7 +10,7 @@ Cool Request可以追踪任意方法(除java包外)，将自动根据API入口�
 
 # 开启耗时追踪
 
-Cool Request默认开启耗时追踪，这会导致第一次请求API时速度下降，如果不需要耗时追踪，可点击关闭
+Cool Request默认关闭方法耗时追踪，如果开启后，会影响第一次发起API时的速度，如果不需要耗时追踪，可点击关闭
 
 ![Alt text](../images/trace-enabled.png)
 

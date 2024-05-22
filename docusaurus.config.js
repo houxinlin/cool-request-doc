@@ -9,7 +9,8 @@ import { themes as prismThemes } from 'prism-react-renderer';
 /** @type {import('@docusaurus/types').Config} */
 const config = {
   title: 'Cool Request',
-  tagline: '新一代 IDEA 接口调试工具(v2024.5.1)',
+
+  tagline: '让调用变得更简单',
   favicon: 'img/favicon.ico',
 
   // Set the production url of your site here
@@ -25,6 +26,9 @@ const config = {
 
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
+  customFields:{
+    newTagline: '新一代IDEA接口调试插件(v2024.6.1)',
+  },
 
   // Even if you don't use internationalization, you can use this field to set
   // useful metadata like html lang. For example, if your site is Chinese, you
