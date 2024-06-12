@@ -3,6 +3,14 @@ sidebar_position: 1
 title: 更新记录
 ---
 
+# v2024.6.15
+1. 增加WebSocket测试
+2. 增加对Spring容器内任意方法调用
+3. 增加历史记录搜索
+4. API列表可显示Java Doc注释
+5. 增加HTTP请求重定向时自动附带Cookie
+6. 优化UI体验
+
 # v2024.6.1
 1. 增加多标签模式
 2. 增加历史记录
