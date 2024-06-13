@@ -1,7 +1,7 @@
 {
   "id": "tutorial-basics/spring_gateway copy",
   "title": "Spring网关自动发现",
-  "description": "Cool Request在网关程序启动后，会自动提取网关配置的路劲，并添加到环境变量中，用户只需要更具实际修改即可。",
+  "description": "Cool Request在网关程序启动后，会自动提取网关配置的路径，并添加到环境变量中，用户只需要更具实际修改即可。",
   "source": "@site/docs/tutorial-basics/spring_gateway copy.md",
   "sourceDirName": "tutorial-basics",
   "slug": "/tutorial-basics/spring_gateway copy",
