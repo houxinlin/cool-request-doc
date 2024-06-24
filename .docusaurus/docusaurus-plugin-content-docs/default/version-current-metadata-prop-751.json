@@ -266,6 +266,33 @@
       "description": "当扫描API成功后，双击将要调试的API。",
       "sidebar": "tutorialSidebar"
     },
+<<<<<<< HEAD
+=======
+    "tutorial-basics/request_by_reflex": {
+      "id": "tutorial-basics/request_by_reflex",
+      "title": "发起反射请求",
+      "description": "普通HTTP请求的流程如下：",
+      "sidebar": "tutorialSidebar"
+    },
+    "tutorial-basics/request_timer": {
+      "id": "tutorial-basics/request_timer",
+      "title": "手动触发定时器",
+      "description": "手动触发定时器是Cool Request特色功能之一，他可以在运行时候，调用任意具有@Scheduled注解的方法，这样带来的好处是无需等待Spring自动调度，省去了开发人员调试定时器带来的麻烦。",
+      "sidebar": "tutorialSidebar"
+    },
+    "tutorial-basics/request_xxljob": {
+      "id": "tutorial-basics/request_xxljob",
+      "title": "手动触XXL-JOB任务",
+      "description": "手动触发定时器是Cool Request特色功能之一，他可以在运行时候，调用任意具有@XxlJob注解的方法，这样带来的好处是无需等待XXL-JOB自动调度，省去了开发人员调试定时器带来的麻烦。",
+      "sidebar": "tutorialSidebar"
+    },
+    "tutorial-basics/spring_gateway": {
+      "id": "tutorial-basics/spring_gateway",
+      "title": "Spring网关自动发现",
+      "description": "Cool Request在网关程序启动后，会自动提取网关配置的路径，并添加到环境变量中，用户只需要根据实际修改配置即可。",
+      "sidebar": "tutorialSidebar"
+    },
+>>>>>>> 3a28b1e6503d8368bb0238105875e9933ce8a1ad
     "tutorial-basics/startup": {
       "id": "tutorial-basics/startup",
       "title": "扫描API",
