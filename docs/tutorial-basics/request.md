@@ -5,12 +5,15 @@ title: 发起HTTP请求
 
 当扫描API成功后，双击将要调试的API。
 
+
 ![Alt text](../images/api-tree.png)
+
 
 会自动跳转到HTTP请求界面。
 :::tip
  HTTP请求界面分为上下两个布局，第一个为HTTP参数设置界面，第二个为HTTP响应预览界面。
 :::
+
 ![Alt text](../images/http-request.png)
 
 

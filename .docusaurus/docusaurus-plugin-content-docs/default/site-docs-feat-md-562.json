@@ -1,11 +1,11 @@
 {
-  "id": "intro copy",
+  "id": "feat",
   "title": "什么是Cool Request",
   "description": "无力维护多个版本的文档，所有的文档针对最新版本",
-  "source": "@site/docs/intro copy.md",
+  "source": "@site/docs/feat.md",
   "sourceDirName": ".",
-  "slug": "/intro copy",
-  "permalink": "/docs/intro copy",
+  "slug": "/feat",
+  "permalink": "/docs/feat",
   "draft": false,
   "unlisted": false,
   "tags": [],
@@ -16,7 +16,7 @@
   },
   "sidebar": "tutorialSidebar",
   "next": {
-    "title": "什么是Cool Request",
+    "title": "特色功能",
     "permalink": "/docs/intro"
   }
 }

@@ -186,17 +186,17 @@
     },
     "content": "content---markdown-page-393-028"
   },
-  "/docs-f5d": {
+  "/docs-5b0": {
     "__comp": "__comp---theme-docs-root-5-e-9-0b6",
     "__context": {
       "plugin": "plugin---docsfb-0-360"
     }
   },
-  "/docs-c44": {
+  "/docs-bb3": {
     "__comp": "__comp---theme-doc-version-roota-7-b-5de",
     "version": "version---docs-935-398"
   },
-  "/docs-998": {
+  "/docs-890": {
     "__comp": "__comp---theme-doc-roota-94-67a"
   },
   "/docs/category/第三方接入-176": {
@@ -210,6 +210,34 @@
   "/docs/category/使用教程-a55": {
     "__comp": "__comp---theme-doc-category-generated-index-page-14-e-640",
     "categoryGeneratedIndex": "categoryGeneratedIndex---docs-category-使用教程-627-641"
+  },
+  "/docs/category/特色功能-bc9": {
+    "__comp": "__comp---theme-doc-category-generated-index-page-14-e-640",
+    "categoryGeneratedIndex": "categoryGeneratedIndex---docs-category-特色功能f-8-d-149"
+  },
+  "/docs/feat/request_by_reflex-22b": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-feat-request-by-reflex-8-d-8-c61"
+  },
+  "/docs/feat/request_by_reflex copy-871": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-feat-request-by-reflex-copy-80-e-78c"
+  },
+  "/docs/feat/request_timer-e27": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-feat-request-timer-97-f-b84"
+  },
+  "/docs/feat/request_xxljob-5a6": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-feat-request-xxljob-8-ea-2d6"
+  },
+  "/docs/feat/spring_gateway-9bd": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-feat-spring-gateway-378-05e"
+  },
+  "/docs/feat/trace-98f": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-feat-tracee-96-927"
   },
   "/docs/intro-aed": {
     "__comp": "__comp---theme-doc-item-178-a40",
@@ -239,22 +267,6 @@
     "__comp": "__comp---theme-doc-item-178-a40",
     "content": "content---docs-tutorial-basics-request-8-d-1-623"
   },
-  "/docs/tutorial-basics/request_by_reflex-73b": {
-    "__comp": "__comp---theme-doc-item-178-a40",
-    "content": "content---docs-tutorial-basics-request-by-reflexf-59-f26"
-  },
-  "/docs/tutorial-basics/request_timer-5f3": {
-    "__comp": "__comp---theme-doc-item-178-a40",
-    "content": "content---docs-tutorial-basics-request-timerd-7-a-b01"
-  },
-  "/docs/tutorial-basics/request_xxljob-b34": {
-    "__comp": "__comp---theme-doc-item-178-a40",
-    "content": "content---docs-tutorial-basics-request-xxljob-68-d-fbb"
-  },
-  "/docs/tutorial-basics/spring_gateway-3cd": {
-    "__comp": "__comp---theme-doc-item-178-a40",
-    "content": "content---docs-tutorial-basics-spring-gatewayc-61-dda"
-  },
   "/docs/tutorial-basics/startup-c6c": {
     "__comp": "__comp---theme-doc-item-178-a40",
     "content": "content---docs-tutorial-basics-startup-312-920"
@@ -262,10 +274,6 @@
   "/docs/tutorial-basics/static_server-3cf": {
     "__comp": "__comp---theme-doc-item-178-a40",
     "content": "content---docs-tutorial-basics-static-servere-80-faa"
-  },
-  "/docs/tutorial-basics/trace-9a3": {
-    "__comp": "__comp---theme-doc-item-178-a40",
-    "content": "content---docs-tutorial-basics-traced-47-417"
   },
   "/docs/tutorial-script/common-074": {
     "__comp": "__comp---theme-doc-item-178-a40",

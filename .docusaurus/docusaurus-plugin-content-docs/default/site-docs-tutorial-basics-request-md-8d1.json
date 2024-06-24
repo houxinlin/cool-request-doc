@@ -21,7 +21,7 @@
     "permalink": "/docs/tutorial-basics/env_config"
   },
   "next": {
-    "title": "发起反射请求",
-    "permalink": "/docs/tutorial-basics/request_by_reflex"
+    "title": "创建静态资源服务器",
+    "permalink": "/docs/tutorial-basics/static_server"
   }
 }

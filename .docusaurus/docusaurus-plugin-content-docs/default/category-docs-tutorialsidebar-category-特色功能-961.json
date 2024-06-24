@@ -1,0 +1,16 @@
+{
+  "title": "特色功能",
+  "description": "以下文章快速带您使用Cool Request",
+  "slug": "/category/特色功能",
+  "permalink": "/docs/category/特色功能",
+  "navigation": {
+    "previous": {
+      "title": "更新记录",
+      "permalink": "/docs/update_history"
+    },
+    "next": {
+      "title": "统计方法耗时",
+      "permalink": "/docs/feat/trace"
+    }
+  }
+}

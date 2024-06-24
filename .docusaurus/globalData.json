@@ -11,6 +11,36 @@
           "mainDocId": "intro",
           "docs": [
             {
+              "id": "feat/request_by_reflex",
+              "path": "/docs/feat/request_by_reflex",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "feat/request_by_reflex copy",
+              "path": "/docs/feat/request_by_reflex copy",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "feat/request_timer",
+              "path": "/docs/feat/request_timer",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "feat/request_xxljob",
+              "path": "/docs/feat/request_xxljob",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "feat/spring_gateway",
+              "path": "/docs/feat/spring_gateway",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "feat/trace",
+              "path": "/docs/feat/trace",
+              "sidebar": "tutorialSidebar"
+            },
+            {
               "id": "intro",
               "path": "/docs/intro",
               "sidebar": "tutorialSidebar"
@@ -46,26 +76,6 @@
               "sidebar": "tutorialSidebar"
             },
             {
-              "id": "tutorial-basics/request_by_reflex",
-              "path": "/docs/tutorial-basics/request_by_reflex",
-              "sidebar": "tutorialSidebar"
-            },
-            {
-              "id": "tutorial-basics/request_timer",
-              "path": "/docs/tutorial-basics/request_timer",
-              "sidebar": "tutorialSidebar"
-            },
-            {
-              "id": "tutorial-basics/request_xxljob",
-              "path": "/docs/tutorial-basics/request_xxljob",
-              "sidebar": "tutorialSidebar"
-            },
-            {
-              "id": "tutorial-basics/spring_gateway",
-              "path": "/docs/tutorial-basics/spring_gateway",
-              "sidebar": "tutorialSidebar"
-            },
-            {
               "id": "tutorial-basics/startup",
               "path": "/docs/tutorial-basics/startup",
               "sidebar": "tutorialSidebar"
@@ -73,11 +83,6 @@
             {
               "id": "tutorial-basics/static_server",
               "path": "/docs/tutorial-basics/static_server",
-              "sidebar": "tutorialSidebar"
-            },
-            {
-              "id": "tutorial-basics/trace",
-              "path": "/docs/tutorial-basics/trace",
               "sidebar": "tutorialSidebar"
             },
             {
@@ -103,6 +108,11 @@
             {
               "id": "update_history",
               "path": "/docs/update_history",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "/category/特色功能",
+              "path": "/docs/category/特色功能",
               "sidebar": "tutorialSidebar"
             },
             {

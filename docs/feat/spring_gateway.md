@@ -25,7 +25,6 @@ public class Config {
 ```
 启动成功点击环境设置，可以发现会有一个名为`apiroute`的环境。
 
-![Alt text](../images/env_setting.png)
 
 :::tip
 此过程必须重启网关程序，如果启动后未发现自动添加到环境变量中，可手动添加。

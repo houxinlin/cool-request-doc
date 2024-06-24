@@ -1,0 +1,27 @@
+{
+  "id": "feat/request_xxljob",
+  "title": "手动触XXL-JOB任务",
+  "description": "手动触发定时器是Cool Request特色功能之一，他可以在运行时候，调用任意具有@XxlJob注解的方法，这样带来的好处是无需等待XXL-JOB自动调度，省去了开发人员调试定时器带来的麻烦。",
+  "source": "@site/docs/feat/request_xxljob.md",
+  "sourceDirName": "feat",
+  "slug": "/feat/request_xxljob",
+  "permalink": "/docs/feat/request_xxljob",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 7,
+  "frontMatter": {
+    "sidebar_position": 7,
+    "title": "手动触XXL-JOB任务"
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "手动触发定时器",
+    "permalink": "/docs/feat/request_timer"
+  },
+  "next": {
+    "title": "使用教程",
+    "permalink": "/docs/category/使用教程"
+  }
+}

@@ -17,8 +17,8 @@
   },
   "sidebar": "tutorialSidebar",
   "previous": {
-    "title": "统计方法耗时",
-    "permalink": "/docs/tutorial-basics/trace"
+    "title": "扫描API",
+    "permalink": "/docs/tutorial-basics/startup"
   },
   "next": {
     "title": "环境配置",

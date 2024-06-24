@@ -99,15 +99,15 @@ export default [
   },
   {
     path: '/docs',
-    component: ComponentCreator('/docs', 'f5d'),
+    component: ComponentCreator('/docs', '5b0'),
     routes: [
       {
         path: '/docs',
-        component: ComponentCreator('/docs', 'c44'),
+        component: ComponentCreator('/docs', 'bb3'),
         routes: [
           {
             path: '/docs',
-            component: ComponentCreator('/docs', '998'),
+            component: ComponentCreator('/docs', '890'),
             routes: [
               {
                 path: '/docs/category/第三方接入',
@@ -124,6 +124,48 @@ export default [
               {
                 path: '/docs/category/使用教程',
                 component: ComponentCreator('/docs/category/使用教程', 'a55'),
+                exact: true,
+                sidebar: "tutorialSidebar"
+              },
+              {
+                path: '/docs/category/特色功能',
+                component: ComponentCreator('/docs/category/特色功能', 'bc9'),
+                exact: true,
+                sidebar: "tutorialSidebar"
+              },
+              {
+                path: '/docs/feat/request_by_reflex',
+                component: ComponentCreator('/docs/feat/request_by_reflex', '22b'),
+                exact: true,
+                sidebar: "tutorialSidebar"
+              },
+              {
+                path: '/docs/feat/request_by_reflex copy',
+                component: ComponentCreator('/docs/feat/request_by_reflex copy', '871'),
+                exact: true,
+                sidebar: "tutorialSidebar"
+              },
+              {
+                path: '/docs/feat/request_timer',
+                component: ComponentCreator('/docs/feat/request_timer', 'e27'),
+                exact: true,
+                sidebar: "tutorialSidebar"
+              },
+              {
+                path: '/docs/feat/request_xxljob',
+                component: ComponentCreator('/docs/feat/request_xxljob', '5a6'),
+                exact: true,
+                sidebar: "tutorialSidebar"
+              },
+              {
+                path: '/docs/feat/spring_gateway',
+                component: ComponentCreator('/docs/feat/spring_gateway', '9bd'),
+                exact: true,
+                sidebar: "tutorialSidebar"
+              },
+              {
+                path: '/docs/feat/trace',
+                component: ComponentCreator('/docs/feat/trace', '98f'),
                 exact: true,
                 sidebar: "tutorialSidebar"
               },
@@ -170,30 +212,6 @@ export default [
                 sidebar: "tutorialSidebar"
               },
               {
-                path: '/docs/tutorial-basics/request_by_reflex',
-                component: ComponentCreator('/docs/tutorial-basics/request_by_reflex', '73b'),
-                exact: true,
-                sidebar: "tutorialSidebar"
-              },
-              {
-                path: '/docs/tutorial-basics/request_timer',
-                component: ComponentCreator('/docs/tutorial-basics/request_timer', '5f3'),
-                exact: true,
-                sidebar: "tutorialSidebar"
-              },
-              {
-                path: '/docs/tutorial-basics/request_xxljob',
-                component: ComponentCreator('/docs/tutorial-basics/request_xxljob', 'b34'),
-                exact: true,
-                sidebar: "tutorialSidebar"
-              },
-              {
-                path: '/docs/tutorial-basics/spring_gateway',
-                component: ComponentCreator('/docs/tutorial-basics/spring_gateway', '3cd'),
-                exact: true,
-                sidebar: "tutorialSidebar"
-              },
-              {
                 path: '/docs/tutorial-basics/startup',
                 component: ComponentCreator('/docs/tutorial-basics/startup', 'c6c'),
                 exact: true,
@@ -202,12 +220,6 @@ export default [
               {
                 path: '/docs/tutorial-basics/static_server',
                 component: ComponentCreator('/docs/tutorial-basics/static_server', '3cf'),
-                exact: true,
-                sidebar: "tutorialSidebar"
-              },
-              {
-                path: '/docs/tutorial-basics/trace',
-                component: ComponentCreator('/docs/tutorial-basics/trace', '9a3'),
                 exact: true,
                 sidebar: "tutorialSidebar"
               },

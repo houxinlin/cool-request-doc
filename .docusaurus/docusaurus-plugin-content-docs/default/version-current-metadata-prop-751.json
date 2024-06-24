@@ -25,6 +25,57 @@
       },
       {
         "type": "category",
+        "label": "特色功能",
+        "collapsible": false,
+        "collapsed": false,
+        "items": [
+          {
+            "type": "link",
+            "label": "统计方法耗时",
+            "href": "/docs/feat/trace",
+            "docId": "feat/trace",
+            "unlisted": false
+          },
+          {
+            "type": "link",
+            "label": "调用任意方法",
+            "href": "/docs/feat/request_by_reflex copy",
+            "docId": "feat/request_by_reflex copy",
+            "unlisted": false
+          },
+          {
+            "type": "link",
+            "label": "发起反射请求",
+            "href": "/docs/feat/request_by_reflex",
+            "docId": "feat/request_by_reflex",
+            "unlisted": false
+          },
+          {
+            "type": "link",
+            "label": "Spring网关自动发现",
+            "href": "/docs/feat/spring_gateway",
+            "docId": "feat/spring_gateway",
+            "unlisted": false
+          },
+          {
+            "type": "link",
+            "label": "手动触发定时器",
+            "href": "/docs/feat/request_timer",
+            "docId": "feat/request_timer",
+            "unlisted": false
+          },
+          {
+            "type": "link",
+            "label": "手动触XXL-JOB任务",
+            "href": "/docs/feat/request_xxljob",
+            "docId": "feat/request_xxljob",
+            "unlisted": false
+          }
+        ],
+        "href": "/docs/category/特色功能"
+      },
+      {
+        "type": "category",
         "label": "使用教程",
         "collapsible": false,
         "collapsed": false,
@@ -34,13 +85,6 @@
             "label": "扫描API",
             "href": "/docs/tutorial-basics/startup",
             "docId": "tutorial-basics/startup",
-            "unlisted": false
-          },
-          {
-            "type": "link",
-            "label": "统计方法耗时",
-            "href": "/docs/tutorial-basics/trace",
-            "docId": "tutorial-basics/trace",
             "unlisted": false
           },
           {
@@ -66,37 +110,9 @@
           },
           {
             "type": "link",
-            "label": "发起反射请求",
-            "href": "/docs/tutorial-basics/request_by_reflex",
-            "docId": "tutorial-basics/request_by_reflex",
-            "unlisted": false
-          },
-          {
-            "type": "link",
-            "label": "Spring网关自动发现",
-            "href": "/docs/tutorial-basics/spring_gateway",
-            "docId": "tutorial-basics/spring_gateway",
-            "unlisted": false
-          },
-          {
-            "type": "link",
-            "label": "手动触发定时器",
-            "href": "/docs/tutorial-basics/request_timer",
-            "docId": "tutorial-basics/request_timer",
-            "unlisted": false
-          },
-          {
-            "type": "link",
-            "label": "创建静态服务",
+            "label": "创建静态资源服务器",
             "href": "/docs/tutorial-basics/static_server",
             "docId": "tutorial-basics/static_server",
-            "unlisted": false
-          },
-          {
-            "type": "link",
-            "label": "手动触XXL-JOB任务",
-            "href": "/docs/tutorial-basics/request_xxljob",
-            "docId": "tutorial-basics/request_xxljob",
             "unlisted": false
           },
           {
@@ -172,10 +188,46 @@
     ]
   },
   "docs": {
+    "feat/request_by_reflex": {
+      "id": "feat/request_by_reflex",
+      "title": "发起反射请求",
+      "description": "发射请求可绕过系统中的拦截器，在开发时，可直接使请求进入到Controller方法。",
+      "sidebar": "tutorialSidebar"
+    },
+    "feat/request_by_reflex copy": {
+      "id": "feat/request_by_reflex copy",
+      "title": "调用任意方法",
+      "description": "Cool Request支持在SpringBoot运行时调用任意容器内实例的方法、同时也包括静态方法。",
+      "sidebar": "tutorialSidebar"
+    },
+    "feat/request_timer": {
+      "id": "feat/request_timer",
+      "title": "手动触发定时器",
+      "description": "手动触发定时器是Cool Request特色功能之一，他可以在运行时候，调用任意具有@Scheduled注解的方法，这样带来的好处是无需等待Spring自动调度，省去了开发人员调试定时器带来的麻烦。",
+      "sidebar": "tutorialSidebar"
+    },
+    "feat/request_xxljob": {
+      "id": "feat/request_xxljob",
+      "title": "手动触XXL-JOB任务",
+      "description": "手动触发定时器是Cool Request特色功能之一，他可以在运行时候，调用任意具有@XxlJob注解的方法，这样带来的好处是无需等待XXL-JOB自动调度，省去了开发人员调试定时器带来的麻烦。",
+      "sidebar": "tutorialSidebar"
+    },
+    "feat/spring_gateway": {
+      "id": "feat/spring_gateway",
+      "title": "Spring网关自动发现",
+      "description": "Cool Request在网关程序启动后，会自动提取网关配置的路劲，并添加到环境变量中，用户只需要根据实际修改配置即可。",
+      "sidebar": "tutorialSidebar"
+    },
+    "feat/trace": {
+      "id": "feat/trace",
+      "title": "统计方法耗时",
+      "description": "Cool Request可以追踪任意方法(除java包外)，将自动根据API入口函数向下推测所有方法，并统计各个方法的耗时。",
+      "sidebar": "tutorialSidebar"
+    },
     "intro": {
       "id": "intro",
       "title": "什么是Cool Request",
-      "description": "Cool Request是一款基于 IntelliJ IDEA 的插件，旨在简化 Spring MVC(Boot) 项目中 API调试调用，提供了强大的参数推测能力、方法耗时追踪、运行时反射调用等能力。",
+      "description": "无力维护多个版本的文档，所有的文档针对最新版本",
       "sidebar": "tutorialSidebar"
     },
     "three-part/apifox": {
@@ -214,30 +266,6 @@
       "description": "当扫描API成功后，双击将要调试的API。",
       "sidebar": "tutorialSidebar"
     },
-    "tutorial-basics/request_by_reflex": {
-      "id": "tutorial-basics/request_by_reflex",
-      "title": "发起反射请求",
-      "description": "普通HTTP请求的流程如下：",
-      "sidebar": "tutorialSidebar"
-    },
-    "tutorial-basics/request_timer": {
-      "id": "tutorial-basics/request_timer",
-      "title": "手动触发定时器",
-      "description": "手动触发定时器是Cool Request特色功能之一，他可以在运行时候，调用任意具有@Scheduled注解的方法，这样带来的好处是无需等待Spring自动调度，省去了开发人员调试定时器带来的麻烦。",
-      "sidebar": "tutorialSidebar"
-    },
-    "tutorial-basics/request_xxljob": {
-      "id": "tutorial-basics/request_xxljob",
-      "title": "手动触XXL-JOB任务",
-      "description": "手动触发定时器是Cool Request特色功能之一，他可以在运行时候，调用任意具有@XxlJob注解的方法，这样带来的好处是无需等待XXL-JOB自动调度，省去了开发人员调试定时器带来的麻烦。",
-      "sidebar": "tutorialSidebar"
-    },
-    "tutorial-basics/spring_gateway": {
-      "id": "tutorial-basics/spring_gateway",
-      "title": "Spring网关自动发现",
-      "description": "Cool Request在网关程序启动后，会自动提取网关配置的路劲，并添加到环境变量中，用户只需要根据实际修改配置即可。",
-      "sidebar": "tutorialSidebar"
-    },
     "tutorial-basics/startup": {
       "id": "tutorial-basics/startup",
       "title": "扫描API",
@@ -246,14 +274,8 @@
     },
     "tutorial-basics/static_server": {
       "id": "tutorial-basics/static_server",
-      "title": "创建静态服务",
+      "title": "创建静态资源服务器",
       "description": "Cool Request可以创建一个静态资源服务器，可方便对本机数据进行共享，操作方式如下：",
-      "sidebar": "tutorialSidebar"
-    },
-    "tutorial-basics/trace": {
-      "id": "tutorial-basics/trace",
-      "title": "统计方法耗时",
-      "description": "Cool Request可以追踪任意方法(除java包外)，将自动根据API入口函数向下推测所有方法，并统计各个方法的耗时。",
       "sidebar": "tutorialSidebar"
     },
     "tutorial-script/common": {

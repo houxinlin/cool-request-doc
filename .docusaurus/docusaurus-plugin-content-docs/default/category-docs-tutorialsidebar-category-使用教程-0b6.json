@@ -5,8 +5,8 @@
   "permalink": "/docs/category/使用教程",
   "navigation": {
     "previous": {
-      "title": "更新记录",
-      "permalink": "/docs/update_history"
+      "title": "手动触XXL-JOB任务",
+      "permalink": "/docs/feat/request_xxljob"
     },
     "next": {
       "title": "扫描API",

@@ -11,7 +11,9 @@ Cool Request提供了两种扫描项目API方式，Static和Dyanmic。
 
     Static扫描会尽可能多的扫描出API，但不会扫描第三方库中的数据，在IDEA 建立索引完成后自动触发一次Static扫描。
 
+
     ![Alt text](../images/static-refresh.png)
+
 
     :::tip
         Static扫描支持获取项目中定义的`server.port`和`server.servlet.context-path`，如果没有指定，则默认为`8080`和`/`,同时支持`spring.profiles.active`检测。

@@ -13,7 +13,7 @@ Cool Request提供了脚本，可以使用Java语法在请求前修改HTTP请求
 ![Alt text](../images/insert_code_temple.png)
 
 :::danger 警告
-由于Java自身原因，当使用脚本后，发起脚本速度会变慢。
+由于Java自身原因，当使用脚本后，发起请求速度会变慢。
 :::
 
 # 引入依赖
@@ -42,7 +42,6 @@ public boolean handlerRequest(ILog log, HTTPRequest request) {
     return true;
 }
 ```
-![Alt text](image.png)
 
 :::danger 警告
 项目类必须被编译后才可以调用，否则会出现"找不到类"情况，并且项目使用的JDK不得大于8，但这只是无法调用比JDK 8更高的API，在这种情况下，开发人员可以自行在脚本代码中编写所需代码。
