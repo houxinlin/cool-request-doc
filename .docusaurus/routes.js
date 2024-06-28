@@ -99,15 +99,15 @@ export default [
   },
   {
     path: '/docs',
-    component: ComponentCreator('/docs', '5b0'),
+    component: ComponentCreator('/docs', '64d'),
     routes: [
       {
         path: '/docs',
-        component: ComponentCreator('/docs', 'bb3'),
+        component: ComponentCreator('/docs', '440'),
         routes: [
           {
             path: '/docs',
-            component: ComponentCreator('/docs', '890'),
+            component: ComponentCreator('/docs', '222'),
             routes: [
               {
                 path: '/docs/category/第三方接入',
@@ -130,6 +130,18 @@ export default [
               {
                 path: '/docs/category/特色功能',
                 component: ComponentCreator('/docs/category/特色功能', 'bc9'),
+                exact: true,
+                sidebar: "tutorialSidebar"
+              },
+              {
+                path: '/docs/feat',
+                component: ComponentCreator('/docs/feat', '3cb'),
+                exact: true,
+                sidebar: "tutorialSidebar"
+              },
+              {
+                path: '/docs/feat/custom_function',
+                component: ComponentCreator('/docs/feat/custom_function', '7b9'),
                 exact: true,
                 sidebar: "tutorialSidebar"
               },

@@ -17,8 +17,8 @@
   },
   "sidebar": "tutorialSidebar",
   "previous": {
-    "title": "统计方法耗时",
-    "permalink": "/docs/feat/trace"
+    "title": "自定义函数",
+    "permalink": "/docs/feat/custom_function"
   },
   "next": {
     "title": "发起反射请求",

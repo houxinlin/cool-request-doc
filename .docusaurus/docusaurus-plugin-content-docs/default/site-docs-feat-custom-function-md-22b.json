@@ -1,0 +1,27 @@
+{
+  "id": "feat/custom_function",
+  "title": "自定义函数",
+  "description": "Cool Request拥有最强大得函数支持系统，当HTTP参数想要使用动态参数时，可根据自己需求，编写自定义函数。",
+  "source": "@site/docs/feat/custom_function.md",
+  "sourceDirName": "feat",
+  "slug": "/feat/custom_function",
+  "permalink": "/docs/feat/custom_function",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 2,
+  "frontMatter": {
+    "sidebar_position": 2,
+    "title": "自定义函数"
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "统计方法耗时",
+    "permalink": "/docs/feat/trace"
+  },
+  "next": {
+    "title": "调用任意方法",
+    "permalink": "/docs/feat/request_by_reflex copy"
+  }
+}

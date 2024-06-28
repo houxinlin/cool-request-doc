@@ -18,6 +18,59 @@
           "contentPathLocalized": "D:\\project\\web\\cool-request-doc\\i18n\\en\\docusaurus-plugin-content-docs\\current",
           "docs": [
             {
+              "id": "feat",
+              "title": "什么是Cool Request",
+              "description": "无力维护多个版本的文档，所有的文档针对最新版本",
+              "source": "@site/docs/feat.md",
+              "sourceDirName": ".",
+              "slug": "/feat",
+              "permalink": "/docs/feat",
+              "draft": false,
+              "unlisted": false,
+              "tags": [],
+              "version": "current",
+              "sidebarPosition": 2,
+              "frontMatter": {
+                "sidebar_position": 2
+              },
+              "sidebar": "tutorialSidebar",
+              "previous": {
+                "title": "手动触XXL-JOB任务",
+                "permalink": "/docs/feat/request_xxljob"
+              },
+              "next": {
+                "title": "使用教程",
+                "permalink": "/docs/category/使用教程"
+              }
+            },
+            {
+              "id": "feat/custom_function",
+              "title": "自定义函数",
+              "description": "Cool Request拥有最强大得函数支持系统，当HTTP参数想要使用动态参数时，可根据自己需求，编写自定义函数。",
+              "source": "@site/docs/feat/custom_function.md",
+              "sourceDirName": "feat",
+              "slug": "/feat/custom_function",
+              "permalink": "/docs/feat/custom_function",
+              "draft": false,
+              "unlisted": false,
+              "tags": [],
+              "version": "current",
+              "sidebarPosition": 2,
+              "frontMatter": {
+                "sidebar_position": 2,
+                "title": "自定义函数"
+              },
+              "sidebar": "tutorialSidebar",
+              "previous": {
+                "title": "统计方法耗时",
+                "permalink": "/docs/feat/trace"
+              },
+              "next": {
+                "title": "调用任意方法",
+                "permalink": "/docs/feat/request_by_reflex copy"
+              }
+            },
+            {
               "id": "feat/request_by_reflex",
               "title": "发起反射请求",
               "description": "发射请求可绕过系统中的拦截器，在开发时，可直接使请求进入到Controller方法。",
@@ -63,8 +116,8 @@
               },
               "sidebar": "tutorialSidebar",
               "previous": {
-                "title": "统计方法耗时",
-                "permalink": "/docs/feat/trace"
+                "title": "自定义函数",
+                "permalink": "/docs/feat/custom_function"
               },
               "next": {
                 "title": "发起反射请求",
@@ -121,14 +174,14 @@
                 "permalink": "/docs/feat/request_timer"
               },
               "next": {
-                "title": "使用教程",
-                "permalink": "/docs/category/使用教程"
+                "title": "什么是Cool Request",
+                "permalink": "/docs/feat"
               }
             },
             {
               "id": "feat/spring_gateway",
               "title": "Spring网关自动发现",
-              "description": "Cool Request在网关程序启动后，会自动提取网关配置的路劲，并添加到环境变量中，用户只需要根据实际修改配置即可。",
+              "description": "Cool Request在网关程序启动后，会自动提取网关配置的路径，并添加到环境变量中，用户只需要根据实际修改配置即可。",
               "source": "@site/docs/feat/spring_gateway.md",
               "sourceDirName": "feat",
               "slug": "/feat/spring_gateway",
@@ -175,8 +228,8 @@
                 "permalink": "/docs/category/特色功能"
               },
               "next": {
-                "title": "调用任意方法",
-                "permalink": "/docs/feat/request_by_reflex copy"
+                "title": "自定义函数",
+                "permalink": "/docs/feat/custom_function"
               }
             },
             {
@@ -352,63 +405,6 @@
               }
             },
             {
-<<<<<<< HEAD
-=======
-              "id": "tutorial-basics/request_xxljob",
-              "title": "手动触XXL-JOB任务",
-              "description": "手动触发定时器是Cool Request特色功能之一，他可以在运行时候，调用任意具有@XxlJob注解的方法，这样带来的好处是无需等待XXL-JOB自动调度，省去了开发人员调试定时器带来的麻烦。",
-              "source": "@site/docs/tutorial-basics/request_xxljob.md",
-              "sourceDirName": "tutorial-basics",
-              "slug": "/tutorial-basics/request_xxljob",
-              "permalink": "/docs/tutorial-basics/request_xxljob",
-              "draft": false,
-              "unlisted": false,
-              "tags": [],
-              "version": "current",
-              "sidebarPosition": 7,
-              "frontMatter": {
-                "sidebar_position": 7,
-                "title": "手动触XXL-JOB任务"
-              },
-              "sidebar": "tutorialSidebar",
-              "previous": {
-                "title": "创建静态服务",
-                "permalink": "/docs/tutorial-basics/static_server"
-              },
-              "next": {
-                "title": "导入cURL参数",
-                "permalink": "/docs/tutorial-basics/import_curl_param"
-              }
-            },
-            {
-              "id": "tutorial-basics/spring_gateway",
-              "title": "Spring网关自动发现",
-              "description": "Cool Request在网关程序启动后，会自动提取网关配置的路径，并添加到环境变量中，用户只需要根据实际修改配置即可。",
-              "source": "@site/docs/tutorial-basics/spring_gateway.md",
-              "sourceDirName": "tutorial-basics",
-              "slug": "/tutorial-basics/spring_gateway",
-              "permalink": "/docs/tutorial-basics/spring_gateway",
-              "draft": false,
-              "unlisted": false,
-              "tags": [],
-              "version": "current",
-              "sidebarPosition": 3,
-              "frontMatter": {
-                "sidebar_position": 3,
-                "title": "Spring网关自动发现"
-              },
-              "sidebar": "tutorialSidebar",
-              "previous": {
-                "title": "发起反射请求",
-                "permalink": "/docs/tutorial-basics/request_by_reflex"
-              },
-              "next": {
-                "title": "手动触发定时器",
-                "permalink": "/docs/tutorial-basics/request_timer"
-              }
-            },
-            {
->>>>>>> 3a28b1e6503d8368bb0238105875e9933ce8a1ad
               "id": "tutorial-basics/startup",
               "title": "扫描API",
               "description": "Cool Request提供了两种扫描项目API方式，Static和Dyanmic。",
@@ -567,7 +563,7 @@
             {
               "id": "update_history",
               "title": "更新记录",
-              "description": "1. 增加WebSocket测试",
+              "description": "1. 增加内网穿透、免费域名、免备案",
               "source": "@site/docs/update_history.md",
               "sourceDirName": ".",
               "slug": "/update_history",
@@ -615,6 +611,10 @@
                   },
                   {
                     "type": "doc",
+                    "id": "feat/custom_function"
+                  },
+                  {
+                    "type": "doc",
                     "id": "feat/request_by_reflex copy"
                   },
                   {
@@ -640,6 +640,10 @@
                   "slug": "/category/特色功能",
                   "permalink": "/docs/category/特色功能"
                 }
+              },
+              {
+                "type": "doc",
+                "id": "feat"
               },
               {
                 "type": "category",
