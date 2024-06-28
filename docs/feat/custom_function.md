@@ -21,3 +21,11 @@ public String custom(){
 在任意HTTP参数值中，通过`{{函数名}}`来引用此函数。
 
 ![Alt text](../images/function_example.png)
+
+
+# 关闭函数转换
+
+如果想关闭函数转换，可以设置中禁用
+
+
+![Alt text](../images/function_setting.png)
