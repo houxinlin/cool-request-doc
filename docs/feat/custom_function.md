@@ -11,7 +11,7 @@ Cool Request拥有最强大得函数支持系统，当HTTP参数想要使用动�
 
 ![Alt text](../images/function.png)
 
-例如想要增加一个自定义函数，可编译以下代码。
+例如想要增加一个自定义函数，可编写以下代码。
 ```java
 public String custom(){
     return "custom";
