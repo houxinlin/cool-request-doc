@@ -11,11 +11,6 @@
           "mainDocId": "intro",
           "docs": [
             {
-              "id": "feat",
-              "path": "/docs/feat",
-              "sidebar": "tutorialSidebar"
-            },
-            {
               "id": "feat/custom_function",
               "path": "/docs/feat/custom_function",
               "sidebar": "tutorialSidebar"

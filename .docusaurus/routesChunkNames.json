@@ -186,17 +186,17 @@
     },
     "content": "content---markdown-page-393-028"
   },
-  "/docs-64d": {
+  "/docs-408": {
     "__comp": "__comp---theme-docs-root-5-e-9-0b6",
     "__context": {
       "plugin": "plugin---docsfb-0-360"
     }
   },
-  "/docs-440": {
+  "/docs-c87": {
     "__comp": "__comp---theme-doc-version-roota-7-b-5de",
     "version": "version---docs-935-398"
   },
-  "/docs-222": {
+  "/docs-cbb": {
     "__comp": "__comp---theme-doc-roota-94-67a"
   },
   "/docs/category/第三方接入-176": {
@@ -214,10 +214,6 @@
   "/docs/category/特色功能-bc9": {
     "__comp": "__comp---theme-doc-category-generated-index-page-14-e-640",
     "categoryGeneratedIndex": "categoryGeneratedIndex---docs-category-特色功能f-8-d-149"
-  },
-  "/docs/feat-3cb": {
-    "__comp": "__comp---theme-doc-item-178-a40",
-    "content": "content---docs-feat-562-4da"
   },
   "/docs/feat/custom_function-7b9": {
     "__comp": "__comp---theme-doc-item-178-a40",
