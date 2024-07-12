@@ -5,8 +5,8 @@
   "permalink": "/docs/category/使用教程",
   "navigation": {
     "previous": {
-      "title": "手动触XXL-JOB任务",
-      "permalink": "/docs/feat/request_xxljob"
+      "title": "小工具开发",
+      "permalink": "/docs/feat/tools/"
     },
     "next": {
       "title": "扫描API",

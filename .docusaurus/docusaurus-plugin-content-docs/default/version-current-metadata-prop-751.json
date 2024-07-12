@@ -77,6 +77,21 @@
             "href": "/docs/feat/request_xxljob",
             "docId": "feat/request_xxljob",
             "unlisted": false
+          },
+          {
+            "type": "category",
+            "label": "小工具",
+            "collapsible": false,
+            "collapsed": false,
+            "items": [
+              {
+                "type": "link",
+                "label": "小工具开发",
+                "href": "/docs/feat/tools/",
+                "docId": "feat/tools/tools",
+                "unlisted": false
+              }
+            ]
           }
         ],
         "href": "/docs/category/特色功能"
@@ -229,6 +244,12 @@
       "id": "feat/spring_gateway",
       "title": "Spring网关自动发现",
       "description": "Cool Request在网关程序启动后，会自动提取网关配置的路径，并添加到环境变量中，用户只需要根据实际修改配置即可。",
+      "sidebar": "tutorialSidebar"
+    },
+    "feat/tools/tools": {
+      "id": "feat/tools/tools",
+      "title": "小工具开发",
+      "description": "Cool Request在v2024.7.15中增加了小工具，并且广大用户可自行开发小工具，同时可安装官方所提供的工具库。",
       "sidebar": "tutorialSidebar"
     },
     "feat/trace": {

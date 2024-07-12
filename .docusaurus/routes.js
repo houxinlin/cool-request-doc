@@ -99,15 +99,15 @@ export default [
   },
   {
     path: '/docs',
-    component: ComponentCreator('/docs', '408'),
+    component: ComponentCreator('/docs', '0ba'),
     routes: [
       {
         path: '/docs',
-        component: ComponentCreator('/docs', 'c87'),
+        component: ComponentCreator('/docs', '27a'),
         routes: [
           {
             path: '/docs',
-            component: ComponentCreator('/docs', 'cbb'),
+            component: ComponentCreator('/docs', '693'),
             routes: [
               {
                 path: '/docs/category/第三方接入',
@@ -166,6 +166,12 @@ export default [
               {
                 path: '/docs/feat/spring_gateway',
                 component: ComponentCreator('/docs/feat/spring_gateway', '9bd'),
+                exact: true,
+                sidebar: "tutorialSidebar"
+              },
+              {
+                path: '/docs/feat/tools/',
+                component: ComponentCreator('/docs/feat/tools/', '702'),
                 exact: true,
                 sidebar: "tutorialSidebar"
               },

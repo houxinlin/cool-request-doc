@@ -41,6 +41,11 @@
               "sidebar": "tutorialSidebar"
             },
             {
+              "id": "feat/tools/tools",
+              "path": "/docs/feat/tools/",
+              "sidebar": "tutorialSidebar"
+            },
+            {
               "id": "feat/trace",
               "path": "/docs/feat/trace",
               "sidebar": "tutorialSidebar"
