@@ -26,8 +26,9 @@ function HomepageHeader() {
             快速开始 ⏱️
           </Link>
           <a
+            
             className="button button--primary button--lg download-btn"
-            href="https://plugins.jetbrains.com/plugin/download?rel=true&updateId=503073"
+            href="https://plugins.jetbrains.com/plugin/23555-cool-request/versions"
             download
           >
             下载
