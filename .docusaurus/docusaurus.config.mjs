@@ -64,6 +64,13 @@ export default {
           "label": "VIP"
         },
         {
+          "href": "https://vip.coolrequest.dev/tools",
+          "type": "docSidebar",
+          "sidebarId": "tutorialSidebar",
+          "position": "left",
+          "label": "小工具"
+        },
+        {
           "href": "https://github.com/houxinlin/cool-request",
           "html": "\n            <img\n              src=\"https://img.shields.io/github/stars/houxinlin/cool-request?style=social\"\n              alt=\"GitHub Stars\"\n              style=\"vertical-align: middle\"\n            />\n          ",
           "position": "right"
