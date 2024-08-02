@@ -89,6 +89,13 @@ const config = {
             label: 'VIP',
           },
           {
+            href: 'https://vip.coolrequest.dev/tools',
+            type: 'docSidebar',
+            sidebarId: 'tutorialSidebar',
+            position: 'left',
+            label: '小工具',
+          },
+          {
             href: 'https://github.com/houxinlin/cool-request',
             html: `
             <img
