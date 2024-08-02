@@ -2,7 +2,14 @@
 sidebar_position: 1
 title: 更新记录
 ---
-# v2024.8.1(开发中..)
+# v2024.8.15(开发中..)
+
+# v2024.8.1
+1. 增加Cookie管理
+2. 增加Trace方法参数查看
+3. 增加Tab标签可浮动
+4. 增加URL Post Processor，可自由生成url
+5. 优化响应显示格式，自动格式化json、xml
 
 # v2024.7.15
 1. HTTP参数参数数量概要
