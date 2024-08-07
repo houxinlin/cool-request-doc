@@ -1,7 +1,7 @@
 {
   "id": "update_history",
   "title": "更新记录",
-  "description": "1. HTTP参数参数数量概要",
+  "description": "1. 增加Cookie管理",
   "source": "@site/docs/update_history.md",
   "sourceDirName": ".",
   "slug": "/update_history",

@@ -38,16 +38,16 @@
           },
           {
             "type": "link",
-            "label": "自定义函数",
-            "href": "/docs/feat/custom_function",
-            "docId": "feat/custom_function",
+            "label": "调用任意方法",
+            "href": "/docs/feat/call_this_method",
+            "docId": "feat/call_this_method",
             "unlisted": false
           },
           {
             "type": "link",
-            "label": "调用任意方法",
-            "href": "/docs/feat/request_by_reflex copy",
-            "docId": "feat/request_by_reflex copy",
+            "label": "自定义函数",
+            "href": "/docs/feat/custom_function",
+            "docId": "feat/custom_function",
             "unlisted": false
           },
           {
@@ -210,6 +210,12 @@
     ]
   },
   "docs": {
+    "feat/call_this_method": {
+      "id": "feat/call_this_method",
+      "title": "调用任意方法",
+      "description": "Cool Request支持在SpringBoot运行时调用任意容器内实例的方法、同时也包括静态方法。",
+      "sidebar": "tutorialSidebar"
+    },
     "feat/custom_function": {
       "id": "feat/custom_function",
       "title": "自定义函数",
@@ -220,12 +226,6 @@
       "id": "feat/request_by_reflex",
       "title": "发起反射请求",
       "description": "发射请求可绕过系统中的拦截器，在开发时，可直接使请求进入到Controller方法。",
-      "sidebar": "tutorialSidebar"
-    },
-    "feat/request_by_reflex copy": {
-      "id": "feat/request_by_reflex copy",
-      "title": "调用任意方法",
-      "description": "Cool Request支持在SpringBoot运行时调用任意容器内实例的方法、同时也包括静态方法。",
       "sidebar": "tutorialSidebar"
     },
     "feat/request_timer": {
@@ -339,7 +339,7 @@
     "update_history": {
       "id": "update_history",
       "title": "更新记录",
-      "description": "1. HTTP参数参数数量概要",
+      "description": "1. 增加Cookie管理",
       "sidebar": "tutorialSidebar"
     }
   }

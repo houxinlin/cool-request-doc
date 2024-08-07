@@ -17,11 +17,11 @@
   },
   "sidebar": "tutorialSidebar",
   "previous": {
-    "title": "统计方法耗时",
-    "permalink": "/docs/feat/trace"
+    "title": "调用任意方法",
+    "permalink": "/docs/feat/call_this_method"
   },
   "next": {
-    "title": "调用任意方法",
-    "permalink": "/docs/feat/request_by_reflex copy"
+    "title": "发起反射请求",
+    "permalink": "/docs/feat/request_by_reflex"
   }
 }

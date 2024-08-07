@@ -17,8 +17,8 @@
   },
   "sidebar": "tutorialSidebar",
   "previous": {
-    "title": "调用任意方法",
-    "permalink": "/docs/feat/request_by_reflex copy"
+    "title": "自定义函数",
+    "permalink": "/docs/feat/custom_function"
   },
   "next": {
     "title": "Spring网关自动发现",

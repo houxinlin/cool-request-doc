@@ -11,6 +11,11 @@
           "mainDocId": "intro",
           "docs": [
             {
+              "id": "feat/call_this_method",
+              "path": "/docs/feat/call_this_method",
+              "sidebar": "tutorialSidebar"
+            },
+            {
               "id": "feat/custom_function",
               "path": "/docs/feat/custom_function",
               "sidebar": "tutorialSidebar"
@@ -18,11 +23,6 @@
             {
               "id": "feat/request_by_reflex",
               "path": "/docs/feat/request_by_reflex",
-              "sidebar": "tutorialSidebar"
-            },
-            {
-              "id": "feat/request_by_reflex copy",
-              "path": "/docs/feat/request_by_reflex copy",
               "sidebar": "tutorialSidebar"
             },
             {
