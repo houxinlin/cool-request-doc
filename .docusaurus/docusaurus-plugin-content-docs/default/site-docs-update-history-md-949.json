@@ -1,7 +1,7 @@
 {
   "id": "update_history",
   "title": "更新记录",
-  "description": "1. 增加Cookie管理",
+  "description": "1. 优化方法调用",
   "source": "@site/docs/update_history.md",
   "sourceDirName": ".",
   "slug": "/update_history",

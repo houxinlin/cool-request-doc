@@ -65,20 +65,6 @@
             "unlisted": false
           },
           {
-            "type": "link",
-            "label": "手动触发定时器",
-            "href": "/docs/feat/request_timer",
-            "docId": "feat/request_timer",
-            "unlisted": false
-          },
-          {
-            "type": "link",
-            "label": "手动触XXL-JOB任务",
-            "href": "/docs/feat/request_xxljob",
-            "docId": "feat/request_xxljob",
-            "unlisted": false
-          },
-          {
             "type": "category",
             "label": "小工具",
             "collapsible": false,
@@ -121,6 +107,13 @@
             "label": "环境配置",
             "href": "/docs/tutorial-basics/env_config",
             "docId": "tutorial-basics/env_config",
+            "unlisted": false
+          },
+          {
+            "type": "link",
+            "label": "快速复制url信息",
+            "href": "/docs/tutorial-basics/quick_copy",
+            "docId": "tutorial-basics/quick_copy",
             "unlisted": false
           },
           {
@@ -228,18 +221,6 @@
       "description": "发射请求可绕过系统中的拦截器，在开发时，可直接使请求进入到Controller方法。",
       "sidebar": "tutorialSidebar"
     },
-    "feat/request_timer": {
-      "id": "feat/request_timer",
-      "title": "手动触发定时器",
-      "description": "手动触发定时器是Cool Request特色功能之一，他可以在运行时候，调用任意具有@Scheduled注解的方法，这样带来的好处是无需等待Spring自动调度，省去了开发人员调试定时器带来的麻烦。",
-      "sidebar": "tutorialSidebar"
-    },
-    "feat/request_xxljob": {
-      "id": "feat/request_xxljob",
-      "title": "手动触XXL-JOB任务",
-      "description": "手动触发定时器是Cool Request特色功能之一，他可以在运行时候，调用任意具有@XxlJob注解的方法，这样带来的好处是无需等待XXL-JOB自动调度，省去了开发人员调试定时器带来的麻烦。",
-      "sidebar": "tutorialSidebar"
-    },
     "feat/spring_gateway": {
       "id": "feat/spring_gateway",
       "title": "Spring网关自动发现",
@@ -294,6 +275,12 @@
       "description": "Cool Request可以快速导入cURL中的参数，以方便开发人员，操作方式如下。",
       "sidebar": "tutorialSidebar"
     },
+    "tutorial-basics/quick_copy": {
+      "id": "tutorial-basics/quick_copy",
+      "title": "快速复制url信息",
+      "description": "右击方法左侧Cool Request图标，可快速复制url信息",
+      "sidebar": "tutorialSidebar"
+    },
     "tutorial-basics/request": {
       "id": "tutorial-basics/request",
       "title": "发起HTTP请求",
@@ -339,7 +326,7 @@
     "update_history": {
       "id": "update_history",
       "title": "更新记录",
-      "description": "1. 增加Cookie管理",
+      "description": "1. 优化方法调用",
       "sidebar": "tutorialSidebar"
     }
   }

@@ -26,16 +26,6 @@
               "sidebar": "tutorialSidebar"
             },
             {
-              "id": "feat/request_timer",
-              "path": "/docs/feat/request_timer",
-              "sidebar": "tutorialSidebar"
-            },
-            {
-              "id": "feat/request_xxljob",
-              "path": "/docs/feat/request_xxljob",
-              "sidebar": "tutorialSidebar"
-            },
-            {
               "id": "feat/spring_gateway",
               "path": "/docs/feat/spring_gateway",
               "sidebar": "tutorialSidebar"
@@ -78,6 +68,11 @@
             {
               "id": "tutorial-basics/import_curl_param",
               "path": "/docs/tutorial-basics/import_curl_param",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "tutorial-basics/quick_copy",
+              "path": "/docs/tutorial-basics/quick_copy",
               "sidebar": "tutorialSidebar"
             },
             {

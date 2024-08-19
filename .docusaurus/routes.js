@@ -99,15 +99,15 @@ export default [
   },
   {
     path: '/docs',
-    component: ComponentCreator('/docs', '3c2'),
+    component: ComponentCreator('/docs', 'ba7'),
     routes: [
       {
         path: '/docs',
-        component: ComponentCreator('/docs', 'b82'),
+        component: ComponentCreator('/docs', '438'),
         routes: [
           {
             path: '/docs',
-            component: ComponentCreator('/docs', '5a9'),
+            component: ComponentCreator('/docs', 'b04'),
             routes: [
               {
                 path: '/docs/category/第三方接入',
@@ -148,18 +148,6 @@ export default [
               {
                 path: '/docs/feat/request_by_reflex',
                 component: ComponentCreator('/docs/feat/request_by_reflex', '22b'),
-                exact: true,
-                sidebar: "tutorialSidebar"
-              },
-              {
-                path: '/docs/feat/request_timer',
-                component: ComponentCreator('/docs/feat/request_timer', 'e27'),
-                exact: true,
-                sidebar: "tutorialSidebar"
-              },
-              {
-                path: '/docs/feat/request_xxljob',
-                component: ComponentCreator('/docs/feat/request_xxljob', '5a6'),
                 exact: true,
                 sidebar: "tutorialSidebar"
               },
@@ -214,6 +202,12 @@ export default [
               {
                 path: '/docs/tutorial-basics/import_curl_param',
                 component: ComponentCreator('/docs/tutorial-basics/import_curl_param', '1f8'),
+                exact: true,
+                sidebar: "tutorialSidebar"
+              },
+              {
+                path: '/docs/tutorial-basics/quick_copy',
+                component: ComponentCreator('/docs/tutorial-basics/quick_copy', '414'),
                 exact: true,
                 sidebar: "tutorialSidebar"
               },

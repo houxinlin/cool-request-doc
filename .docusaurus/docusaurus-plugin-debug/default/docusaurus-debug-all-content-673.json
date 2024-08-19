@@ -99,59 +99,6 @@
               }
             },
             {
-              "id": "feat/request_timer",
-              "title": "手动触发定时器",
-              "description": "手动触发定时器是Cool Request特色功能之一，他可以在运行时候，调用任意具有@Scheduled注解的方法，这样带来的好处是无需等待Spring自动调度，省去了开发人员调试定时器带来的麻烦。",
-              "source": "@site/docs/feat/request_timer.md",
-              "sourceDirName": "feat",
-              "slug": "/feat/request_timer",
-              "permalink": "/docs/feat/request_timer",
-              "draft": false,
-              "unlisted": false,
-              "tags": [],
-              "version": "current",
-              "sidebarPosition": 6,
-              "frontMatter": {
-                "sidebar_position": 6,
-                "title": "手动触发定时器"
-              },
-              "sidebar": "tutorialSidebar",
-              "previous": {
-                "title": "Spring网关自动发现",
-                "permalink": "/docs/feat/spring_gateway"
-              },
-              "next": {
-                "title": "手动触XXL-JOB任务",
-                "permalink": "/docs/feat/request_xxljob"
-              }
-            },
-            {
-              "id": "feat/request_xxljob",
-              "title": "手动触XXL-JOB任务",
-              "description": "手动触发定时器是Cool Request特色功能之一，他可以在运行时候，调用任意具有@XxlJob注解的方法，这样带来的好处是无需等待XXL-JOB自动调度，省去了开发人员调试定时器带来的麻烦。",
-              "source": "@site/docs/feat/request_xxljob.md",
-              "sourceDirName": "feat",
-              "slug": "/feat/request_xxljob",
-              "permalink": "/docs/feat/request_xxljob",
-              "draft": false,
-              "unlisted": false,
-              "tags": [],
-              "version": "current",
-              "sidebarPosition": 7,
-              "frontMatter": {
-                "sidebar_position": 7,
-                "title": "手动触XXL-JOB任务"
-              },
-              "sidebar": "tutorialSidebar",
-              "previous": {
-                "title": "手动触发定时器",
-                "permalink": "/docs/feat/request_timer"
-              },
-              "next": {
-                "title": "小工具"
-              }
-            },
-            {
               "id": "feat/spring_gateway",
               "title": "Spring网关自动发现",
               "description": "Cool Request在网关程序启动后，会自动提取网关配置的路径，并添加到环境变量中，用户只需要根据实际修改配置即可。",
@@ -174,8 +121,7 @@
                 "permalink": "/docs/feat/request_by_reflex"
               },
               "next": {
-                "title": "手动触发定时器",
-                "permalink": "/docs/feat/request_timer"
+                "title": "小工具"
               }
             },
             {
@@ -345,8 +291,8 @@
                 "permalink": "/docs/tutorial-basics/api_search"
               },
               "next": {
-                "title": "发起HTTP请求",
-                "permalink": "/docs/tutorial-basics/request"
+                "title": "快速复制url信息",
+                "permalink": "/docs/tutorial-basics/quick_copy"
               }
             },
             {
@@ -377,6 +323,33 @@
               }
             },
             {
+              "id": "tutorial-basics/quick_copy",
+              "title": "快速复制url信息",
+              "description": "右击方法左侧Cool Request图标，可快速复制url信息",
+              "source": "@site/docs/tutorial-basics/quick_copy.md",
+              "sourceDirName": "tutorial-basics",
+              "slug": "/tutorial-basics/quick_copy",
+              "permalink": "/docs/tutorial-basics/quick_copy",
+              "draft": false,
+              "unlisted": false,
+              "tags": [],
+              "version": "current",
+              "sidebarPosition": 2,
+              "frontMatter": {
+                "sidebar_position": 2,
+                "title": "快速复制url信息"
+              },
+              "sidebar": "tutorialSidebar",
+              "previous": {
+                "title": "环境配置",
+                "permalink": "/docs/tutorial-basics/env_config"
+              },
+              "next": {
+                "title": "发起HTTP请求",
+                "permalink": "/docs/tutorial-basics/request"
+              }
+            },
+            {
               "id": "tutorial-basics/request",
               "title": "发起HTTP请求",
               "description": "当扫描API成功后，双击将要调试的API。",
@@ -395,8 +368,8 @@
               },
               "sidebar": "tutorialSidebar",
               "previous": {
-                "title": "环境配置",
-                "permalink": "/docs/tutorial-basics/env_config"
+                "title": "快速复制url信息",
+                "permalink": "/docs/tutorial-basics/quick_copy"
               },
               "next": {
                 "title": "创建静态资源服务器",
@@ -562,7 +535,7 @@
             {
               "id": "update_history",
               "title": "更新记录",
-              "description": "1. 增加Cookie管理",
+              "description": "1. 优化方法调用",
               "source": "@site/docs/update_history.md",
               "sourceDirName": ".",
               "slug": "/update_history",
@@ -625,14 +598,6 @@
                     "id": "feat/spring_gateway"
                   },
                   {
-                    "type": "doc",
-                    "id": "feat/request_timer"
-                  },
-                  {
-                    "type": "doc",
-                    "id": "feat/request_xxljob"
-                  },
-                  {
                     "type": "category",
                     "label": "小工具",
                     "collapsible": false,
@@ -670,6 +635,10 @@
                   {
                     "type": "doc",
                     "id": "tutorial-basics/env_config"
+                  },
+                  {
+                    "type": "doc",
+                    "id": "tutorial-basics/quick_copy"
                   },
                   {
                     "type": "doc",

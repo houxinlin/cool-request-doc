@@ -17,8 +17,8 @@
   },
   "sidebar": "tutorialSidebar",
   "previous": {
-    "title": "环境配置",
-    "permalink": "/docs/tutorial-basics/env_config"
+    "title": "快速复制url信息",
+    "permalink": "/docs/tutorial-basics/quick_copy"
   },
   "next": {
     "title": "创建静态资源服务器",
