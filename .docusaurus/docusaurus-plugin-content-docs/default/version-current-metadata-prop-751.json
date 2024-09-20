@@ -199,6 +199,13 @@
           }
         ],
         "href": "/docs/category/第三方接入"
+      },
+      {
+        "type": "link",
+        "label": "常见问题",
+        "href": "/docs/problem",
+        "docId": "problem",
+        "unlisted": false
       }
     ]
   },
@@ -243,6 +250,12 @@
       "id": "intro",
       "title": "什么是Cool Request",
       "description": "无力维护多个版本的文档，所有的文档针对最新版本",
+      "sidebar": "tutorialSidebar"
+    },
+    "problem": {
+      "id": "problem",
+      "title": "常见问题",
+      "description": "问:  请求脚本中无法设置HTTP Origin等头",
       "sidebar": "tutorialSidebar"
     },
     "three-part/apifox": {
@@ -326,7 +339,7 @@
     "update_history": {
       "id": "update_history",
       "title": "更新记录",
-      "description": "1. 优化方法调用",
+      "description": "1. 优化cURL导入，支持分析Path参数",
       "sidebar": "tutorialSidebar"
     }
   }

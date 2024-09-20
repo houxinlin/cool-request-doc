@@ -99,15 +99,15 @@ export default [
   },
   {
     path: '/docs',
-    component: ComponentCreator('/docs', 'ba7'),
+    component: ComponentCreator('/docs', '4b5'),
     routes: [
       {
         path: '/docs',
-        component: ComponentCreator('/docs', '438'),
+        component: ComponentCreator('/docs', 'a12'),
         routes: [
           {
             path: '/docs',
-            component: ComponentCreator('/docs', 'b04'),
+            component: ComponentCreator('/docs', '6fd'),
             routes: [
               {
                 path: '/docs/category/第三方接入',
@@ -172,6 +172,12 @@ export default [
               {
                 path: '/docs/intro',
                 component: ComponentCreator('/docs/intro', 'aed'),
+                exact: true,
+                sidebar: "tutorialSidebar"
+              },
+              {
+                path: '/docs/problem',
+                component: ComponentCreator('/docs/problem', '3ee'),
                 exact: true,
                 sidebar: "tutorialSidebar"
               },

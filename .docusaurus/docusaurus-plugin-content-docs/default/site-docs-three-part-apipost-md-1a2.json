@@ -15,5 +15,9 @@
   "previous": {
     "title": "apifox",
     "permalink": "/docs/three-part/apifox"
+  },
+  "next": {
+    "title": "常见问题",
+    "permalink": "/docs/problem"
   }
 }

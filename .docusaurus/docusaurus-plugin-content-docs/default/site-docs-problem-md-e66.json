@@ -1,0 +1,23 @@
+{
+  "id": "problem",
+  "title": "常见问题",
+  "description": "问:  请求脚本中无法设置HTTP Origin等头",
+  "source": "@site/docs/problem.md",
+  "sourceDirName": ".",
+  "slug": "/problem",
+  "permalink": "/docs/problem",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 10,
+  "frontMatter": {
+    "sidebar_position": 10,
+    "title": "常见问题"
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "apipost",
+    "permalink": "/docs/three-part/apipost"
+  }
+}
