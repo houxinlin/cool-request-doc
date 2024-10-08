@@ -2,6 +2,15 @@
 sidebar_position: 1
 title: 更新记录
 ---
+# v2024.10.15（马上发布）
+1. 增加gRPC调用
+2. 增加压力测试
+3. 支持form-data中填写json
+4. 提升API扫描速度
+5. 增加test模块下方法快速执行
+6. 增加call this method前后置脚本
+7. 优化部分功能体验
+
 # v2024.9.1
 1. 优化cURL导入，支持分析Path参数
 2. 支持Rose框架
