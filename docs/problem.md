@@ -14,3 +14,11 @@ title: 常见问题
 
 然后重启idea。
 ```
+
+#### 问：安装插件后无法启动项目
+
+```
+Cool Request得一些高级功能需要依靠SpringBoot得自动配置，故而需要一个Starter。
+如果出现无法启动得情况，可能是这个Starter与项目版本出现问题，
+可在Cool Request设置中禁用高级特性，但如Call this method等功能会无法使用。
+```

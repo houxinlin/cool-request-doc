@@ -31,6 +31,20 @@
         "items": [
           {
             "type": "link",
+            "label": "压力测试",
+            "href": "/docs/feat/stress_test",
+            "docId": "feat/stress_test",
+            "unlisted": false
+          },
+          {
+            "type": "link",
+            "label": "快速测试代码",
+            "href": "/docs/feat/test",
+            "docId": "feat/test",
+            "unlisted": false
+          },
+          {
+            "type": "link",
             "label": "统计方法耗时",
             "href": "/docs/feat/trace",
             "docId": "feat/trace",
@@ -234,6 +248,18 @@
       "description": "Cool Request在网关程序启动后，会自动提取网关配置的路径，并添加到环境变量中，用户只需要根据实际修改配置即可。",
       "sidebar": "tutorialSidebar"
     },
+    "feat/stress_test": {
+      "id": "feat/stress_test",
+      "title": "压力测试",
+      "description": "压力测试提供了简单的并发请求，可选择调用次数以及线程数，暂无指标分析。",
+      "sidebar": "tutorialSidebar"
+    },
+    "feat/test": {
+      "id": "feat/test",
+      "title": "快速测试代码",
+      "description": "快速测试代码基于正在运行的SpringBoot程序，将当前代码自动编译后注入到SpringBoot程序中，使代码快速生效，从而无需启动SpringBoot。",
+      "sidebar": "tutorialSidebar"
+    },
     "feat/tools/tools": {
       "id": "feat/tools/tools",
       "title": "小工具开发",
@@ -339,7 +365,7 @@
     "update_history": {
       "id": "update_history",
       "title": "更新记录",
-      "description": "1. 优化cURL导入，支持分析Path参数",
+      "description": "1. 增加gRPC调用",
       "sidebar": "tutorialSidebar"
     }
   }

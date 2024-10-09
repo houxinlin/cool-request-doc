@@ -9,8 +9,8 @@
       "permalink": "/docs/update_history"
     },
     "next": {
-      "title": "统计方法耗时",
-      "permalink": "/docs/feat/trace"
+      "title": "压力测试",
+      "permalink": "/docs/feat/stress_test"
     }
   }
 }

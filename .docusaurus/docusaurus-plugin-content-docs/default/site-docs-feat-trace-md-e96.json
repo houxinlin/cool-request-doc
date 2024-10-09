@@ -17,8 +17,8 @@
   },
   "sidebar": "tutorialSidebar",
   "previous": {
-    "title": "特色功能",
-    "permalink": "/docs/category/特色功能"
+    "title": "快速测试代码",
+    "permalink": "/docs/feat/test"
   },
   "next": {
     "title": "调用任意方法",

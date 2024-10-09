@@ -31,6 +31,16 @@
               "sidebar": "tutorialSidebar"
             },
             {
+              "id": "feat/stress_test",
+              "path": "/docs/feat/stress_test",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "feat/test",
+              "path": "/docs/feat/test",
+              "sidebar": "tutorialSidebar"
+            },
+            {
               "id": "feat/tools/tools",
               "path": "/docs/feat/tools/",
               "sidebar": "tutorialSidebar"

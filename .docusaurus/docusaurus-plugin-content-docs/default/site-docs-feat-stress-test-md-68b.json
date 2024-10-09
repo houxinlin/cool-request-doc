@@ -1,0 +1,27 @@
+{
+  "id": "feat/stress_test",
+  "title": "压力测试",
+  "description": "压力测试提供了简单的并发请求，可选择调用次数以及线程数，暂无指标分析。",
+  "source": "@site/docs/feat/stress_test.md",
+  "sourceDirName": "feat",
+  "slug": "/feat/stress_test",
+  "permalink": "/docs/feat/stress_test",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 1,
+  "frontMatter": {
+    "sidebar_position": 1,
+    "title": "压力测试"
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "特色功能",
+    "permalink": "/docs/category/特色功能"
+  },
+  "next": {
+    "title": "快速测试代码",
+    "permalink": "/docs/feat/test"
+  }
+}

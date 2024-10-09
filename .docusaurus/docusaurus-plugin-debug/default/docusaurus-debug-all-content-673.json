@@ -125,6 +125,60 @@
               }
             },
             {
+              "id": "feat/stress_test",
+              "title": "压力测试",
+              "description": "压力测试提供了简单的并发请求，可选择调用次数以及线程数，暂无指标分析。",
+              "source": "@site/docs/feat/stress_test.md",
+              "sourceDirName": "feat",
+              "slug": "/feat/stress_test",
+              "permalink": "/docs/feat/stress_test",
+              "draft": false,
+              "unlisted": false,
+              "tags": [],
+              "version": "current",
+              "sidebarPosition": 1,
+              "frontMatter": {
+                "sidebar_position": 1,
+                "title": "压力测试"
+              },
+              "sidebar": "tutorialSidebar",
+              "previous": {
+                "title": "特色功能",
+                "permalink": "/docs/category/特色功能"
+              },
+              "next": {
+                "title": "快速测试代码",
+                "permalink": "/docs/feat/test"
+              }
+            },
+            {
+              "id": "feat/test",
+              "title": "快速测试代码",
+              "description": "快速测试代码基于正在运行的SpringBoot程序，将当前代码自动编译后注入到SpringBoot程序中，使代码快速生效，从而无需启动SpringBoot。",
+              "source": "@site/docs/feat/test.md",
+              "sourceDirName": "feat",
+              "slug": "/feat/test",
+              "permalink": "/docs/feat/test",
+              "draft": false,
+              "unlisted": false,
+              "tags": [],
+              "version": "current",
+              "sidebarPosition": 1,
+              "frontMatter": {
+                "sidebar_position": 1,
+                "title": "快速测试代码"
+              },
+              "sidebar": "tutorialSidebar",
+              "previous": {
+                "title": "压力测试",
+                "permalink": "/docs/feat/stress_test"
+              },
+              "next": {
+                "title": "统计方法耗时",
+                "permalink": "/docs/feat/trace"
+              }
+            },
+            {
               "id": "feat/tools/tools",
               "title": "小工具开发",
               "description": "Cool Request在v2024.7.15中增加了小工具，并且广大用户可自行开发小工具，同时可安装官方所提供的工具库。",
@@ -169,8 +223,8 @@
               },
               "sidebar": "tutorialSidebar",
               "previous": {
-                "title": "特色功能",
-                "permalink": "/docs/category/特色功能"
+                "title": "快速测试代码",
+                "permalink": "/docs/feat/test"
               },
               "next": {
                 "title": "调用任意方法",
@@ -562,7 +616,7 @@
             {
               "id": "update_history",
               "title": "更新记录",
-              "description": "1. 优化cURL导入，支持分析Path参数",
+              "description": "1. 增加gRPC调用",
               "source": "@site/docs/update_history.md",
               "sourceDirName": ".",
               "slug": "/update_history",
@@ -604,6 +658,14 @@
                 "collapsible": false,
                 "collapsed": false,
                 "items": [
+                  {
+                    "type": "doc",
+                    "id": "feat/stress_test"
+                  },
+                  {
+                    "type": "doc",
+                    "id": "feat/test"
+                  },
                   {
                     "type": "doc",
                     "id": "feat/trace"
