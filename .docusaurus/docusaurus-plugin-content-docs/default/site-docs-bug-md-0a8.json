@@ -1,0 +1,27 @@
+{
+  "id": "bug",
+  "title": "已知bug",
+  "description": "这里有一些已经发现的bug，以及解决方案，已知bug将在下个版本解决。",
+  "source": "@site/docs/bug.md",
+  "sourceDirName": ".",
+  "slug": "/bug",
+  "permalink": "/docs/bug",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 2,
+  "frontMatter": {
+    "sidebar_position": 2,
+    "title": "已知bug"
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "更新记录",
+    "permalink": "/docs/update_history"
+  },
+  "next": {
+    "title": "特色功能",
+    "permalink": "/docs/category/特色功能"
+  }
+}

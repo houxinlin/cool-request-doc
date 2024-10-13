@@ -11,6 +11,11 @@
           "mainDocId": "intro",
           "docs": [
             {
+              "id": "bug",
+              "path": "/docs/bug",
+              "sidebar": "tutorialSidebar"
+            },
+            {
               "id": "feat/call_this_method",
               "path": "/docs/feat/call_this_method",
               "sidebar": "tutorialSidebar"

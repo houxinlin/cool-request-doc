@@ -24,6 +24,13 @@
         "unlisted": false
       },
       {
+        "type": "link",
+        "label": "已知bug",
+        "href": "/docs/bug",
+        "docId": "bug",
+        "unlisted": false
+      },
+      {
         "type": "category",
         "label": "特色功能",
         "collapsible": false,
@@ -224,6 +231,12 @@
     ]
   },
   "docs": {
+    "bug": {
+      "id": "bug",
+      "title": "已知bug",
+      "description": "这里有一些已经发现的bug，以及解决方案，已知bug将在下个版本解决。",
+      "sidebar": "tutorialSidebar"
+    },
     "feat/call_this_method": {
       "id": "feat/call_this_method",
       "title": "调用任意方法",

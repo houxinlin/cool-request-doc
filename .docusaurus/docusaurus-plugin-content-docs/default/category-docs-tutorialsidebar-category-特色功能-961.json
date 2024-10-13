@@ -5,8 +5,8 @@
   "permalink": "/docs/category/特色功能",
   "navigation": {
     "previous": {
-      "title": "更新记录",
-      "permalink": "/docs/update_history"
+      "title": "已知bug",
+      "permalink": "/docs/bug"
     },
     "next": {
       "title": "压力测试",

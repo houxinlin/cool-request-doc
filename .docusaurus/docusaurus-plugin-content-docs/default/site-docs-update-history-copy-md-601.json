@@ -1,11 +1,11 @@
 {
-  "id": "update_history",
+  "id": "update_history copy",
   "title": "更新记录",
   "description": "1. 增加gRPC调用",
-  "source": "@site/docs/update_history.md",
+  "source": "@site/docs/update_history copy.md",
   "sourceDirName": ".",
-  "slug": "/update_history",
-  "permalink": "/docs/update_history",
+  "slug": "/update_history copy",
+  "permalink": "/docs/update_history copy",
   "draft": false,
   "unlisted": false,
   "tags": [],
@@ -21,7 +21,7 @@
     "permalink": "/docs/intro"
   },
   "next": {
-    "title": "已知bug",
-    "permalink": "/docs/bug"
+    "title": "更新记录",
+    "permalink": "/docs/update_history"
   }
 }
