@@ -11,3 +11,9 @@ title: 已知bug
     解决方案:
         
         1. 在自定义环境地址中，增加context-path部分，如`http://192.168.13.5:8080/context`，或者`http://192.168.13.5:8080/`，但不可以是`http://192.168.13.5:8080`
+
+2. call this method在调用具有Class参数对象后，无法再次发起。原因是一些转移字符。
+
+    解决方案:
+
+        1. 进入C:\Users\{用户名}\.config\.cool-request\request\method-cache ，删除所有文件
