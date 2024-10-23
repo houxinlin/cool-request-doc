@@ -3,7 +3,7 @@ sidebar_position: 1
 title: 更新记录
 ---
 
-# v2024.11.1(带发布)
+# v2024.11.1(待发布)
 1. 增加Run Collections
 2. 优化测试推测能力
 3. 增加public函数仓库、函数支持参数传递
