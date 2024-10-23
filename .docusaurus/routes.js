@@ -99,15 +99,15 @@ export default [
   },
   {
     path: '/docs',
-    component: ComponentCreator('/docs', 'cda'),
+    component: ComponentCreator('/docs', 'ad4'),
     routes: [
       {
         path: '/docs',
-        component: ComponentCreator('/docs', 'ad0'),
+        component: ComponentCreator('/docs', 'f5d'),
         routes: [
           {
             path: '/docs',
-            component: ComponentCreator('/docs', '670'),
+            component: ComponentCreator('/docs', '277'),
             routes: [
               {
                 path: '/docs/bug',
@@ -154,6 +154,12 @@ export default [
               {
                 path: '/docs/feat/request_by_reflex',
                 component: ComponentCreator('/docs/feat/request_by_reflex', '22b'),
+                exact: true,
+                sidebar: "tutorialSidebar"
+              },
+              {
+                path: '/docs/feat/run_collections',
+                component: ComponentCreator('/docs/feat/run_collections', 'e5f'),
                 exact: true,
                 sidebar: "tutorialSidebar"
               },

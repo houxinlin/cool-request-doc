@@ -1,7 +1,7 @@
 {
   "id": "update_history",
   "title": "更新记录",
-  "description": "1. 增加gRPC调用",
+  "description": "1. 增加Run Collections",
   "source": "@site/docs/update_history.md",
   "sourceDirName": ".",
   "slug": "/update_history",

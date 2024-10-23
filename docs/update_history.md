@@ -3,6 +3,14 @@ sidebar_position: 1
 title: 更新记录
 ---
 
+# v2024.11.1(带发布)
+1. 增加Run Collections
+2. 优化测试推测能力
+3. 增加public函数仓库、函数支持参数传递
+4. 增加参数双击放大编辑
+5. SpringBoot低版本兼容
+6. 解决n多个Bug
+
 # v2024.10.15
 1. 增加gRPC调用
 2. 增加压力测试

@@ -17,8 +17,8 @@
   },
   "sidebar": "tutorialSidebar",
   "previous": {
-    "title": "发起反射请求",
-    "permalink": "/docs/feat/request_by_reflex"
+    "title": "运行API集合",
+    "permalink": "/docs/feat/run_collections"
   },
   "next": {
     "title": "小工具"

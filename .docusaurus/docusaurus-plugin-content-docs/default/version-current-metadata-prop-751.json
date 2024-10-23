@@ -80,6 +80,13 @@
           },
           {
             "type": "link",
+            "label": "运行API集合",
+            "href": "/docs/feat/run_collections",
+            "docId": "feat/run_collections",
+            "unlisted": false
+          },
+          {
+            "type": "link",
             "label": "Spring网关自动发现",
             "href": "/docs/feat/spring_gateway",
             "docId": "feat/spring_gateway",
@@ -255,6 +262,12 @@
       "description": "发射请求可绕过系统中的拦截器，在开发时，可直接使请求进入到Controller方法。",
       "sidebar": "tutorialSidebar"
     },
+    "feat/run_collections": {
+      "id": "feat/run_collections",
+      "title": "运行API集合",
+      "description": "运行API集合类似Postman中Run Collections功能，可一键触发N个API。",
+      "sidebar": "tutorialSidebar"
+    },
     "feat/spring_gateway": {
       "id": "feat/spring_gateway",
       "title": "Spring网关自动发现",
@@ -378,7 +391,7 @@
     "update_history": {
       "id": "update_history",
       "title": "更新记录",
-      "description": "1. 增加gRPC调用",
+      "description": "1. 增加Run Collections",
       "sidebar": "tutorialSidebar"
     }
   }

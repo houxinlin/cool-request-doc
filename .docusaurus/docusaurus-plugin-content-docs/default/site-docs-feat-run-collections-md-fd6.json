@@ -1,0 +1,27 @@
+{
+  "id": "feat/run_collections",
+  "title": "运行API集合",
+  "description": "运行API集合类似Postman中Run Collections功能，可一键触发N个API。",
+  "source": "@site/docs/feat/run_collections.md",
+  "sourceDirName": "feat",
+  "slug": "/feat/run_collections",
+  "permalink": "/docs/feat/run_collections",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 2,
+  "frontMatter": {
+    "sidebar_position": 2,
+    "title": "运行API集合"
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "发起反射请求",
+    "permalink": "/docs/feat/request_by_reflex"
+  },
+  "next": {
+    "title": "Spring网关自动发现",
+    "permalink": "/docs/feat/spring_gateway"
+  }
+}
