@@ -22,11 +22,11 @@ const FeatureList = [
     ),
   },
   {
-    title: '手动触发定时器',
+    title: '调用任意方法',
     Svg: require('@site/static/img/main-1.svg').default,
     description: (
       <>
-        一键触发定时器任务，无需配置/等待，提升开发效率
+        手动触发任意方法，支持多实例选择，调试代码方便至极
       </>
     ),
   },

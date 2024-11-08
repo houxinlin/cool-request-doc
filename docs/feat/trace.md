@@ -34,7 +34,9 @@ Cool Request默认关闭方法耗时追踪，如果开启后，会影响第一�
 
 有些原因可能会导致跟踪失效
 
-1. 当Controller内部抛出异常时，Trace将失效，请确保链路中无异常。
+1. 当Controller内部抛出异常时，Trace将失效，请确保链路中无异常,并且是从Controller方法中return;
 2. 非SpringBoot项目
 3. 使用了jrebel启动(理论支持，但如果失效，可正常启动重新尝试)
-2. 确保HTTP返回状态返回200
+4. 确保HTTP返回状态返回200
+
+如果发现为0 trace时，可重启一次IDEA再次尝试

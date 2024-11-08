@@ -23,6 +23,16 @@ public String custom(){
 ![Alt text](../images/function_example.png)
 
 
+# 参数传递
+
+目前只支持基本数据类型参数传递，以下是一个示例
+```java
+public static String argTest(String name,int age){
+    return name+age;
+}
+
+```
+可在参数中通过`{{argTest("name",1)}}`使用
 # 关闭函数转换
 
 如果想关闭函数转换，可以设置中禁用
