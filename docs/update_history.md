@@ -3,10 +3,10 @@ sidebar_position: 1
 title: 更新记录
 ---
 # v2024.11.15(待发布)
-1. 还没想好
-2. 在思考
-3. 不知道加什么
-4. ............
+1. 增加call this method快速按钮
+2. 优化内网穿透
+3. 修复bug
+4. 多处UI细节优化
 
 # v2024.11.1
 1. 增加Run Collections
