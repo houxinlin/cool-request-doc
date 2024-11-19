@@ -2,7 +2,9 @@
 sidebar_position: 1
 title: 更新记录
 ---
-# v2024.11.15(待发布)
+# v2024.12.1(开发中)
+
+# v2024.11.15
 1. 增加call this method快速按钮
 2. 优化内网穿透
 3. 修复bug
