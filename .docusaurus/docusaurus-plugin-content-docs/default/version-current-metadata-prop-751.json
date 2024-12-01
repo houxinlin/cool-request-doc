@@ -391,7 +391,7 @@
     "update_history": {
       "id": "update_history",
       "title": "更新记录",
-      "description": "1. 还没想好",
+      "description": "1. 增加call this method快速按钮",
       "sidebar": "tutorialSidebar"
     }
   }

@@ -26,12 +26,17 @@ function HomepageHeader() {
             快速开始 ⏱️
           </Link>
           <a
-            
             className="button button--primary button--lg download-btn"
             href="https://plugins.jetbrains.com/plugin/23555-cool-request/versions"
             download
           >
             下载
+          </a>
+          <a
+            className="button button--primary button--lg download-btn"
+            href="https://coolrequest.dev/static/help.html"
+          >
+            找工作中...
           </a>
         </div>
       </div>
