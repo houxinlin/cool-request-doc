@@ -2,7 +2,9 @@
 sidebar_position: 1
 title: 更新记录
 ---
-# v2024.12.1(开发中)
+# v2024.12.1
+1. 增加离线文档导出
+2. 修复很多个bug
 
 # v2024.11.15
 1. 增加call this method快速按钮
