@@ -32,12 +32,7 @@ function HomepageHeader() {
           >
             下载
           </a>
-          <a
-            className="button button--primary button--lg download-btn"
-            href="https://coolrequest.dev/static/help.html"
-          >
-            找工作中...
-          </a>
+
         </div>
       </div>
     </header>
