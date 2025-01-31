@@ -1,7 +1,7 @@
 {
   "id": "update_history",
   "title": "更新记录",
-  "description": "1. 增加call this method快速按钮",
+  "description": "1. 增加MySQL日志跟踪",
   "source": "@site/docs/update_history.md",
   "sourceDirName": ".",
   "slug": "/update_history",

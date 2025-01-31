@@ -2,6 +2,25 @@
 sidebar_position: 1
 title: 更新记录
 ---
+
+
+# v2025.2.1（待发布）
+1. 增加MySQL日志跟踪
+![Alt text](./images/mysql_trace.png)
+
+2. 优化全局环境，可选择性勾选全局参数
+3. 优化标签，重启IDEA后可恢复至上次状态
+4. 增加参数文本模式编辑
+![Alt text](./images/txt_model.gif)
+
+5. 增加参数输入提示
+![Alt text](./images/parameter_tip.gif)
+
+6. HTTP参数推测时，可选择指定类型参数进行忽略
+![Alt text](./images/ignore_parameter.png)
+
+7. 增加Call this method 方法耗时跟踪
+![Alt text](./images/call_this_method_trace.png)
 # v2024.12.1
 1. 增加离线文档导出
 2. 修复很多个bug
