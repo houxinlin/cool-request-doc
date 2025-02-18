@@ -4,7 +4,7 @@ title: 更新记录
 ---
 
 
-# v2025.2.1（待发布）
+# v2025.2.1
 1. 增加MySQL日志跟踪
 ![Alt text](./images/mysql_trace.png)
 
