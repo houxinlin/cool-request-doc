@@ -3,7 +3,19 @@ sidebar_position: 1
 title: 更新记录
 ---
 
+# v2025.3.1
 
+1. 增加JSON Tree预览（来源于Json Assistant插件）
+![Alt text](./images/json-tree.png)
+
+2. 增加SSE
+![Alt text](./images/sse.gif)
+
+
+3. 增加存储测试用例
+
+(可在空白处使用滑轮切换测试用例参数)
+![Alt text](./images/case.gif)
 # v2025.2.1
 1. 增加MySQL日志跟踪
 ![Alt text](./images/mysql_trace.png)

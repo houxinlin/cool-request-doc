@@ -391,7 +391,7 @@
     "update_history": {
       "id": "update_history",
       "title": "更新记录",
-      "description": "1. 增加MySQL日志跟踪",
+      "description": "1. 增加JSON Tree预览（来源于Json Assistant插件）",
       "sidebar": "tutorialSidebar"
     }
   }
