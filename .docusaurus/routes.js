@@ -99,15 +99,15 @@ export default [
   },
   {
     path: '/docs',
-    component: ComponentCreator('/docs', '8b2'),
+    component: ComponentCreator('/docs', 'ddd'),
     routes: [
       {
         path: '/docs',
-        component: ComponentCreator('/docs', 'f5d'),
+        component: ComponentCreator('/docs', '2d8'),
         routes: [
           {
             path: '/docs',
-            component: ComponentCreator('/docs', '277'),
+            component: ComponentCreator('/docs', 'b05'),
             routes: [
               {
                 path: '/docs/bug',
@@ -196,6 +196,12 @@ export default [
               {
                 path: '/docs/intro',
                 component: ComponentCreator('/docs/intro', 'aed'),
+                exact: true,
+                sidebar: "tutorialSidebar"
+              },
+              {
+                path: '/docs/plugin_share',
+                component: ComponentCreator('/docs/plugin_share', 'b15'),
                 exact: true,
                 sidebar: "tutorialSidebar"
               },

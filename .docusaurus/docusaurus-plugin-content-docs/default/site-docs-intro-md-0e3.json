@@ -1,6 +1,6 @@
 {
   "id": "intro",
-  "title": "什么是Cool Request",
+  "title": "Cool Request",
   "description": "Cool Request是一款基于 IntelliJ IDEA 的插件，旨在简化 Spring MVC(Boot) 项目中 API调试调用，提供了强大的参数推测能力、方法耗时追踪、运行时反射调用等能力。",
   "source": "@site/docs/intro.md",
   "sourceDirName": ".",
@@ -12,11 +12,12 @@
   "version": "current",
   "sidebarPosition": 1,
   "frontMatter": {
-    "sidebar_position": 1
+    "sidebar_position": 1,
+    "title": "Cool Request"
   },
   "sidebar": "tutorialSidebar",
   "next": {
-    "title": "更新记录",
-    "permalink": "/docs/update_history"
+    "title": "好货分享",
+    "permalink": "/docs/plugin_share"
   }
 }

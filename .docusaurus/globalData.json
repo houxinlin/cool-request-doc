@@ -66,6 +66,11 @@
               "sidebar": "tutorialSidebar"
             },
             {
+              "id": "plugin_share",
+              "path": "/docs/plugin_share",
+              "sidebar": "tutorialSidebar"
+            },
+            {
               "id": "problem",
               "path": "/docs/problem",
               "sidebar": "tutorialSidebar"
