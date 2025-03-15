@@ -9,4 +9,4 @@ title: 好货分享
 
 Json Assistant 是基于 IntelliJ IDEs 的 JSON 工具插件，让 JSON 处理变得更轻松！
 
-![Alt text](https://plugins.jetbrains.com/files/24738/screenshot_3ccafac4-520b-4df5-82ea-6b2cb4e63a3f)
+![Alt text](./images/java-assistant.png)
