@@ -2,6 +2,12 @@
 sidebar_position: 1
 title: 更新记录
 ---
+# v2025.4.7
+
+1. 历史记录中增加Call this method记录
+![Alt text](./images/call_this_method_history.png)
+2. 修复bug
+
 
 # v2025.3.1
 
