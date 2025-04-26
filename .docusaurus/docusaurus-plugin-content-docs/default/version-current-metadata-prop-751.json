@@ -404,7 +404,7 @@
     "update_history": {
       "id": "update_history",
       "title": "更新记录",
-      "description": "1. 历史记录中增加Call this method记录",
+      "description": "1. 优化体验",
       "sidebar": "tutorialSidebar"
     }
   }

@@ -14,7 +14,7 @@ export default {
   "onBrokenLinks": "throw",
   "onBrokenMarkdownLinks": "warn",
   "customFields": {
-    "newTagline": "新一代IDEA接口调试插件(v2025.3.1)"
+    "newTagline": "新一代IDEA接口调试插件(v2025.4.25)"
   },
   "i18n": {
     "defaultLocale": "en",
