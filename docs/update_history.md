@@ -12,7 +12,6 @@ title: 更新记录
 1. 历史记录中增加Call this method记录
 ![Alt text](./images/call_this_method_history.png)
 2. 修复bug
-![Alt text](image-2.png)
 
 # v2025.3.1
 
