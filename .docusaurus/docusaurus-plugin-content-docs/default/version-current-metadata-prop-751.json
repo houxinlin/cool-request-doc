@@ -45,6 +45,13 @@
         "items": [
           {
             "type": "link",
+            "label": "静态执行Mybatis",
+            "href": "/docs/feat/mybatis",
+            "docId": "feat/mybatis",
+            "unlisted": false
+          },
+          {
+            "type": "link",
             "label": "压力测试",
             "href": "/docs/feat/stress_test",
             "docId": "feat/stress_test",
@@ -263,6 +270,12 @@
       "description": "Cool Request拥有最强大得函数支持系统，当HTTP参数想要使用动态参数时，可根据自己需求，编写自定义函数。",
       "sidebar": "tutorialSidebar"
     },
+    "feat/mybatis": {
+      "id": "feat/mybatis",
+      "title": "静态执行Mybatis",
+      "description": "Cool Request支持在在不启动SpringBoot程序时，执行Mybatis Mapper方法",
+      "sidebar": "tutorialSidebar"
+    },
     "feat/request_by_reflex": {
       "id": "feat/request_by_reflex",
       "title": "发起反射请求",
@@ -404,7 +417,7 @@
     "update_history": {
       "id": "update_history",
       "title": "更新记录",
-      "description": "1. 优化体验",
+      "description": "1. 增加Mybatis执行",
       "sidebar": "tutorialSidebar"
     }
   }

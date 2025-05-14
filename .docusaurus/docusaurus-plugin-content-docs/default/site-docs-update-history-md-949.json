@@ -1,7 +1,7 @@
 {
   "id": "update_history",
   "title": "更新记录",
-  "description": "1. 优化体验",
+  "description": "1. 增加Mybatis执行",
   "source": "@site/docs/update_history.md",
   "sourceDirName": ".",
   "slug": "/update_history",

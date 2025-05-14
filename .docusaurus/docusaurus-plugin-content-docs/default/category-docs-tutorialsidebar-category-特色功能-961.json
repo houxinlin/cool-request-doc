@@ -9,8 +9,8 @@
       "permalink": "/docs/bug"
     },
     "next": {
-      "title": "压力测试",
-      "permalink": "/docs/feat/stress_test"
+      "title": "静态执行Mybatis",
+      "permalink": "/docs/feat/mybatis"
     }
   }
 }

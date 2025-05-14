@@ -1,0 +1,27 @@
+{
+  "id": "feat/call_this_method copy",
+  "title": "调用任意方法",
+  "description": "Cool Request支持在SpringBoot运行时调用任意容器内实例的方法、同时也包括静态方法。",
+  "source": "@site/docs/feat/call_this_method copy.md",
+  "sourceDirName": "feat",
+  "slug": "/feat/call_this_method copy",
+  "permalink": "/docs/feat/call_this_method copy",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 2,
+  "frontMatter": {
+    "sidebar_position": 2,
+    "title": "调用任意方法"
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "统计方法耗时",
+    "permalink": "/docs/feat/trace"
+  },
+  "next": {
+    "title": "调用任意方法",
+    "permalink": "/docs/feat/call_this_method"
+  }
+}

@@ -99,6 +99,33 @@
               }
             },
             {
+              "id": "feat/mybatis",
+              "title": "静态执行Mybatis",
+              "description": "Cool Request支持在在不启动SpringBoot程序时，执行Mybatis Mapper方法",
+              "source": "@site/docs/feat/mybatis.md",
+              "sourceDirName": "feat",
+              "slug": "/feat/mybatis",
+              "permalink": "/docs/feat/mybatis",
+              "draft": false,
+              "unlisted": false,
+              "tags": [],
+              "version": "current",
+              "sidebarPosition": 1,
+              "frontMatter": {
+                "sidebar_position": 1,
+                "title": "静态执行Mybatis"
+              },
+              "sidebar": "tutorialSidebar",
+              "previous": {
+                "title": "特色功能",
+                "permalink": "/docs/category/特色功能"
+              },
+              "next": {
+                "title": "压力测试",
+                "permalink": "/docs/feat/stress_test"
+              }
+            },
+            {
               "id": "feat/request_by_reflex",
               "title": "发起反射请求",
               "description": "发射请求可绕过系统中的拦截器，在开发时，可直接使请求进入到Controller方法。",
@@ -197,8 +224,8 @@
               },
               "sidebar": "tutorialSidebar",
               "previous": {
-                "title": "特色功能",
-                "permalink": "/docs/category/特色功能"
+                "title": "静态执行Mybatis",
+                "permalink": "/docs/feat/mybatis"
               },
               "next": {
                 "title": "快速测试代码",
@@ -698,7 +725,7 @@
             {
               "id": "update_history",
               "title": "更新记录",
-              "description": "1. 历史记录中增加Call this method记录",
+              "description": "1. 增加Mybatis执行",
               "source": "@site/docs/update_history.md",
               "sourceDirName": ".",
               "slug": "/update_history",
@@ -748,6 +775,10 @@
                 "collapsible": false,
                 "collapsed": false,
                 "items": [
+                  {
+                    "type": "doc",
+                    "id": "feat/mybatis"
+                  },
                   {
                     "type": "doc",
                     "id": "feat/stress_test"

@@ -2,7 +2,16 @@
 sidebar_position: 1
 title: 更新记录
 ---
+# v2025.5.15 
+1. 增加Mybatis执行
 
+    ![Alt text](./images/mybatis-run.png)
+
+2. 增加Mybatis sql预览
+
+    ![Alt text](./images/mybatis-sql.png)
+
+3. 修复bug，提升体验
 # v2025.4.25
 
 1. 优化体验

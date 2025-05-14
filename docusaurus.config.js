@@ -27,7 +27,7 @@ const config = {
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
   customFields:{
-    newTagline: '新一代IDEA接口调试插件(v2025.4.25)',
+    newTagline: '新一代IDEA接口调试插件(v2025.5.15)',
   },
 
   // Even if you don't use internationalization, you can use this field to set

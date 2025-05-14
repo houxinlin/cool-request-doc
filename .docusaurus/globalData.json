@@ -26,6 +26,11 @@
               "sidebar": "tutorialSidebar"
             },
             {
+              "id": "feat/mybatis",
+              "path": "/docs/feat/mybatis",
+              "sidebar": "tutorialSidebar"
+            },
+            {
               "id": "feat/request_by_reflex",
               "path": "/docs/feat/request_by_reflex",
               "sidebar": "tutorialSidebar"

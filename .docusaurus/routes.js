@@ -3,6 +3,41 @@ import ComponentCreator from '@docusaurus/ComponentCreator';
 
 export default [
   {
+    path: '/__docusaurus/debug',
+    component: ComponentCreator('/__docusaurus/debug', '7df'),
+    exact: true
+  },
+  {
+    path: '/__docusaurus/debug/config',
+    component: ComponentCreator('/__docusaurus/debug/config', 'a7e'),
+    exact: true
+  },
+  {
+    path: '/__docusaurus/debug/content',
+    component: ComponentCreator('/__docusaurus/debug/content', '483'),
+    exact: true
+  },
+  {
+    path: '/__docusaurus/debug/globalData',
+    component: ComponentCreator('/__docusaurus/debug/globalData', '4a1'),
+    exact: true
+  },
+  {
+    path: '/__docusaurus/debug/metadata',
+    component: ComponentCreator('/__docusaurus/debug/metadata', '15b'),
+    exact: true
+  },
+  {
+    path: '/__docusaurus/debug/registry',
+    component: ComponentCreator('/__docusaurus/debug/registry', 'f33'),
+    exact: true
+  },
+  {
+    path: '/__docusaurus/debug/routes',
+    component: ComponentCreator('/__docusaurus/debug/routes', '3fa'),
+    exact: true
+  },
+  {
     path: '/blog',
     component: ComponentCreator('/blog', 'f31'),
     exact: true
@@ -64,15 +99,15 @@ export default [
   },
   {
     path: '/docs',
-    component: ComponentCreator('/docs', 'ddd'),
+    component: ComponentCreator('/docs', '7ce'),
     routes: [
       {
         path: '/docs',
-        component: ComponentCreator('/docs', '2d8'),
+        component: ComponentCreator('/docs', '288'),
         routes: [
           {
             path: '/docs',
-            component: ComponentCreator('/docs', 'b05'),
+            component: ComponentCreator('/docs', 'f02'),
             routes: [
               {
                 path: '/docs/bug',
@@ -113,6 +148,12 @@ export default [
               {
                 path: '/docs/feat/custom_function',
                 component: ComponentCreator('/docs/feat/custom_function', '7b9'),
+                exact: true,
+                sidebar: "tutorialSidebar"
+              },
+              {
+                path: '/docs/feat/mybatis',
+                component: ComponentCreator('/docs/feat/mybatis', '235'),
                 exact: true,
                 sidebar: "tutorialSidebar"
               },

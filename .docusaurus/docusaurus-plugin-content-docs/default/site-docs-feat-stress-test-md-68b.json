@@ -17,8 +17,8 @@
   },
   "sidebar": "tutorialSidebar",
   "previous": {
-    "title": "特色功能",
-    "permalink": "/docs/category/特色功能"
+    "title": "静态执行Mybatis",
+    "permalink": "/docs/feat/mybatis"
   },
   "next": {
     "title": "快速测试代码",

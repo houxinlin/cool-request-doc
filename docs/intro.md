@@ -14,7 +14,7 @@ Cool Request是一款基于 IntelliJ IDEA 的插件，旨在简化 Spring MVC(Bo
 # 预览
   ![Alt text](images/white-preview-0.png)
   ![Alt text](images/white-preview-1.png)
-  ![Alt text](images/white-preview-2.png)
+  ![Alt text](images/white-preview-3.png)
 
 # 如何安装
 ## 方法一
