@@ -3,7 +3,7 @@ sidebar_position: 1
 title: 静态执行Mybatis
 ---
 
-Cool Request支持在在不启动SpringBoot程序时，执行Mybatis Mapper方法
+Cool Request支持在不启动SpringBoot程序时，执行Mybatis Mapper方法
 
 ##  使用方法
 
@@ -21,7 +21,7 @@ Cool Request支持在在不启动SpringBoot程序时，执行Mybatis Mapper方�
 
 Cool Request将在全局扫描以下文件查找数据源。
 
-1. 所有yaml|yml结尾的文件，其内容包含以下配置
+1. 所有yaml | yml结尾的文件，其内容包含以下配置
 ```yml
 spring:
   datasource:
@@ -30,7 +30,7 @@ spring:
     password: 123456
     driver-class-name: com.mysql.cj.jdbc.Driver
 ```
-2. 所有properties结尾的文件，其内容包含一下配置
+2. 所有properties结尾的文件，其内容包含以下配置
 
 ```properties
 spring.datasource.url=jdbc:mysql://localhost:3306/?allowPublicKeyRetrieval=true
