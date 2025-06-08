@@ -273,7 +273,7 @@
     "feat/mybatis": {
       "id": "feat/mybatis",
       "title": "静态执行Mybatis",
-      "description": "Cool Request支持在在不启动SpringBoot程序时，执行Mybatis Mapper方法",
+      "description": "Cool Request支持在不启动SpringBoot程序时，执行Mybatis Mapper方法",
       "sidebar": "tutorialSidebar"
     },
     "feat/request_by_reflex": {

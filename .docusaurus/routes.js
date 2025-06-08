@@ -309,7 +309,7 @@ export default [
   },
   {
     path: '/',
-    component: ComponentCreator('/', 'c42'),
+    component: ComponentCreator('/', 'b3a'),
     exact: true
   },
   {

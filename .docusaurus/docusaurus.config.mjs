@@ -24,6 +24,9 @@ export default {
     "path": "i18n",
     "localeConfigs": {}
   },
+  "plugins": [
+    null
+  ],
   "presets": [
     [
       "classic",
@@ -307,7 +310,6 @@ export default {
   "staticDirectories": [
     "static"
   ],
-  "plugins": [],
   "themes": [],
   "scripts": [],
   "headTags": [],

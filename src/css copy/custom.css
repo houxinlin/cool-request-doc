@@ -35,18 +35,3 @@ button{
 ul{
   list-style: none;
 }
-.iconfont{
-  font-size: 33px !important;
-}
-
-a.button{
-  border: none;
-  outline: none;
-  border-radius: 100px;
-}
-
-a.doc{
-  border: 2px #2563eb solid;
-  background: none;
-  color: #2563eb;
-}

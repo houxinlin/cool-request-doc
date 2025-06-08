@@ -1,0 +1,1343 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cool Request - 让调用变得简单</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.min.css"
+    />
+    <script src="https://cdn.tailwindcss.com/3.4.16"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: { primary: "#3b82f6", secondary: "#10b981" },
+            borderRadius: {
+              none: "0px",
+              sm: "4px",
+              DEFAULT: "8px",
+              md: "12px",
+              lg: "16px",
+              xl: "20px",
+              "2xl": "24px",
+              "3xl": "32px",
+              full: "9999px",
+              button: "8px",
+            },
+          },
+        },
+      };
+    </script>
+    <style>
+      :where([class^="ri-"])::before { content: "\f3c2"; }
+      body {
+          font-family: 'Inter', sans-serif;
+          scroll-behavior: smooth;
+      }
+      .dark {
+          color-scheme: dark;
+      }
+      .hero-bg {
+          background-position: right center;
+          background-repeat: no-repeat;
+          background-size: contain;
+      }
+      .counter {
+          transition: all 0.5s ease;
+      }
+      .feature-card {
+          opacity: 0;
+          transform: translateY(20px);
+          transition: opacity 0.6s ease, transform 0.6s ease;
+      }
+      .feature-card.visible {
+          opacity: 1;
+          transform: translateY(0);
+      }
+      .alternating-section {
+          opacity: 0;
+          transform: translateY(30px);
+          transition: opacity 0.8s ease, transform 0.8s ease;
+      }
+      .alternating-section.visible {
+          opacity: 1;
+          transform: translateY(0);
+      }
+      .theme-switch {
+          position: relative;
+          width: 60px;
+          height: 30px;
+          border-radius: 15px;
+          cursor: pointer;
+          transition: background-color 0.3s;
+      }
+      .theme-switch::after {
+          content: '';
+          position: absolute;
+          top: 3px;
+          left: 3px;
+          width: 24px;
+          height: 24px;
+          border-radius: 50%;
+          background-color: white;
+          transition: transform 0.3s;
+      }
+      .dark .theme-switch::after {
+          transform: translateX(30px);
+      }
+      input[type="range"] {
+          -webkit-appearance: none;
+          width: 100%;
+          height: 6px;
+          border-radius: 3px;
+          background: #e5e7eb;
+          outline: none;
+      }
+      input[type="range"]::-webkit-slider-thumb {
+          -webkit-appearance: none;
+          width: 18px;
+          height: 18px;
+          border-radius: 50%;
+          background: #3b82f6;
+          cursor: pointer;
+      }
+      .custom-checkbox {
+          position: relative;
+          padding-left: 30px;
+          cursor: pointer;
+          user-select: none;
+      }
+      .custom-checkbox input {
+          position: absolute;
+          opacity: 0;
+          cursor: pointer;
+          height: 0;
+          width: 0;
+      }
+      .checkmark {
+          position: absolute;
+          top: 0;
+          left: 0;
+          height: 20px;
+          width: 20px;
+          background-color: #fff;
+          border: 2px solid #d1d5db;
+          border-radius: 4px;
+          transition: all 0.2s ease;
+      }
+      .custom-checkbox input:checked ~ .checkmark {
+          background-color: #3b82f6;
+          border-color: #3b82f6;
+      }
+      .checkmark:after {
+          content: "";
+          position: absolute;
+          display: none;
+      }
+      .custom-checkbox input:checked ~ .checkmark:after {
+          display: block;
+      }
+      .custom-checkbox .checkmark:after {
+          left: 6px;
+          top: 2px;
+          width: 5px;
+          height: 10px;
+          border: solid white;
+          border-width: 0 2px 2px 0;
+          transform: rotate(45deg);
+      }
+    </style>
+  </head>
+  <body class="bg-white text-gray-800 transition-colors duration-300">
+    <header
+      class="fixed top-0 left-0 right-0 bg-white/80 backdrop-blur-md shadow-sm z-50 transition-colors duration-300 dark:bg-gray-900/80 dark:text-white"
+    >
+      <div
+        class="container mx-auto px-4 py-3 flex items-center justify-between"
+      >
+        <a href="#" class="text-2xl font-['Pacifico'] text-primary"
+          >Cool Request</a
+        >
+        <nav class="hidden md:flex items-center space-x-8">
+          <a
+            href="#features"
+            class="text-gray-700 hover:text-primary transition-colors dark:text-gray-300"
+            >功能介绍</a
+          >
+          <a
+            href="#advantages"
+            class="text-gray-700 hover:text-primary transition-colors dark:text-gray-300"
+            >产品特色</a
+          >
+          <a
+            href="#testimonials"
+            class="text-gray-700 hover:text-primary transition-colors dark:text-gray-300"
+            >用户评价</a
+          >
+          <a
+            href="#"
+            class="text-gray-700 hover:text-primary transition-colors dark:text-gray-300"
+            >文档</a
+          >
+          <a
+            href="#"
+            class="flex items-center text-gray-700 hover:text-primary transition-colors dark:text-gray-300"
+          >
+            <span class="w-5 h-5 flex items-center justify-center mr-1"
+              ><i class="ri-github-line"></i
+            ></span>
+            <span>GitHub</span>
+          </a>
+          <div
+            class="theme-switch bg-gray-300 dark:bg-primary"
+            id="themeSwitch"
+          ></div>
+        </nav>
+        <button
+          class="md:hidden w-10 h-10 flex items-center justify-center text-gray-700 dark:text-white"
+        >
+          <i class="ri-menu-line text-2xl"></i>
+        </button>
+      </div>
+    </header>
+
+    <main>
+      <section
+        class="hero-bg pt-28 pb-20 md:pt-32 md:pb-24 px-4 relative overflow-hidden"
+        style="background-image: url('https://readdy.ai/api/search-image?query=A%20modern%2C%20clean%20IDE%20plugin%20interface%20with%20HTTP%20debugging%20tools%2C%20showing%20a%20sleek%20user%20interface%20with%20code%20panels%2C%20request%20parameters%2C%20and%20response%20data.%20The%20image%20should%20have%20a%20clean%20white%20background%20on%20the%20left%20side%20transitioning%20naturally%20to%20the%20interface%20on%20the%20right.%20The%20interface%20should%20look%20professional%20and%20developer-friendly%20with%20syntax%20highlighting%20and%20organized%20panels.&width=1200&height=800&seq=hero1&orientation=landscape')"
+      >
+        <div
+          class="container mx-auto w-full flex flex-col md:flex-row items-center"
+        >
+          <div class="md:w-1/2 z-10">
+            <h1 class="text-4xl md:text-5xl font-bold mb-4">Cool Request</h1>
+            <h2 class="text-2xl md:text-3xl font-medium text-primary mb-6">
+              让调用变得简单
+            </h2>
+            <p class="text-lg mb-8 max-w-lg">
+              专为开发者打造的 IDEA 插件，简化 HTTP、gRPC、WebSocket
+              调试流程，支持调用 SpringBoot
+              容器内方法，一键导出静态文档，完美支持 OpenAPI。
+            </p>
+            <div class="flex flex-wrap gap-4">
+              <a
+                href="#"
+                class="bg-primary text-white px-8 py-3 !rounded-button font-medium hover:bg-blue-600 transition-colors whitespace-nowrap"
+                >立即下载</a
+              >
+              <a
+                href="#"
+                class="border border-gray-300 px-8 py-3 !rounded-button font-medium hover:bg-gray-100 transition-colors dark:border-gray-700 dark:hover:bg-gray-800 whitespace-nowrap"
+                >查看文档</a
+              >
+            </div>
+            <div class="mt-8 flex items-center gap-4">
+              <div class="flex items-center">
+                <span
+                  class="w-6 h-6 flex items-center justify-center text-primary"
+                  ><i class="ri-download-line"></i
+                ></span>
+                <span class="ml-2"
+                  ><span id="downloadCount" class="font-bold">0</span>+
+                  下载</span
+                >
+              </div>
+              <div class="flex items-center">
+                <span
+                  class="w-6 h-6 flex items-center justify-center text-primary"
+                  ><i class="ri-star-line"></i
+                ></span>
+                <span class="ml-2"
+                  ><span id="starCount" class="font-bold">0</span>+ Star</span
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section
+        id="features"
+        class="py-20 px-4 bg-gray-50 dark:bg-gray-900 transition-colors duration-300"
+      >
+        <div class="container mx-auto text-center">
+          <h2 class="text-3xl font-bold mb-3">强大的功能集</h2>
+          <p
+            class="text-lg text-gray-600 dark:text-gray-400 mb-16 max-w-2xl mx-auto"
+          >
+            全方位满足开发调试需求，提升开发效率
+          </p>
+
+          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <div
+              class="feature-card bg-white dark:bg-gray-800 p-6 rounded-lg shadow-sm hover:shadow-md transition-shadow"
+            >
+              <div
+                class="w-16 h-16 flex items-center justify-center bg-blue-100 dark:bg-blue-900/30 rounded-full mx-auto mb-6"
+              >
+                <i class="ri-http-fill text-2xl text-primary"></i>
+              </div>
+              <h3 class="text-xl font-semibold mb-3">HTTP 调试</h3>
+              <p class="text-gray-600 dark:text-gray-400">
+                支持 GET、POST、PUT、DELETE
+                等多种请求方式，便捷设置请求头、参数和请求体，实时查看响应结果。
+              </p>
+            </div>
+
+            <div
+              class="feature-card bg-white dark:bg-gray-800 p-6 rounded-lg shadow-sm hover:shadow-md transition-shadow"
+            >
+              <div
+                class="w-16 h-16 flex items-center justify-center bg-green-100 dark:bg-green-900/30 rounded-full mx-auto mb-6"
+              >
+                <i class="ri-server-line text-2xl text-secondary"></i>
+              </div>
+              <h3 class="text-xl font-semibold mb-3">gRPC 测试</h3>
+              <p class="text-gray-600 dark:text-gray-400">
+                直接在 IDE 中测试 gRPC 服务，自动解析 proto
+                文件，支持流式调用，简化 RPC 服务测试流程。
+              </p>
+            </div>
+
+            <div
+              class="feature-card bg-white dark:bg-gray-800 p-6 rounded-lg shadow-sm hover:shadow-md transition-shadow"
+            >
+              <div
+                class="w-16 h-16 flex items-center justify-center bg-purple-100 dark:bg-purple-900/30 rounded-full mx-auto mb-6"
+              >
+                <i class="ri-wifi-line text-2xl text-purple-500"></i>
+              </div>
+              <h3 class="text-xl font-semibold mb-3">WebSocket 支持</h3>
+              <p class="text-gray-600 dark:text-gray-400">
+                建立 WebSocket
+                连接，发送和接收消息，监控连接状态，支持自定义心跳包，方便实时通信调试。
+              </p>
+            </div>
+
+            <div
+              class="feature-card bg-white dark:bg-gray-800 p-6 rounded-lg shadow-sm hover:shadow-md transition-shadow"
+            >
+              <div
+                class="w-16 h-16 flex items-center justify-center bg-orange-100 dark:bg-orange-900/30 rounded-full mx-auto mb-6"
+              >
+                <i class="ri-code-box-line text-2xl text-orange-500"></i>
+              </div>
+              <h3 class="text-xl font-semibold mb-3">Spring 容器方法调用</h3>
+              <p class="text-gray-600 dark:text-gray-400">
+                直接调用 SpringBoot
+                容器内的任意方法，无需编写测试代码，快速验证业务逻辑，提高开发效率。
+              </p>
+            </div>
+
+            <div
+              class="feature-card bg-white dark:bg-gray-800 p-6 rounded-lg shadow-sm hover:shadow-md transition-shadow"
+            >
+              <div
+                class="w-16 h-16 flex items-center justify-center bg-red-100 dark:bg-red-900/30 rounded-full mx-auto mb-6"
+              >
+                <i class="ri-file-text-line text-2xl text-red-500"></i>
+              </div>
+              <h3 class="text-xl font-semibold mb-3">静态文档导出</h3>
+              <p class="text-gray-600 dark:text-gray-400">
+                一键导出 API
+                文档，支持多种格式，包含请求参数、响应示例，方便团队协作和接口共享。
+              </p>
+            </div>
+
+            <div
+              class="feature-card bg-white dark:bg-gray-800 p-6 rounded-lg shadow-sm hover:shadow-md transition-shadow"
+            >
+              <div
+                class="w-16 h-16 flex items-center justify-center bg-yellow-100 dark:bg-yellow-900/30 rounded-full mx-auto mb-6"
+              >
+                <i class="ri-api-line text-2xl text-yellow-500"></i>
+              </div>
+              <h3 class="text-xl font-semibold mb-3">OpenAPI 支持</h3>
+              <p class="text-gray-600 dark:text-gray-400">
+                自动识别 OpenAPI 规范，导入和导出 Swagger 文档，与主流 API
+                设计标准无缝集成。
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="advantages" class="py-20 px-4">
+        <div class="container mx-auto">
+          <h2 class="text-3xl font-bold mb-3 text-center">
+            为什么选择 Cool Request
+          </h2>
+          <p
+            class="text-lg text-gray-600 dark:text-gray-400 mb-16 max-w-2xl mx-auto text-center"
+          >
+            专为开发者体验设计，提供卓越的调试体验
+          </p>
+
+          <div class="space-y-24">
+            <div
+              class="alternating-section flex flex-col md:flex-row items-center gap-8"
+            >
+              <div class="md:w-1/2">
+                <h3 class="text-2xl font-semibold mb-4">简洁直观的界面设计</h3>
+                <p class="text-gray-600 dark:text-gray-400 mb-6">
+                  精心设计的用户界面，符合 IDEA
+                  原生风格，低学习成本，高效操作。支持暗色主题，减轻视觉疲劳，提供舒适的开发体验。
+                </p>
+                <div class="space-y-4">
+                  <div class="flex items-start">
+                    <span
+                      class="w-5 h-5 flex items-center justify-center text-primary mt-1"
+                      ><i class="ri-check-line"></i
+                    ></span>
+                    <p class="ml-3">符合 IDEA 原生设计风格</p>
+                  </div>
+                  <div class="flex items-start">
+                    <span
+                      class="w-5 h-5 flex items-center justify-center text-primary mt-1"
+                      ><i class="ri-check-line"></i
+                    ></span>
+                    <p class="ml-3">支持亮色/暗色主题切换</p>
+                  </div>
+                  <div class="flex items-start">
+                    <span
+                      class="w-5 h-5 flex items-center justify-center text-primary mt-1"
+                      ><i class="ri-check-line"></i
+                    ></span>
+                    <p class="ml-3">高效的工作区布局</p>
+                  </div>
+                </div>
+              </div>
+              <div class="md:w-1/2">
+                <img
+                  src="https://readdy.ai/api/search-image?query=A%20clean%20and%20intuitive%20IDE%20plugin%20interface%20with%20HTTP%20request%20panels%2C%20showing%20a%20well-organized%20layout%20with%20request%20parameters%20on%20the%20left%20and%20response%20data%20on%20the%20right.%20The%20interface%20should%20have%20syntax%20highlighting%20and%20follow%20IntelliJ%20IDEAs%20design%20language%20with%20tabs%20and%20tool%20windows.&width=600&height=400&seq=ui1&orientation=landscape"
+                  alt="简洁直观的界面设计"
+                  class="rounded-lg shadow-lg w-full"
+                />
+              </div>
+            </div>
+
+            <div
+              class="alternating-section flex flex-col md:flex-row-reverse items-center gap-8"
+            >
+              <div class="md:w-1/2">
+                <h3 class="text-2xl font-semibold mb-4">完整的调试工具链</h3>
+                <p class="text-gray-600 dark:text-gray-400 mb-6">
+                  从 HTTP 到 gRPC，从 WebSocket 到 Spring
+                  容器方法，提供全方位的调试能力，满足各种开发场景需求，一站式解决接口调试问题。
+                </p>
+                <div class="space-y-4">
+                  <div class="flex items-start">
+                    <span
+                      class="w-5 h-5 flex items-center justify-center text-primary mt-1"
+                      ><i class="ri-check-line"></i
+                    ></span>
+                    <p class="ml-3">多协议支持，覆盖常见开发场景</p>
+                  </div>
+                  <div class="flex items-start">
+                    <span
+                      class="w-5 h-5 flex items-center justify-center text-primary mt-1"
+                      ><i class="ri-check-line"></i
+                    ></span>
+                    <p class="ml-3">丰富的请求参数配置选项</p>
+                  </div>
+                  <div class="flex items-start">
+                    <span
+                      class="w-5 h-5 flex items-center justify-center text-primary mt-1"
+                      ><i class="ri-check-line"></i
+                    ></span>
+                    <p class="ml-3">详细的响应分析工具</p>
+                  </div>
+                </div>
+              </div>
+              <div class="md:w-1/2">
+                <img
+                  src="https://readdy.ai/api/search-image?query=A%20comprehensive%20debugging%20toolchain%20interface%20showing%20multiple%20tabs%20for%20HTTP%2C%20gRPC%2C%20and%20WebSocket%20testing.%20The%20interface%20should%20display%20request%20configuration%20options%2C%20method%20selection%20dropdowns%2C%20and%20response%20data%20with%20syntax%20highlighting.%20Include%20a%20panel%20showing%20Spring%20container%20method%20invocation.&width=600&height=400&seq=debug1&orientation=landscape"
+                  alt="完整的调试工具链"
+                  class="rounded-lg shadow-lg w-full"
+                />
+              </div>
+            </div>
+
+            <div
+              class="alternating-section flex flex-col md:flex-row items-center gap-8"
+            >
+              <div class="md:w-1/2">
+                <h3 class="text-2xl font-semibold mb-4">便捷的文档管理</h3>
+                <p class="text-gray-600 dark:text-gray-400 mb-6">
+                  自动生成 API 文档，支持多种格式导出，与 OpenAPI/Swagger
+                  无缝集成，简化团队协作流程，提高开发效率。
+                </p>
+                <div class="space-y-4">
+                  <div class="flex items-start">
+                    <span
+                      class="w-5 h-5 flex items-center justify-center text-primary mt-1"
+                      ><i class="ri-check-line"></i
+                    ></span>
+                    <p class="ml-3">一键导出多种格式文档</p>
+                  </div>
+                  <div class="flex items-start">
+                    <span
+                      class="w-5 h-5 flex items-center justify-center text-primary mt-1"
+                      ><i class="ri-check-line"></i
+                    ></span>
+                    <p class="ml-3">自动生成请求和响应示例</p>
+                  </div>
+                  <div class="flex items-start">
+                    <span
+                      class="w-5 h-5 flex items-center justify-center text-primary mt-1"
+                      ><i class="ri-check-line"></i
+                    ></span>
+                    <p class="ml-3">支持 OpenAPI/Swagger 规范</p>
+                  </div>
+                </div>
+              </div>
+              <div class="md:w-1/2">
+                <img
+                  src="https://readdy.ai/api/search-image?query=A%20documentation%20management%20interface%20showing%20API%20documentation%20generation%20with%20OpenAPI%2FSwagger%20integration.%20The%20interface%20should%20display%20a%20panel%20for%20exporting%20documentation%20in%20different%20formats%2C%20with%20a%20preview%20of%20the%20generated%20documentation%20showing%20request%20parameters%2C%20response%20examples%2C%20and%20endpoint%20details.&width=600&height=400&seq=doc1&orientation=landscape"
+                  alt="便捷的文档管理"
+                  class="rounded-lg shadow-lg w-full"
+                />
+              </div>
+            </div>
+
+            <div
+              class="alternating-section flex flex-col md:flex-row-reverse items-center gap-8"
+            >
+              <div class="md:w-1/2">
+                <h3 class="text-2xl font-semibold mb-4">
+                  深度集成 Spring 生态
+                </h3>
+                <p class="text-gray-600 dark:text-gray-400 mb-6">
+                  直接调用 SpringBoot
+                  容器内方法，无需编写测试代码，快速验证业务逻辑，提高开发效率，为
+                  Spring 开发者提供最佳体验。
+                </p>
+                <div class="space-y-4">
+                  <div class="flex items-start">
+                    <span
+                      class="w-5 h-5 flex items-center justify-center text-primary mt-1"
+                      ><i class="ri-check-line"></i
+                    ></span>
+                    <p class="ml-3">直接调用容器内任意方法</p>
+                  </div>
+                  <div class="flex items-start">
+                    <span
+                      class="w-5 h-5 flex items-center justify-center text-primary mt-1"
+                      ><i class="ri-check-line"></i
+                    ></span>
+                    <p class="ml-3">自动识别 Spring MVC 接口</p>
+                  </div>
+                  <div class="flex items-start">
+                    <span
+                      class="w-5 h-5 flex items-center justify-center text-primary mt-1"
+                      ><i class="ri-check-line"></i
+                    ></span>
+                    <p class="ml-3">支持 Spring 环境配置</p>
+                  </div>
+                </div>
+              </div>
+              <div class="md:w-1/2">
+                <img
+                  src="https://readdy.ai/api/search-image?query=A%20Spring%20integration%20interface%20showing%20method%20invocation%20in%20a%20Spring%20container.%20The%20interface%20should%20display%20a%20tree%20view%20of%20available%20Spring%20beans%20on%20the%20left%2C%20method%20selection%20in%20the%20center%2C%20and%20parameter%20input%20fields%20on%20the%20right.%20Include%20Spring%20framework%20icons%20and%20syntax%20highlighting%20for%20Java%20code.&width=600&height=400&seq=spring1&orientation=landscape"
+                  alt="深度集成 Spring 生态"
+                  class="rounded-lg shadow-lg w-full"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section
+        class="py-20 px-4 bg-gradient-to-r from-blue-500 to-primary text-white"
+      >
+        <div class="container mx-auto text-center">
+          <h2 class="text-3xl font-bold mb-6">立即体验 Cool Request</h2>
+          <p class="text-xl mb-10 max-w-2xl mx-auto">
+            提升开发效率，简化调试流程，让接口调用变得简单
+          </p>
+          <div class="flex flex-wrap justify-center gap-4">
+            <a
+              href="#"
+              class="bg-white text-primary px-8 py-3 !rounded-button font-medium hover:bg-gray-100 transition-colors whitespace-nowrap"
+              >从 IDEA 插件市场安装</a
+            >
+            <a
+              href="#"
+              class="border border-white px-8 py-3 !rounded-button font-medium hover:bg-white/10 transition-colors whitespace-nowrap"
+              >下载插件包</a
+            >
+          </div>
+        </div>
+      </section>
+
+      <section class="py-20 px-4">
+        <div class="container mx-auto text-center">
+          <h2 class="text-3xl font-bold mb-3">使用统计</h2>
+          <p
+            class="text-lg text-gray-600 dark:text-gray-400 mb-16 max-w-2xl mx-auto"
+          >
+            受到全球开发者的信赖和好评
+          </p>
+
+          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+            <div class="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-sm">
+              <div
+                class="w-16 h-16 flex items-center justify-center bg-blue-100 dark:bg-blue-900/30 rounded-full mx-auto mb-4"
+              >
+                <i class="ri-download-line text-2xl text-primary"></i>
+              </div>
+              <h3 class="text-3xl font-bold mb-2">
+                <span id="downloadCounter" class="counter">0</span>+
+              </h3>
+              <p class="text-gray-600 dark:text-gray-400">插件下载量</p>
+            </div>
+
+            <div class="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-sm">
+              <div
+                class="w-16 h-16 flex items-center justify-center bg-green-100 dark:bg-green-900/30 rounded-full mx-auto mb-4"
+              >
+                <i class="ri-user-line text-2xl text-secondary"></i>
+              </div>
+              <h3 class="text-3xl font-bold mb-2">
+                <span id="userCounter" class="counter">0</span>+
+              </h3>
+              <p class="text-gray-600 dark:text-gray-400">活跃用户</p>
+            </div>
+
+            <div class="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-sm">
+              <div
+                class="w-16 h-16 flex items-center justify-center bg-yellow-100 dark:bg-yellow-900/30 rounded-full mx-auto mb-4"
+              >
+                <i class="ri-star-line text-2xl text-yellow-500"></i>
+              </div>
+              <h3 class="text-3xl font-bold mb-2">
+                <span id="starCounter" class="counter">0</span>+
+              </h3>
+              <p class="text-gray-600 dark:text-gray-400">GitHub Star</p>
+            </div>
+
+            <div class="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-sm">
+              <div
+                class="w-16 h-16 flex items-center justify-center bg-red-100 dark:bg-red-900/30 rounded-full mx-auto mb-4"
+              >
+                <i class="ri-heart-line text-2xl text-red-500"></i>
+              </div>
+              <h3 class="text-3xl font-bold mb-2">
+                <span id="ratingCounter" class="counter">0</span>%
+              </h3>
+              <p class="text-gray-600 dark:text-gray-400">好评率</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="testimonials" class="py-20 px-4 bg-gray-50 dark:bg-gray-900">
+        <div class="container mx-auto">
+          <h2 class="text-3xl font-bold mb-3 text-center">用户评价</h2>
+          <p
+            class="text-lg text-gray-600 dark:text-gray-400 mb-16 max-w-2xl mx-auto text-center"
+          >
+            来自行业专家和开发者的真实反馈
+          </p>
+
+          <div class="relative">
+            <div
+              class="flex overflow-x-auto pb-8 gap-6 snap-x"
+              id="testimonialSlider"
+            >
+              <div
+                class="min-w-[300px] md:min-w-[350px] flex-shrink-0 bg-white dark:bg-gray-800 p-6 rounded-lg shadow-sm snap-center"
+              >
+                <div class="flex items-center mb-4">
+                  <div
+                    class="w-12 h-12 flex items-center justify-center bg-blue-100 dark:bg-blue-900/30 rounded-full mr-4"
+                  >
+                    <i class="ri-user-line text-xl text-primary"></i>
+                  </div>
+                  <div>
+                    <h4 class="font-semibold">张伟</h4>
+                    <p class="text-sm text-gray-600 dark:text-gray-400">
+                      阿里巴巴资深工程师
+                    </p>
+                  </div>
+                </div>
+                <p class="text-gray-600 dark:text-gray-400">
+                  "Cool Request 极大地提高了我的开发效率，特别是调用 Spring
+                  容器内方法的功能，让我不再需要编写大量测试代码。界面设计简洁直观，完全符合
+                  IDEA 的使用习惯。"
+                </p>
+                <div class="mt-4 flex text-yellow-400">
+                  <i class="ri-star-fill"></i>
+                  <i class="ri-star-fill"></i>
+                  <i class="ri-star-fill"></i>
+                  <i class="ri-star-fill"></i>
+                  <i class="ri-star-fill"></i>
+                </div>
+              </div>
+
+              <div
+                class="min-w-[300px] md:min-w-[350px] flex-shrink-0 bg-white dark:bg-gray-800 p-6 rounded-lg shadow-sm snap-center"
+              >
+                <div class="flex items-center mb-4">
+                  <div
+                    class="w-12 h-12 flex items-center justify-center bg-green-100 dark:bg-green-900/30 rounded-full mr-4"
+                  >
+                    <i class="ri-user-line text-xl text-secondary"></i>
+                  </div>
+                  <div>
+                    <h4 class="font-semibold">刘芳</h4>
+                    <p class="text-sm text-gray-600 dark:text-gray-400">
+                      腾讯高级后端开发
+                    </p>
+                  </div>
+                </div>
+                <p class="text-gray-600 dark:text-gray-400">
+                  "作为一名后端开发，我每天都要和各种 API 打交道。Cool Request
+                  的 gRPC 测试功能非常强大，让我可以直接在 IDE 中测试 RPC
+                  服务，省去了很多麻烦。文档导出功能也很实用。"
+                </p>
+                <div class="mt-4 flex text-yellow-400">
+                  <i class="ri-star-fill"></i>
+                  <i class="ri-star-fill"></i>
+                  <i class="ri-star-fill"></i>
+                  <i class="ri-star-fill"></i>
+                  <i class="ri-star-fill"></i>
+                </div>
+              </div>
+
+              <div
+                class="min-w-[300px] md:min-w-[350px] flex-shrink-0 bg-white dark:bg-gray-800 p-6 rounded-lg shadow-sm snap-center"
+              >
+                <div class="flex items-center mb-4">
+                  <div
+                    class="w-12 h-12 flex items-center justify-center bg-purple-100 dark:bg-purple-900/30 rounded-full mr-4"
+                  >
+                    <i class="ri-user-line text-xl text-purple-500"></i>
+                  </div>
+                  <div>
+                    <h4 class="font-semibold">王明</h4>
+                    <p class="text-sm text-gray-600 dark:text-gray-400">
+                      字节跳动技术专家
+                    </p>
+                  </div>
+                </div>
+                <p class="text-gray-600 dark:text-gray-400">
+                  "我们团队一直在寻找一个能够满足各种调试需求的工具，Cool
+                  Request 完美解决了这个问题。它的 WebSocket
+                  支持非常出色，对于我们的实时通信应用开发帮助很大。"
+                </p>
+                <div class="mt-4 flex text-yellow-400">
+                  <i class="ri-star-fill"></i>
+                  <i class="ri-star-fill"></i>
+                  <i class="ri-star-fill"></i>
+                  <i class="ri-star-fill"></i>
+                  <i class="ri-star-half-fill"></i>
+                </div>
+              </div>
+
+              <div
+                class="min-w-[300px] md:min-w-[350px] flex-shrink-0 bg-white dark:bg-gray-800 p-6 rounded-lg shadow-sm snap-center"
+              >
+                <div class="flex items-center mb-4">
+                  <div
+                    class="w-12 h-12 flex items-center justify-center bg-orange-100 dark:bg-orange-900/30 rounded-full mr-4"
+                  >
+                    <i class="ri-user-line text-xl text-orange-500"></i>
+                  </div>
+                  <div>
+                    <h4 class="font-semibold">赵静</h4>
+                    <p class="text-sm text-gray-600 dark:text-gray-400">
+                      百度全栈工程师
+                    </p>
+                  </div>
+                </div>
+                <p class="text-gray-600 dark:text-gray-400">
+                  "Cool Request 的 HTTP
+                  调试功能非常强大，支持各种请求方式和参数设置，响应分析也很详细。最重要的是，它与
+                  IDEA 的集成非常自然，使用起来非常顺手。"
+                </p>
+                <div class="mt-4 flex text-yellow-400">
+                  <i class="ri-star-fill"></i>
+                  <i class="ri-star-fill"></i>
+                  <i class="ri-star-fill"></i>
+                  <i class="ri-star-fill"></i>
+                  <i class="ri-star-fill"></i>
+                </div>
+              </div>
+
+              <div
+                class="min-w-[300px] md:min-w-[350px] flex-shrink-0 bg-white dark:bg-gray-800 p-6 rounded-lg shadow-sm snap-center"
+              >
+                <div class="flex items-center mb-4">
+                  <div
+                    class="w-12 h-12 flex items-center justify-center bg-red-100 dark:bg-red-900/30 rounded-full mr-4"
+                  >
+                    <i class="ri-user-line text-xl text-red-500"></i>
+                  </div>
+                  <div>
+                    <h4 class="font-semibold">陈强</h4>
+                    <p class="text-sm text-gray-600 dark:text-gray-400">
+                      华为架构师
+                    </p>
+                  </div>
+                </div>
+                <p class="text-gray-600 dark:text-gray-400">
+                  "作为架构师，我需要一个能够快速验证 API 设计的工具。Cool
+                  Request 的 OpenAPI 支持让我可以轻松导入和导出 Swagger
+                  文档，与我们的 API 设计流程无缝集成。"
+                </p>
+                <div class="mt-4 flex text-yellow-400">
+                  <i class="ri-star-fill"></i>
+                  <i class="ri-star-fill"></i>
+                  <i class="ri-star-fill"></i>
+                  <i class="ri-star-fill"></i>
+                  <i class="ri-star-line"></i>
+                </div>
+              </div>
+            </div>
+
+            <button
+              class="absolute left-0 top-1/2 transform -translate-y-1/2 w-10 h-10 bg-white dark:bg-gray-800 rounded-full shadow-md flex items-center justify-center text-gray-700 dark:text-white focus:outline-none z-10 -ml-5 hidden md:flex"
+              id="prevBtn"
+            >
+              <i class="ri-arrow-left-s-line text-xl"></i>
+            </button>
+            <button
+              class="absolute right-0 top-1/2 transform -translate-y-1/2 w-10 h-10 bg-white dark:bg-gray-800 rounded-full shadow-md flex items-center justify-center text-gray-700 dark:text-white focus:outline-none z-10 -mr-5 hidden md:flex"
+              id="nextBtn"
+            >
+              <i class="ri-arrow-right-s-line text-xl"></i>
+            </button>
+          </div>
+
+          <div class="flex justify-center mt-6 gap-2" id="testimonialDots">
+            <button
+              class="w-3 h-3 rounded-full bg-primary opacity-100"
+            ></button>
+            <button
+              class="w-3 h-3 rounded-full bg-gray-300 dark:bg-gray-700 opacity-50"
+            ></button>
+            <button
+              class="w-3 h-3 rounded-full bg-gray-300 dark:bg-gray-700 opacity-50"
+            ></button>
+            <button
+              class="w-3 h-3 rounded-full bg-gray-300 dark:bg-gray-700 opacity-50"
+            ></button>
+            <button
+              class="w-3 h-3 rounded-full bg-gray-300 dark:bg-gray-700 opacity-50"
+            ></button>
+          </div>
+        </div>
+      </section>
+
+      <section class="py-20 px-4">
+        <div class="container mx-auto">
+          <h2 class="text-3xl font-bold mb-3 text-center">常见问题</h2>
+          <p
+            class="text-lg text-gray-600 dark:text-gray-400 mb-16 max-w-2xl mx-auto text-center"
+          >
+            解答您可能遇到的问题
+          </p>
+
+          <div class="max-w-3xl mx-auto space-y-6">
+            <div
+              class="bg-white dark:bg-gray-800 rounded-lg shadow-sm overflow-hidden"
+            >
+              <button
+                class="w-full px-6 py-4 text-left font-semibold flex justify-between items-center focus:outline-none"
+                id="faq1"
+              >
+                <span>Cool Request 支持哪些 IDEA 版本？</span>
+                <i
+                  class="ri-arrow-down-s-line transition-transform duration-200"
+                ></i>
+              </button>
+              <div class="px-6 pb-4 hidden" id="faq1Answer">
+                <p class="text-gray-600 dark:text-gray-400">
+                  Cool Request 支持 IntelliJ IDEA 2020.1 及以上版本，包括
+                  Community 和 Ultimate 版本。同时也支持
+                  WebStorm、PyCharm、GoLand 等基于 IntelliJ 平台的 IDE。
+                </p>
+              </div>
+            </div>
+
+            <div
+              class="bg-white dark:bg-gray-800 rounded-lg shadow-sm overflow-hidden"
+            >
+              <button
+                class="w-full px-6 py-4 text-left font-semibold flex justify-between items-center focus:outline-none"
+                id="faq2"
+              >
+                <span>如何安装 Cool Request？</span>
+                <i
+                  class="ri-arrow-down-s-line transition-transform duration-200"
+                ></i>
+              </button>
+              <div class="px-6 pb-4 hidden" id="faq2Answer">
+                <p class="text-gray-600 dark:text-gray-400">
+                  您可以通过以下两种方式安装 Cool Request：
+                </p>
+                <ol
+                  class="list-decimal ml-5 mt-2 space-y-2 text-gray-600 dark:text-gray-400"
+                >
+                  <li>
+                    在 IDEA 中，依次点击 File > Settings > Plugins，搜索 "Cool
+                    Request" 并安装。
+                  </li>
+                  <li>
+                    从我们的官网下载插件包（.zip 文件），然后在 IDEA
+                    中，依次点击 File > Settings > Plugins > ⚙️ > Install Plugin
+                    from Disk，选择下载的插件包安装。
+                  </li>
+                </ol>
+              </div>
+            </div>
+
+            <div
+              class="bg-white dark:bg-gray-800 rounded-lg shadow-sm overflow-hidden"
+            >
+              <button
+                class="w-full px-6 py-4 text-left font-semibold flex justify-between items-center focus:outline-none"
+                id="faq3"
+              >
+                <span>Cool Request 是免费的吗？</span>
+                <i
+                  class="ri-arrow-down-s-line transition-transform duration-200"
+                ></i>
+              </button>
+              <div class="px-6 pb-4 hidden" id="faq3Answer">
+                <p class="text-gray-600 dark:text-gray-400">
+                  是的，Cool Request 是完全免费的开源项目，您可以在 GitHub
+                  上查看源代码并参与贡献。我们欢迎社区的反馈和建议，以不断改进插件功能。
+                </p>
+              </div>
+            </div>
+
+            <div
+              class="bg-white dark:bg-gray-800 rounded-lg shadow-sm overflow-hidden"
+            >
+              <button
+                class="w-full px-6 py-4 text-left font-semibold flex justify-between items-center focus:outline-none"
+                id="faq4"
+              >
+                <span>如何调用 Spring 容器内的方法？</span>
+                <i
+                  class="ri-arrow-down-s-line transition-transform duration-200"
+                ></i>
+              </button>
+              <div class="px-6 pb-4 hidden" id="faq4Answer">
+                <p class="text-gray-600 dark:text-gray-400">
+                  要调用 Spring 容器内的方法，您需要：
+                </p>
+                <ol
+                  class="list-decimal ml-5 mt-2 space-y-2 text-gray-600 dark:text-gray-400"
+                >
+                  <li>确保您的 SpringBoot 应用已启动并运行。</li>
+                  <li>在 Cool Request 工具窗口中，切换到 "Spring" 标签页。</li>
+                  <li>在左侧树形视图中，浏览并选择要调用的 Bean。</li>
+                  <li>在右侧面板中，选择要调用的方法，填写参数值。</li>
+                  <li>点击 "执行" 按钮调用方法，查看返回结果。</li>
+                </ol>
+              </div>
+            </div>
+
+            <div
+              class="bg-white dark:bg-gray-800 rounded-lg shadow-sm overflow-hidden"
+            >
+              <button
+                class="w-full px-6 py-4 text-left font-semibold flex justify-between items-center focus:outline-none"
+                id="faq5"
+              >
+                <span>如何导出 API 文档？</span>
+                <i
+                  class="ri-arrow-down-s-line transition-transform duration-200"
+                ></i>
+              </button>
+              <div class="px-6 pb-4 hidden" id="faq5Answer">
+                <p class="text-gray-600 dark:text-gray-400">
+                  导出 API 文档的步骤如下：
+                </p>
+                <ol
+                  class="list-decimal ml-5 mt-2 space-y-2 text-gray-600 dark:text-gray-400"
+                >
+                  <li>
+                    在 Cool Request 工具窗口中，点击右上角的 "导出" 按钮。
+                  </li>
+                  <li>
+                    在弹出的对话框中，选择要导出的 API 和导出格式（如
+                    HTML、Markdown、Word 等）。
+                  </li>
+                  <li>选择保存路径，点击 "导出" 按钮。</li>
+                  <li>文档生成完成后，会自动打开文档或提示导出成功。</li>
+                </ol>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="py-20 px-4 bg-primary text-white">
+        <div class="container mx-auto">
+          <div class="max-w-3xl mx-auto text-center">
+            <h2 class="text-3xl font-bold mb-6">订阅我们的更新</h2>
+            <p class="text-lg mb-8">
+              及时获取 Cool Request 的最新功能和更新信息
+            </p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center">
+              <input
+                type="email"
+                placeholder="请输入您的邮箱地址"
+                class="px-4 py-3 rounded-button text-gray-800 w-full sm:w-auto sm:flex-1 max-w-md border-none"
+              />
+              <button
+                class="bg-white text-primary px-6 py-3 !rounded-button font-medium hover:bg-gray-100 transition-colors whitespace-nowrap"
+              >
+                订阅
+              </button>
+            </div>
+            <p class="text-sm mt-4 text-blue-100">
+              我们尊重您的隐私，绝不会向第三方分享您的信息
+            </p>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="bg-gray-900 text-white py-12 px-4">
+      <div class="container mx-auto">
+        <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+          <div>
+            <a href="#" class="text-2xl font-['Pacifico'] mb-4 inline-block"
+              >Cool Request</a
+            >
+            <p class="text-gray-400 mb-4">让调用变得简单</p>
+            <div class="flex space-x-4">
+              <a
+                href="#"
+                class="w-10 h-10 flex items-center justify-center bg-gray-800 rounded-full hover:bg-primary transition-colors"
+              >
+                <i class="ri-github-fill"></i>
+              </a>
+              <a
+                href="#"
+                class="w-10 h-10 flex items-center justify-center bg-gray-800 rounded-full hover:bg-primary transition-colors"
+              >
+                <i class="ri-twitter-x-fill"></i>
+              </a>
+              <a
+                href="#"
+                class="w-10 h-10 flex items-center justify-center bg-gray-800 rounded-full hover:bg-primary transition-colors"
+              >
+                <i class="ri-wechat-fill"></i>
+              </a>
+            </div>
+          </div>
+
+          <div>
+            <h3 class="text-lg font-semibold mb-4">产品</h3>
+            <ul class="space-y-2 text-gray-400">
+              <li>
+                <a href="#" class="hover:text-white transition-colors"
+                  >功能介绍</a
+                >
+              </li>
+              <li>
+                <a href="#" class="hover:text-white transition-colors"
+                  >下载安装</a
+                >
+              </li>
+              <li>
+                <a href="#" class="hover:text-white transition-colors"
+                  >更新日志</a
+                >
+              </li>
+              <li>
+                <a href="#" class="hover:text-white transition-colors"
+                  >路线图</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <div>
+            <h3 class="text-lg font-semibold mb-4">资源</h3>
+            <ul class="space-y-2 text-gray-400">
+              <li>
+                <a href="#" class="hover:text-white transition-colors"
+                  >文档中心</a
+                >
+              </li>
+              <li>
+                <a href="#" class="hover:text-white transition-colors"
+                  >视频教程</a
+                >
+              </li>
+              <li>
+                <a href="#" class="hover:text-white transition-colors"
+                  >常见问题</a
+                >
+              </li>
+              <li>
+                <a href="#" class="hover:text-white transition-colors"
+                  >API 参考</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <div>
+            <h3 class="text-lg font-semibold mb-4">联系我们</h3>
+            <ul class="space-y-2 text-gray-400">
+              <li class="flex items-start">
+                <span
+                  class="w-5 h-5 flex items-center justify-center mt-0.5 mr-2"
+                  ><i class="ri-mail-line"></i
+                ></span>
+                <span>support@coolrequest.com</span>
+              </li>
+              <li class="flex items-start">
+                <span
+                  class="w-5 h-5 flex items-center justify-center mt-0.5 mr-2"
+                  ><i class="ri-github-line"></i
+                ></span>
+                <span>GitHub Issues</span>
+              </li>
+              <li class="flex items-start">
+                <span
+                  class="w-5 h-5 flex items-center justify-center mt-0.5 mr-2"
+                  ><i class="ri-wechat-line"></i
+                ></span>
+                <span>微信公众号：CoolRequest</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div
+          class="mt-12 pt-8 border-t border-gray-800 flex flex-col md:flex-row justify-between items-center"
+        >
+          <p class="text-gray-500 text-sm">
+            © 2025 Cool Request. 保留所有权利。
+          </p>
+          <div class="flex space-x-6 mt-4 md:mt-0">
+            <a
+              href="#"
+              class="text-gray-500 text-sm hover:text-white transition-colors"
+              >隐私政策</a
+            >
+            <a
+              href="#"
+              class="text-gray-500 text-sm hover:text-white transition-colors"
+              >使用条款</a
+            >
+            <a
+              href="#"
+              class="text-gray-500 text-sm hover:text-white transition-colors"
+              >Cookie 政策</a
+            >
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script id="themeScript">
+      document.addEventListener("DOMContentLoaded", function () {
+        const themeSwitch = document.getElementById("themeSwitch");
+        const html = document.documentElement;
+
+        // 检查本地存储中的主题设置
+        const savedTheme = localStorage.getItem("theme");
+        if (savedTheme === "dark") {
+          html.classList.add("dark");
+        }
+
+        // 主题切换功能
+        themeSwitch.addEventListener("click", function () {
+          html.classList.toggle("dark");
+
+          // 保存主题设置到本地存储
+          if (html.classList.contains("dark")) {
+            localStorage.setItem("theme", "dark");
+          } else {
+            localStorage.setItem("theme", "light");
+          }
+        });
+      });
+    </script>
+
+    <script id="animationScript">
+      document.addEventListener("DOMContentLoaded", function () {
+        // 计数器动画
+        function animateCounter(elementId, finalValue, duration) {
+          const element = document.getElementById(elementId);
+          if (!element) return;
+
+          let startValue = 0;
+          const increment = finalValue / (duration / 16);
+
+          const timer = setInterval(() => {
+            startValue += increment;
+            if (startValue >= finalValue) {
+              clearInterval(timer);
+              startValue = finalValue;
+            }
+            element.textContent = Math.floor(startValue);
+          }, 16);
+        }
+
+        // 滚动动画
+        function handleScrollAnimation() {
+          // 特性卡片动画
+          const featureCards = document.querySelectorAll(".feature-card");
+          featureCards.forEach((card) => {
+            const cardTop = card.getBoundingClientRect().top;
+            const windowHeight = window.innerHeight;
+
+            if (cardTop < windowHeight * 0.85) {
+              card.classList.add("visible");
+            }
+          });
+
+          // 交错部分动画
+          const alternatingSection = document.querySelectorAll(
+            ".alternating-section",
+          );
+          alternatingSection.forEach((section) => {
+            const sectionTop = section.getBoundingClientRect().top;
+            const windowHeight = window.innerHeight;
+
+            if (sectionTop < windowHeight * 0.85) {
+              section.classList.add("visible");
+            }
+          });
+
+          // 计数器动画触发
+          const counterSection = document.querySelector("#downloadCounter");
+          if (
+            counterSection &&
+            counterSection.getBoundingClientRect().top < window.innerHeight * 0.8
+          ) {
+            if (!counterSection.classList.contains("animated")) {
+              counterSection.classList.add("animated");
+              animateCounter("downloadCounter", 50000, 1500);
+              animateCounter("userCounter", 20000, 1500);
+              animateCounter("starCounter", 2500, 1500);
+              animateCounter("ratingCounter", 98, 1500);
+
+              // 首屏计数器
+              animateCounter("downloadCount", 50000, 1500);
+              animateCounter("starCount", 2500, 1500);
+            }
+          }
+        }
+
+        // 初始调用一次
+        handleScrollAnimation();
+
+        // 滚动时调用
+        window.addEventListener("scroll", handleScrollAnimation);
+      });
+    </script>
+    <script id="testimonialScript">
+      document.addEventListener("DOMContentLoaded", function () {
+        const slider = document.getElementById("testimonialSlider");
+        const prevBtn = document.getElementById("prevBtn");
+        const nextBtn = document.getElementById("nextBtn");
+        const dots = document.getElementById("testimonialDots").children;
+
+        let currentIndex = 0;
+        const slideWidth = 350 + 24; // 卡片宽度 + 间距
+
+        // 更新滑块位置
+        function updateSlider() {
+          slider.scrollTo({
+            left: currentIndex * slideWidth,
+            behavior: "smooth",
+          });
+
+          // 更新指示点
+          for (let i = 0; i < dots.length; i++) {
+            if (i === currentIndex) {
+              dots[i].classList.add("bg-primary");
+              dots[i].classList.remove("bg-gray-300", "dark:bg-gray-700");
+              dots[i].style.opacity = "1";
+            } else {
+              dots[i].classList.remove("bg-primary");
+              dots[i].classList.add("bg-gray-300", "dark:bg-gray-700");
+              dots[i].style.opacity = "0.5";
+            }
+          }
+        }
+
+        // 上一张
+        prevBtn.addEventListener("click", function () {
+          currentIndex = Math.max(currentIndex - 1, 0);
+          updateSlider();
+        });
+
+        // 下一张
+        nextBtn.addEventListener("click", function () {
+          const maxIndex = slider.children.length - 1;
+          currentIndex = Math.min(currentIndex + 1, maxIndex);
+          updateSlider();
+        });
+
+        // 点击指示点
+        for (let i = 0; i < dots.length; i++) {
+          dots[i].addEventListener("click", function () {
+            currentIndex = i;
+            updateSlider();
+          });
+        }
+
+        // 监听滚动事件
+        slider.addEventListener("scroll", function () {
+          const scrollPosition = slider.scrollLeft;
+          const newIndex = Math.round(scrollPosition / slideWidth);
+
+          if (newIndex !== currentIndex) {
+            currentIndex = newIndex;
+            updateSlider();
+          }
+        });
+      });
+    </script>
+
+    <script id="faqScript">
+      document.addEventListener("DOMContentLoaded", function () {
+        const faqButtons = document.querySelectorAll('[id^="faq"]');
+
+        faqButtons.forEach((button) => {
+          if (!button.id.includes("Answer")) {
+            button.addEventListener("click", function () {
+              const answerId = button.id + "Answer";
+              const answerElement = document.getElementById(answerId);
+              const icon = button.querySelector("i");
+
+              if (answerElement.classList.contains("hidden")) {
+                answerElement.classList.remove("hidden");
+                icon.style.transform = "rotate(180deg)";
+              } else {
+                answerElement.classList.add("hidden");
+                icon.style.transform = "rotate(0)";
+              }
+            });
+          }
+        });
+      });
+    </script>
+  </body>
+</html>
